@@ -214,7 +214,35 @@ public class Pemeran extends Agensi
         }
     }
 
+public void hitungKekayaan(double pendapatanDrama, double pendapatanMovie, 
+                           double pendapatanEvent, double pendapatanPenghargaan)
+{
+    double totalKekayaan = pendapatanDrama + pendapatanMovie + pendapatanEvent + pendapatanPenghargaan;
 
-    
+    System.out.println("====================================================");
+    System.out.println("==================  TOTAL KEKAYAAN  =================");
+    System.out.println("====================================================");
+    System.out.println("Nama                 : " + nama);
+    System.out.println("Pendapatan Drama     : Rp " + pendapatanDrama);
+    System.out.println("Pendapatan Movie     : Rp " + pendapatanMovie);
+    System.out.println("Pendapatan Event     : Rp " + pendapatanEvent);
+    System.out.println("Pendapatan Award     : Rp " + pendapatanPenghargaan);
+    System.out.println("----------------------------------------------------");
+    System.out.println("Total Kekayaan       : Rp " + totalKekayaan);
+    System.out.println("====================================================");
+    System.out.println();
 }
 
+public void tampilkanListKarya() 
+{
+    System.out.println("====================================================");
+    System.out.println("===================  LIST KARYA  ===================");
+    System.out.println("====================================================");
+    System.out.println("Nama Pemeran  : " + nama);
+    System.out.println("----------------------------------------------------");
+    System.out.println("Daftar Drama  : " + listDrama);
+    System.out.println("Daftar Film   : " + listMovie);
+    System.out.println("====================================================");
+    System.out.println();
+}
+}
