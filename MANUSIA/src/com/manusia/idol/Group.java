@@ -36,9 +36,11 @@ public class Group extends Idol {
         System.out.println("=============================================="); }
 
     public void fanChant() {
-        System.out.println("========== FANCHANT ==========");
+        System.out.println("==============================================");
+        System.out.println("                 FANCHANT                     ");
+        System.out.println("==============================================");
         System.out.println("Song : " + judulLagu);
         System.out.print("Fanchant: ");
         for (String m : namaMember) {
             System.out.print(m.toUpperCase() + "! "); }
-        System.out.println("\n=============================="); } }
+        System.out.println("\n=============================================="); } }
