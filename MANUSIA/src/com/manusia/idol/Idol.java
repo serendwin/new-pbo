@@ -4,13 +4,25 @@ import java.util.Scanner;
 
 public class Idol extends Agensi {
     private String albumkpop;
+    private String albumTerbaru;
+    public int JmlMember;
 
     public Idol(String nama, String kewarganegaraan, String ttlLahir,
                    String ttlDebut, int masaTrainee, String posisi,
                    String drama, String movie, String Album, String penghargaan) {
         super(nama, kewarganegaraan, ttlLahir, ttlDebut, masaTrainee,
-              drama, movie, penghargaan, posisi, Album);
-        this.albumkpop = albumkpop; }
+              drama, movie, penghargaan, posisi, Album); }
+
+    @Override
+    public void jadwalComeback() {
+        System.out.println("==============================================");
+        System.out.println("              INFORMASI COMEBACK              ");
+        System.out.println("==============================================");
+        System.out.println("Group     : " + nama);
+        System.out.println("Title     : " + albumTerbaru);
+        System.out.println("Members   : " + JmlMember);
+        System.out.println("MV Release: 6 PM KST on YouTube");
+        System.out.println("==============================================");}
 
     @Override
     public void tampilkanbiodatagroupidol() {

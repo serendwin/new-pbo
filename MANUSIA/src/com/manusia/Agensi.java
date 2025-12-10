@@ -66,6 +66,7 @@ public class Agensi {
     public void inputTiketaktris(Scanner in) {}
     public void cetakTiketaktris() {}
 
+    public void jadwalComeback(){}
     public void infoEventidol() {}
     public void inputTiketidol(Scanner in) {}
     public void cetakTiketidol() {}
