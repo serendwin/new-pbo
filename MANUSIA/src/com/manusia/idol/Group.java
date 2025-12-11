@@ -1,6 +1,7 @@
 package com.manusia.idol;
 
-public class Group extends Idol {
+public class Group extends Idol 
+{
 
     private int JmlMember;
     private String[] namaMember;

@@ -2,18 +2,22 @@ package com.manusia.idol;
 import com.manusia.Agensi;
 import java.util.Scanner;
 
-public class Idol extends Agensi {
+public class Idol extends Agensi 
+{
     private String albumkpop;
 
     public Idol(String nama, String kewarganegaraan, String ttlLahir,
                    String ttlDebut, int masaTrainee, String posisi,
-                   String drama, String movie, String Album, String penghargaan) {
+                   String drama, String movie, String Album, String penghargaan) 
+    {
         super(nama, kewarganegaraan, ttlLahir, ttlDebut, masaTrainee,
               drama, movie, penghargaan, posisi, Album);
-        this.albumkpop = albumkpop; }
+        this.albumkpop = albumkpop; 
+    }
 
     @Override
-    public void tampilkanbiodatagroupidol() {
+    public void tampilkanbiodatagroupidol() 
+    {
         System.out.println("===========================================================");
         System.out.println("=====================  BIODATA GROUP  =====================");
         System.out.println("===========================================================");
@@ -25,7 +29,8 @@ public class Idol extends Agensi {
         System.out.println();}
 
     @Override
-    public void tampilkanbiodatamemberNCTDream() {
+    public void tampilkanbiodatamemberNCTDream() 
+    {
         System.out.println("==================================================================================");
         System.out.println("============================  BIODATA MEMBER NCT DREAM  ==========================");
         System.out.println("==================================================================================");
@@ -35,10 +40,12 @@ public class Idol extends Agensi {
         System.out.println("Masa Trainee     : " + masaTrainee);
         System.out.println("Posisi           : " + posisi);
         System.out.println("==================================================================================");
-        System.out.println();}
+        System.out.println();
+    }
 
     @Override
-    public void tampilkanbiodatamemberDAY6() {
+    public void tampilkanbiodatamemberDAY6() 
+    {
         System.out.println("===========================================================");
         System.out.println("===================  BIODATA MEMBER DAY6  =================");
         System.out.println("===========================================================");
@@ -48,7 +55,8 @@ public class Idol extends Agensi {
         System.out.println("Masa Trainee     : " + masaTrainee);
         System.out.println("Posisi           : " + posisi);
         System.out.println("===========================================================");
-        System.out.println(); }
+        System.out.println(); 
+    }
 
     @Override
     public void infoEventidol() {

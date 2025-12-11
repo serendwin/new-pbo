@@ -1,6 +1,7 @@
 package com.manusia.aktris.aktor;
 
-public class Firstlead extends Pemeran {
+public class Firstlead extends Pemeran 
+{
     int totalPeranUtama;
     double ratingTertinggi;
     String peranLeadTerkenal;
@@ -11,6 +12,9 @@ public class Firstlead extends Pemeran {
             String ttlDebut, int masaTrainee, String posisi,
             String drama, String movie, String album, String penghargaan,
             int totalPeranUtama, double ratingTertinggi, String peranLeadTerkenal
+
+
+            
     ) {
         super(nama, kewarganegaraan, ttlLahir, ttlDebut, masaTrainee,
                 drama, movie, penghargaan, posisi, album);
@@ -20,7 +24,6 @@ public class Firstlead extends Pemeran {
         this.peranLeadTerkenal = peranLeadTerkenal;
     }
 
-    // ===== METHOD 1 — Hitung Popularitas =====
     public double hitungPopularitasLead() {
         return (ratingTertinggi * 2) + (totalPeranUtama * 1.5);
     }
