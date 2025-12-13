@@ -2,9 +2,6 @@ package com.manusia.aktris.aktor;
 
 public class Cameo extends Pemeran 
 {
-    private int totalPeranPendukung;
-    private String jenisPeran;
-
     public Cameo(
             String nama,
             String kewarganegaraan,
@@ -16,6 +13,7 @@ public class Cameo extends Pemeran
             String movie,
             String album,
             String penghargaan,
+            String film,       
             int totalPeranPendukung,
             String jenisPeran
     ) {
@@ -29,11 +27,11 @@ public class Cameo extends Pemeran
                 drama,
                 movie,
                 album,
-                penghargaan
+                penghargaan,
+                "cameo",                  // kategori
+                film                      // ✅ WAJIB
         );
 
-        this.totalPeranPendukung = totalPeranPendukung;
-        this.jenisPeran = jenisPeran;
     }
 
     public void appearBriefly() {
@@ -41,15 +39,6 @@ public class Cameo extends Pemeran
     }
 
     public void deliverPlotTwist() {
-        System.out.println("Datang -> Kasih info rahasia ke Lead -> Langsung pergi/menghilang.");
-    }
-
-    // optional tapi rapi
-    public int getTotalPeranPendukung() {
-        return totalPeranPendukung;
-    }
-
-    public String getJenisPeran() {
-        return jenisPeran;
+        System.out.println("Datang → Kasih info rahasia ke Lead → Langsung pergi/menghilang.");
     }
 }

@@ -7,16 +7,38 @@ public class Idol extends Agensi {
 
     private String albumKpop;
 
-    public Idol(String nama, String kewarganegaraan, String ttlLahir,
-                String ttlDebut, int masaTrainee, String posisi,
-                String drama, String movie, String Album, String penghargaan) {
+    // ✅ CONSTRUCTOR FIX
+    public Idol(
+            String nama,
+            String kewarganegaraan,
+            String ttlLahir,
+            String ttlDebut,
+            int masaTrainee,
+            String posisi,
+            String drama,
+            String movie,
+            String album,
+            String penghargaan
+    ) {
 
-        super(nama, kewarganegaraan, ttlLahir, ttlDebut,
-              masaTrainee, drama, movie, penghargaan, posisi, Album);
+        super(
+            nama,
+            kewarganegaraan,
+            ttlLahir,
+            ttlDebut,
+            masaTrainee,
+            drama,
+            movie,
+            album,
+            penghargaan,
+            posisi,
+            "idol" // ✅ kategori
+        );
 
-        this.albumKpop = null;
+        this.albumKpop = "-";
     }
 
+    // ================= BIODATA =================
     @Override
     public void tampilkanbiodatagroupidol() {
         System.out.println("===========================================================");
@@ -24,38 +46,41 @@ public class Idol extends Agensi {
         System.out.println("===========================================================");
         System.out.println("Group Boyband   : " + nama);
         System.out.println("Debut           : " + ttlDebut);
-        System.out.println("Album Terakhir  : " + Album); 
+        System.out.println("Album Terakhir  : " + album);
         System.out.println("Penghargaan     : " + penghargaan);
         System.out.println("===========================================================");
         System.out.println();
     }
 
     @Override
-    public void tampilkanbiodatamemberNCTDream(){
+    public void tampilkanbiodatamemberNCTDream() {
         System.out.println("==================================================================================");
         System.out.println("============================  BIODATA MEMBER NCT DREAM  ==========================");
         System.out.println("==================================================================================");
-        System.out.println("Nama: " + nama);
-        System.out.println("Tanggal Lahir: " + ttlLahir);
-        System.out.println("Kewarganegaraan: " + kewarganegaraan);
-        System.out.println("Masa Trainee: " + masaTrainee);
-        System.out.println("Posisi: " + posisi);
+        System.out.println("Nama            : " + nama);
+        System.out.println("Tanggal Lahir   : " + ttlLahir);
+        System.out.println("Kewarganegaraan : " + kewarganegaraan);
+        System.out.println("Masa Trainee    : " + masaTrainee);
+        System.out.println("Posisi          : " + posisi);
         System.out.println("==================================================================================");
-        System.out.println();}
- 
+        System.out.println();
+    }
+
     @Override
-    public void tampilkanbiodatamemberDAY6(){
+    public void tampilkanbiodatamemberDAY6() {
         System.out.println("===========================================================");
         System.out.println("===================  BIODATA MEMBER DAY6  =================");
         System.out.println("===========================================================");
-        System.out.println("Nama: " + nama);
-        System.out.println("Tanggal Lahir: " + ttlLahir);
-        System.out.println("Kewarganegaraan: " + kewarganegaraan);
-        System.out.println("Masa Trainee: " + masaTrainee);
-        System.out.println("Posisi: " + posisi);                
+        System.out.println("Nama            : " + nama);
+        System.out.println("Tanggal Lahir   : " + ttlLahir);
+        System.out.println("Kewarganegaraan : " + kewarganegaraan);
+        System.out.println("Masa Trainee    : " + masaTrainee);
+        System.out.println("Posisi          : " + posisi);
         System.out.println("===========================================================");
-        System.out.println();}    
-    
+        System.out.println();
+    }
+
+    // ================= EVENT =================
     @Override
     public void infoEventidol() {
         System.out.println("=============== INFO EVENT IDOL =================");
@@ -67,6 +92,7 @@ public class Idol extends Agensi {
         System.out.println("================================================");
     }
 
+    // ================= PRICELIST =================
     public void pricelistAlbumNCT() {
         System.out.println("=========== PRICELIST ALBUM NCT DREAM ===========");
         System.out.println("GLITCH MODE  : Rp 300000");
@@ -81,12 +107,14 @@ public class Idol extends Agensi {
         System.out.println("================================================");
     }
 
+    // ================= TRANSAKSI =================
     public void beliAlbum(Scanner input) {
         input.nextLine();
         System.out.print("Nama Album : ");
         albumKpop = input.nextLine();
 
         harga = tentukanHargaAlbum(albumKpop);
+
         System.out.print("Jumlah     : ");
         qty = input.nextInt();
 
@@ -103,6 +131,7 @@ public class Idol extends Agensi {
         System.out.println("================================================");
     }
 
+    // ================= HELPER =================
     private double tentukanHargaAlbum(String album) {
         switch (album.toUpperCase()) {
             case "GLITCH MODE": return 300000;

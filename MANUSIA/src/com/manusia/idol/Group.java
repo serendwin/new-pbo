@@ -1,7 +1,7 @@
 package com.manusia.idol;
 
-public class Group extends Idol {
-
+public class Group extends Idol 
+{
     private int jumlahMember;
     private String[] namaMember;
     private String judulLagu;

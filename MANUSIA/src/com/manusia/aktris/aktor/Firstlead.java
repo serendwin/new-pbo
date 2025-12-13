@@ -16,6 +16,7 @@ public class Firstlead extends Pemeran {
             String movie,
             String album,
             String penghargaan,
+            String film,            // ✅ TAMBAH
             String namaPemeran,
             String peran
     ) {
@@ -29,15 +30,16 @@ public class Firstlead extends Pemeran {
                 drama,
                 movie,
                 album,
-                penghargaan
+                penghargaan,
+                "first lead",         // kategori
+                film                 // ✅ WAJIB
         );
 
         this.namaPemeran = namaPemeran;
         this.peran = peran;
     }
 
-    public void setPosterPosition() 
-    {
+    public void setPosterPosition() {
         System.out.println("Posisi: Tengah poster, ukuran font nama paling besar.");
     }
 
