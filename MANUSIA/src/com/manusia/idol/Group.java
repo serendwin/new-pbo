@@ -79,4 +79,3 @@ public class Group extends Idol
     }
 
 }
-
