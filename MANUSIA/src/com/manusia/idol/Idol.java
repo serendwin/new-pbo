@@ -144,5 +144,5 @@ public class Idol extends Agensi {
         }
     }
 
-    public void jadwalComebackGroup() {}
+    public void jadwalComeback() {}
 }

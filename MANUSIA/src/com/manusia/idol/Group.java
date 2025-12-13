@@ -41,7 +41,7 @@ public class Group extends Idol
     }
 
     @Override
-    public void jadwalComebackGroup() 
+    public void jadwalComeback() 
     {
         System.out.println("========= INFORMASI COMEBACK GROUP =========");
         System.out.println("Group : " + nama);
