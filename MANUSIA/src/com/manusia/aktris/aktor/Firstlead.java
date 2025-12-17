@@ -11,29 +11,20 @@ public class Firstlead extends Pemeran
     public Firstlead(
             String nama,
             String kewarganegaraan,
+            String gender,
             String ttlLahir,
             String ttlDebut,
             int masaTrainee,
             String posisi,
             String drama,
-            String movie,
-            String album,
+            String film,
             String penghargaan,
-            String film
+            String event,
+            String lokasi,
+            String tanggal
     ) {
-        super(
-                nama,
-                kewarganegaraan,
-                ttlLahir,
-                ttlDebut,
-                masaTrainee,
-                posisi,
-                drama,
-                movie,
-                album,
-                penghargaan,
-                film
-        );
+        super(nama, kewarganegaraan, gender, ttlLahir, ttlDebut, masaTrainee, posisi,
+              drama, film, penghargaan, event, lokasi, tanggal);
 
         this.PosisiPoster = "-";
         this.Highlight = "-";
@@ -46,9 +37,9 @@ public class Firstlead extends Pemeran
         System.out.println("=================================================");
         System.out.println("              FIRST LEAD POSITION               ");
         System.out.println("=================================================");
-        System.out.println("Posisi Poster : Tengah");
-        System.out.println("Highlight     : Nama paling besar");
-        System.out.println("Fokus Cerita  : Karakter utama");
+        System.out.println("Posisi Poster   :" + PosisiPoster);
+        System.out.println("Highlight       :" + Highlight);
+        System.out.println("Fokus Cerita    :" + FokusCerita);
         System.out.println("=================================================");
         System.out.println();
     }
@@ -57,8 +48,8 @@ public class Firstlead extends Pemeran
         System.out.println("=================================================");
         System.out.println("               PRESS TOUR ACTIVITY              ");
         System.out.println("=================================================");
-        System.out.println("Aktivitas :");
-        System.out.println("• Wawancara TV nasional");
+        System.out.println("Nama Presscon   :" + namapresscon);
+        System.out.println("Nama TV         :" + Tv);
         System.out.println("• Podcast eksklusif");
         System.out.println("• Meet & Greet di 5 kota besar");
         System.out.println("=================================================");

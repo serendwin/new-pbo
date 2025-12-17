@@ -6,8 +6,6 @@ import com.manusia.Agensi;
 public class Pemeran extends Agensi 
 {
     public String event;
-    public String eventName;
-    public String eventType;
     public String lokasi;
     public String tanggal;
 
@@ -22,32 +20,30 @@ public class Pemeran extends Agensi
     public Pemeran(
             String nama,
             String kewarganegaraan,
+            String gender,
             String ttlLahir,
             String ttlDebut,
             int masaTrainee,
             String posisi,
             String drama,
-            String movie,
-            String album,
+            String film,
             String penghargaan,
-            String film
+            String event,
+            String lokasi,
+            String tanggal
     ) {
-        super(
-                nama,
-                kewarganegaraan,
-                ttlLahir,
-                ttlDebut,
-                masaTrainee,
-                drama,    
-                movie,    
-                album,
-                penghargaan,
-                posisi
+          super(
+            nama,
+            kewarganegaraan,
+            gender,
+            ttlLahir,
+            ttlDebut,
+            masaTrainee,
+            penghargaan,
+            posisi
         );
 
         this.event = "-";
-        this.eventName = "-";
-        this.eventType = "-";
         this.lokasi = "-";
         this.tanggal = "-";
         this.harga = tentukanHargaAktor(kategori);
@@ -63,8 +59,7 @@ public class Pemeran extends Agensi
         System.out.println("Kewarganegaraan  : " + kewarganegaraan);
         System.out.println("Tanggal Lahir    : " + ttlLahir);
         System.out.println("Debut            : " + ttlDebut);
-        System.out.println("Drama            : " + listDrama);
-        System.out.println("Movie            : " + listMovie);
+        System.out.println("Drama            : " + drama);
         System.out.println("Film             : " + film);
         System.out.println("Penghargaan      : " + penghargaan);
         System.out.println("=================================================================");
@@ -80,8 +75,7 @@ public class Pemeran extends Agensi
         System.out.println("Kewarganegaraan  : " + kewarganegaraan);
         System.out.println("Tanggal Lahir    : " + ttlLahir);
         System.out.println("Debut            : " + ttlDebut);
-        System.out.println("Drama            : " + listDrama);
-        System.out.println("Movie            : " + listMovie);
+        System.out.println("Drama            : " + drama);
         System.out.println("Film             : " + film);
         System.out.println("Penghargaan      : " + penghargaan);
         System.out.println("=================================================================");
@@ -247,7 +241,7 @@ public class Pemeran extends Agensi
         System.out.println("                 DRAMA POPULER                  ");
         System.out.println("=================================================");
         System.out.println("Nama Artis : " + nama);
-        System.out.println("Drama      : " + listDrama);
+        System.out.println("Drama      : " + drama);
         System.out.println("Peran      : " + posisi);
         System.out.println("=================================================");
         System.out.println();
@@ -258,7 +252,7 @@ public class Pemeran extends Agensi
         System.out.println("                  FILM POPULER                  ");
         System.out.println("=================================================");
         System.out.println("Nama Artis : " + nama);
-        System.out.println("Film       : " + listMovie);
+        System.out.println("Film       : " + film);
         System.out.println("Peran      : " + posisi);
         System.out.println("=================================================");
         System.out.println();
