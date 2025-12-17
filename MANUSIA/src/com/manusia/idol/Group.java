@@ -9,30 +9,32 @@ public class Group extends Idol
     public Group(
             String nama,
             String kewarganegaraan,
+            String gender,
             String ttlLahir,
             String ttlDebut,
             int masaTrainee,
             String posisi,
-            String drama,
-            String movie,
-            String album,
             String penghargaan,
+            String album,
             int jumlahMember,
             String[] memberNames,
-            String albumTerbaru,
             String judulLagu
     ) {
         super(
                 nama,
                 kewarganegaraan,
+                gender,
                 ttlLahir,
                 ttlDebut,
                 masaTrainee,
                 posisi,
-                drama,
-                movie,
+                penghargaan,
                 album,
-                penghargaan
+                "-",        // event
+                "-",        // eventName
+                "-",        // eventType
+                "-",        // lokasi
+                "-"         // tanggal
         );
 
         this.jumlahMember = jumlahMember;
@@ -77,5 +79,4 @@ public class Group extends Idol
 
         System.out.println("\n==============================================");
     }
-
 }

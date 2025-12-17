@@ -6,13 +6,10 @@ public class Agensi {
 
     protected String nama;
     protected String kewarganegaraan;
+    protected String gender;
     protected String ttlLahir;
     protected String ttlDebut;
     protected int masaTrainee;
-
-    protected String listDrama;
-    protected String listMovie;
-    protected String album;
     protected String penghargaan;
     protected String posisi;
 
@@ -20,24 +17,19 @@ public class Agensi {
     public Agensi(
             String nama,
             String kewarganegaraan,
+            String gender,
             String ttlLahir,
             String ttlDebut,
             int masaTrainee,
-            String listDrama,
-            String listMovie,
-            String album,
             String penghargaan,
             String posisi
     ) {
         this.nama = nama;
         this.kewarganegaraan = kewarganegaraan;
+        this.gender = gender;
         this.ttlLahir = ttlLahir;
         this.ttlDebut = ttlDebut;
         this.masaTrainee = masaTrainee;
-
-        this.listDrama = listDrama;
-        this.listMovie = listMovie;
-        this.album = album;
         this.penghargaan = penghargaan;
         this.posisi = posisi;
     }

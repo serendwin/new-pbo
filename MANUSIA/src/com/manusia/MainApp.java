@@ -15,7 +15,7 @@ public class MainApp
 
         /** Aktor - Aktris */
 
-        Cameo leeMinhoCameo = new Cameo(
+        Cameo cameominho = new Cameo(
                 "Lee Min-ho",
                 "Korea Selatan",
                 "22 Juni 1987",
@@ -29,12 +29,12 @@ public class MainApp
                 "Gangnam Blues"
         );
 
-        leeMinhoCameo.durasi = "± 3 Menit";
-        leeMinhoCameo.deskripsi = "Kemunculan misterius sebagai pria berjas hitam";
-        leeMinhoCameo.AksiUtama = "Memberi peringatan ke karakter utama";
-        leeMinhoCameo.DetailAksi = "Datang → Bicara → Menghilang";
+        cameominho.durasi = "± 3 Menit";
+        cameominho.deskripsi = "Kemunculan misterius sebagai pria berjas hitam";
+        cameominho.AksiUtama = "Memberi peringatan ke karakter utama";
+        cameominho.DetailAksi = "Datang → Bicara → Menghilang";
 
-        Firstlead leeMinhoLead = new Firstlead(
+        Firstlead firstminho = new Firstlead(
                 "Lee Min-ho",
                 "Korea Selatan",
                 "22 Juni 1987",
@@ -163,8 +163,8 @@ public class MainApp
         kimJiwonLead.lokasi = "The Kasablanka Hall";
         kimJiwonLead.tanggal = "30 Mei 2026";
 
-        
-        // ====================== GROUP ======================
+        /** Idol */
+
         Idol idol1 = new Idol(
                 "NCT DREAM",
                 "Korea Selatan",
