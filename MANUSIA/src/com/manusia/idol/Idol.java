@@ -52,8 +52,6 @@ public class Idol extends Agensi {
         this.eventType = "-";
         this.lokasi = "-";
         this.tanggal = "-";
-        this.harga = tentukanHargasoloist(eventType, lokasi, tanggal);
-        this.harga = tentukanHargagroup(eventType, lokasi, tanggal);        
     }
 
     /* Biodata */

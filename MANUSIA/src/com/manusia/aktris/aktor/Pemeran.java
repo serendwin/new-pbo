@@ -46,8 +46,8 @@ public class Pemeran extends Agensi
         this.event = "-";
         this.lokasi = "-";
         this.tanggal = "-";
-        this.harga = tentukanHargaAktor(kategori);
-        this.harga = tentukanHargaAktris(kategori);
+        this.kategori = "-";
+        this.section = "-";
     }
 
     @Override
@@ -214,29 +214,40 @@ public class Pemeran extends Agensi
         System.out.println();
     }
 
-    private double tentukanHargaAktor(String kategori) {
-        switch (kategori.toUpperCase()) {
-            case "VVIP": return 3000000;
-            case "VIP": return 2500000;
-            case "REGULAR": return 900000;
-            case "BALCONY": return 600000;
-            default: 
-                System.out.println("Kategori  " + kategori + "  tidak tersedia. Harga default digunakan.");
-                return 0;
-        }
-    }
-
     private double tentukanHargaAktris(String kategori) {
+        if (kategori == null) {
+            System.out.println("Kategori belum dipilih!");
+            return 0;
+        }
+
         switch (kategori.toUpperCase()) {
             case "VVIP": return 2500000;
             case "VIP": return 1500000;
             case "REGULAR": return 800000;
             case "BALCONY": return 500000;
-            default: 
-                System.out.println("Kategori  " + kategori + "  tidak tersedia. Harga default digunakan.");
+            default:
+                System.out.println("Kategori " + kategori + " tidak tersedia.");
                 return 0;
         }
     }
+
+    private double tentukanHargaAktor(String kategori) {
+        if (kategori == null) {
+            System.out.println("Kategori belum dipilih!");
+            return 0;
+        }
+
+        switch (kategori.toUpperCase()) {
+            case "VVIP": return 3000000;
+            case "VIP": return 1800000;
+            case "REGULAR": return 1000000;
+            case "BALCONY": return 600000;
+            default:
+                System.out.println("Kategori " + kategori + " tidak tersedia.");
+                return 0;
+        }
+    }
+
 
     public void tampilkandrama() {
         System.out.println("=================================================");
