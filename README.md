@@ -16,8 +16,12 @@
 ##### 11. TicketKonserIdol.java -> GrandChild Class
 ##### 12. App.java -> 🎮 Main Class 🎮
 ---
+## UML
+<img width="1531" height="1284" alt="uml mihumihu agensi drawio" src="https://github.com/user-attachments/assets/d757510b-2140-43d4-a7e9-26c208b92115" />
+---
+
 ## ✨Disusun Oleh✨
-##### 🤺Fatimah
-##### 🤺Inna Lutfiah Fatih
-##### 🤺Jihaan hanifah
-##### 🤺Elsa Setia Marsca
+1. 🤺Fatimah
+2. 🤺Inna Lutfiah Fatih
+3. 🤺Jihaan hanifah
+4. 🤺Elsa Setia Marsca
