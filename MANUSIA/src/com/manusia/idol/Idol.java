@@ -47,11 +47,11 @@ public class Idol extends Agensi {
         );
 
         this.album = album;
-        this.event = "-";
-        this.eventName = "-";
-        this.eventType = "-";
-        this.lokasi = "-";
-        this.tanggal = "-";
+        this.event = event;
+        this.eventName = eventName;
+        this.eventType = eventType;
+        this.lokasi = lokasi;
+        this.tanggal = tanggal;
     }
 
     /* Biodata */

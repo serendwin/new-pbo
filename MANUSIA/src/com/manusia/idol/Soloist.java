@@ -35,10 +35,10 @@ public class Soloist extends Idol {
                 "-"     // tanggal
         );
 
-        this.gayaAwal = "-";
-        this.gayaAkhir = "-";
-        this.deskripsi = "-";
-        this.penampilan = "-";
+        this.gayaAwal = gayaAwal;
+        this.gayaAkhir = gayaAkhir;
+        this.deskripsi = deskripsi;
+        this.penampilan = penampilan;
     }
 
     @Override

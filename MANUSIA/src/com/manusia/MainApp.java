@@ -217,7 +217,11 @@ public class MainApp
                 "Boygroup",
                 "Daesang, Bonsang",
                 "GLITCH MODE",
-                "-", "-", "-", "-", "-"
+                "NCT DREAM Fanmeeting 2026", 
+                "-", 
+                "FANMEETING", 
+                "Balai Kartini", 
+                "15 Januari 2026"
         );
         Idol day6 = new Idol(
                 "DAY6",
@@ -229,7 +233,11 @@ public class MainApp
                 "Band",
                 "Best Band",
                 "The Book of Us: Negentropy",
-                "-", "-", "-", "-", "-"
+                "-", 
+                "Day6 Fanmeeting 2026", 
+                "FANMEETING", 
+                "JCC", 
+                "27 Januari 2026"
         );
 
         Idol mark = new Idol(
@@ -242,7 +250,11 @@ public class MainApp
             "Leader, Main Rapper, Main Dancer, Sub Vocalist",
             "Seoul Music Awards - Bonsang",
             "Reload (2020)",
-            "-", "-", "-", "-", "-"
+            "NCT DREAM WORLD TOUR", 
+            "NCT DREAM The Dream Show 3", 
+            "Konser", 
+            "GBK Stadium", 
+            "10 Agustus 2026"
         );
 
         Idol renjun = new Idol(
@@ -255,7 +267,11 @@ public class MainApp
             "Main Vocalist, Main Dancer",
             "Seoul Music Awards - Bonsang",
             "Reload (2020)",
-            "-", "-", "-", "-", "-"
+            "NCT DREAM WORLD TOUR", 
+            "NCT DREAM The Dream Show 3", 
+            "Konser", 
+            "GBK Stadium", 
+            "10 Agustus 2026"
         );
 
         Idol jeno = new Idol(
@@ -268,7 +284,11 @@ public class MainApp
             "Main Rapper, Main Dancer, Sub Vocalist, Visual",
             "Seoul Music Awards - Bonsang",
             "Reload (2020)",
-            "-", "-", "-", "-", "-"
+            "NCT DREAM WORLD TOUR", 
+            "NCT DREAM The Dream Show 3", 
+            "Konser", 
+            "GBK Stadium", 
+            "10 Agustus 2026"
         );
 
         Idol haechan = new Idol(
@@ -281,7 +301,11 @@ public class MainApp
             "Main Vocalist",
             "Seoul Music Awards - Bonsang",
             "Reload (2020)",
-            "-", "-", "-", "-", "-"
+            "NCT DREAM WORLD TOUR", 
+            "NCT DREAM The Dream Show 3", 
+            "Konser", 
+            "GBK Stadium", 
+            "10 Agustus 2026"
         );
 
         Idol jaemin = new Idol(
@@ -294,7 +318,11 @@ public class MainApp
             "Main Dancer, Sub Rapper, Sub Vocalist, Visual, Center",
             "Seoul Music Awards - Bonsang",
             "Reload (2020)",
-            "-", "-", "-", "-", "-"
+            "NCT DREAM WORLD TOUR", 
+            "NCT DREAM The Dream Show 3", 
+            "Konser", 
+            "GBK Stadium", 
+            "10 Agustus 2026"
         );
 
         Idol chenle = new Idol(
@@ -307,7 +335,11 @@ public class MainApp
             "Main Vocalist",
             "Seoul Music Awards - Bonsang",
             "Reload (2020)",
-            "-", "-", "-", "-", "-"
+             "NCT DREAM WORLD TOUR", 
+            "NCT DREAM The Dream Show 3", 
+            "Konser", 
+            "GBK Stadium", 
+            "10 Agustus 2026"
         );
 
         Idol jisung = new Idol(
@@ -320,7 +352,11 @@ public class MainApp
             "Main Dancer, Sub Rapper, Sub Vocalist, Maknae",
             "Seoul Music Awards - Bonsang",
             "Reload (2020)",
-            "-", "-", "-", "-", "-"
+             "NCT DREAM WORLD TOUR", 
+            "NCT DREAM The Dream Show 3", 
+            "Konser", 
+            "GBK Stadium", 
+            "10 Agustus 2026"
         );
 
         Idol sungjin = new Idol(
@@ -333,7 +369,11 @@ public class MainApp
             "Leader, Main Vocalist, Rhythm Guitarist",
             "Golden Disc Award - Best Band",
             "The Book of Us: Negentropy (2021)",
-            "-", "-", "-", "-", "-"
+            "DAY6 WORLD TOUR", 
+            "DAY6 Gravity Tour", 
+            "Konser", 
+            "ICE BSD Hall", 
+            "15 september 2026"
         );
 
         Idol youngk = new Idol(
@@ -346,7 +386,11 @@ public class MainApp
             "Bassist, Main Rapper, Main Vocalist",
             "Golden Disc Award - Best Band",
             "The Book of Us: Negentropy (2021)",
-            "-", "-", "-", "-", "-"
+            "DAY6 WORLD TOUR", 
+            "DAY6 Gravity Tour", 
+            "Konser", 
+            "ICE BSD Hall", 
+            "15 september 2026"
         );
 
         Idol wonpil = new Idol(
@@ -359,7 +403,11 @@ public class MainApp
             "Keyboardist, Main Vocalist, Visual",
             "Golden Disc Award - Best Band",
             "The Book of Us: Negentropy (2021)",
-            "-", "-", "-", "-", "-"
+            "DAY6 WORLD TOUR", 
+            "DAY6 Gravity Tour", 
+            "Konser", 
+            "ICE BSD Hall", 
+            "15 september 2026"
         );
 
         Idol dowoon = new Idol(
@@ -372,7 +420,11 @@ public class MainApp
             "Drummer, Maknae, Vocalist",
             "Golden Disc Award - Best Band",
             "The Book of Us: Negentropy (2021)",
-            "-", "-", "-", "-", "-"
+            "DAY6 WORLD TOUR", 
+            "DAY6 Gravity Tour", 
+            "Konser", 
+            "ICE BSD Hall", 
+            "15 september 2026"
         );
 
         Idol iu = new Idol(
@@ -385,7 +437,11 @@ public class MainApp
             "Soloist, Vocalist, Songwriter",
             "Melon Music Awards, Baeksang Arts Awards",
             "LILAC (2021)",
-            "-", "-", "-", "-", "-"
+            "IU FANMEETING", 
+            "IU Lve Poem Fanmeeting", 
+            "FANMEETING", 
+            "Balai Kartini", 
+            "21 Juni 2026"
         );
 
         Idol paulkim = new Idol(
@@ -398,7 +454,11 @@ public class MainApp
             "Soloist, Vocalist",
             "Melon Music Awards, Seoul Music Awards",
             "Star (2018)",
-            "-", "-", "-", "-", "-"
+            "PAUL KIM LIVE TOUR", 
+            "Paul Kim One More Time Concert", 
+            "Konser", 
+            "The kasablanka Hall", 
+            "30 Juli 2026"
         );
 
         /* Group*/
