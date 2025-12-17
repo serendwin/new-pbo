@@ -480,907 +480,952 @@ public class MainApp
         boolean kembaliutama = false;
         while (!kembaliutama) 
         {
-        System.out.println("______________________________________________________________________");
-        System.out.println("=====Hello My Dear, Welcome to Our House, MihuMihu Entertaintment!====");
-        System.out.println("----------------------------------------------------------------------");
-        System.out.println("Choose Your Fighter Baby:");
-        System.out.println("----------------------------------------------------------------------");
-        System.out.println("1. Pemeran Film");
-        System.out.println("2. Idol");
-        System.out.println("3. Keluar");
-        System.out.println("----------------------------------------------------------------------");
-        System.out.print("Pilih menu : ");
-        int menuUtama = input.nextInt();
-        System.out.println();
-        switch (menuUtama)
-        {
-            case 1: 
-                boolean kembalipemeran = false;
-                while (!kembalipemeran) 
-                {
-                    System.out.println("=================================================================");
-                    System.out.println("======================  MENU PEMERAN FILM  =====================");
-                    System.out.println("=================================================================");
-                    System.out.println("1. Lihat Biodata");
-                    System.out.println("2. Info Event dan Pembelian Tiket");
-                    System.out.println("3. Kegiatan Pemeran Film");
-                    System.out.println("4. Kembali ke Menu Utama");
-                    System.out.println("-----------------------------------------------------------------");   
-                    System.out.print("Pilih Menu : ");
-                    int menuutama = input.nextInt();
-                    System.out.println();
-                    switch (menuutama) 
+            System.out.println("______________________________________________________________________");
+            System.out.println("=====Hello My Dear, Welcome to Our House, MihuMihu Entertaintment!====");
+            System.out.println("----------------------------------------------------------------------");
+            System.out.println("Choose Your Fighter Baby:");
+            System.out.println("----------------------------------------------------------------------");
+            System.out.println("1. Pemeran Film");
+            System.out.println("2. Idol");
+            System.out.println("3. Keluar");
+            System.out.println("----------------------------------------------------------------------");
+            System.out.print("Pilih menu : ");
+            int menuUtama = input.nextInt();
+            System.out.println();
+            switch (menuUtama) 
+            {
+                case 1: 
+                    boolean kembalipemeran = false;
+                    while (!kembalipemeran) 
                     {
-                        case 1:  
-                            System.out.println("=================================================================");
-                            System.out.println("==================  PILIH BIODATA PEMERAN FILM  =================");
-                            System.out.println("=================================================================");
-                            System.out.println("1. Lee Min-ho");
-                            System.out.println("2. Lee Dong-wook");
-                            System.out.println("3. Park Shin-Hye");
-                            System.out.println("4. Kim Soo-hyun");
-                            System.out.println("5. Kembali");
-                            System.out.println("----------------------------------------------------------------");                                
-                            System.out.print("Pilih Pemeran : ");
-                            int menubiodatapemeran = input.nextInt();
-                            System.out.println();
-                            switch (menubiodatapemeran) 
-                            {
-                                case 1:
-                                    eventminho.tampilkanAktor();
-                                    break;
-                        
-                                case 2:
-                                    eventdongwook.tampilkanAktor();
-                                    break;
-
-                                case 3:
-                                    eventshinhye.tampilkanAktris();
-                                    break;
-                                    
-                                case 4: 
-                                    eventsoohyun.tampilkanAktris();
-                                    break;
-
-                                case 5:
-                                    System.out.println("Kamu kembali ke menu"); 
-                                    System.out.println();
-                                    break;
-                                
-                                default:
-                                    System.out.println("Menu tidak tersedia!");
-                                    System.out.println();
-                            
-                            break;
-                            }
-                        case 2:  
-                            System.out.println("=================================================================");
-                            System.out.println("====================  PRICELIST & INFO EVENT  ===================");
-                            System.out.println("=================================================================");
-                            System.out.println("1. Lee Min-ho");
-                            System.out.println("2. Lee Dong-wook");
-                            System.out.println("3. Park Shin-Hye");
-                            System.out.println("4. Kim Soo-hyun");
-                            System.out.println("5. Kembali");
-                            System.out.println("----------------------------------------------------------------");                                
-                            System.out.print("Pilih Pemeran : ");
-                            int menutiketpemeran = input.nextInt();
-                            System.out.println();
-                            switch (menutiketpemeran) 
-                            {
-                                case 1:
-                                    eventminho.infoEventaktor();
-                                    System.out.println("1. Beli Tiket");
-                                    System.out.println("2. Kembali");
-                                    System.out.print("Pilih : ");
-                                    int tiketleeminho = input.nextInt();
-                                    System.out.println();
-                                    if (tiketleeminho == 1) 
-                                    {
-                                        eventminho.inputTiketaktor(input);
-                                        eventminho.cetakTiketaktor();
-                                        eventminho.leeminho();
-                                    } 
-                                    else 
-                                    {
-                                        System.out.println("Anda membatalkan pembelian.");
-                                        System.out.println();
-                                    }
-                                    break;
-
-                                case 2:
-                                    eventdongwook.infoEventaktor();
-                                    System.out.println("1. Beli Tiket");
-                                    System.out.println("2. Kembali");
-                                    System.out.print("Pilih : ");
-                                    int tiketdongwook = input.nextInt();
-                                    System.out.println();
-                                    if (tiketdongwook == 1) 
-                                    {
-                                        eventdongwook.inputTiketaktor(input);
-                                        eventdongwook.cetakTiketaktor();
-                                        eventdongwook.dongwook();
-                                    } 
-                                    else 
-                                    {
-                                        System.out.println("Anda membatalkan pembelian.");
-                                        System.out.println();
-                                    }
-                                    break;
-
-                                case 3:
-                                    eventshinhye.infoEventaktris();
-                                    System.out.println("1. Beli Tiket");
-                                    System.out.println("2. Kembali");
-                                    System.out.print("Pilih : ");
-                                    int tiketshinhye = input.nextInt();
-                                    System.out.println();
-                                    if (tiketshinhye == 1) 
-                                    {
-                                        eventshinhye.inputTiketaktris(input);
-                                        eventshinhye.cetakTiketaktris();
-                                        eventshinhye.shinhye();
-                                    } 
-                                    else 
-                                    {
-                                        System.out.println("Anda membatalkan pembelian.");
-                                        System.out.println();
-                                    }
-                                    break;
-
-                                case 4:
-                                    eventsoohyun.infoEventaktor();
-                                    System.out.println("1. Beli Tiket");
-                                    System.out.println("2. Kembali");
-                                    System.out.print("Pilih : ");
-                                    int tiketsoohyun = input.nextInt();
-                                    System.out.println();
-                                    if (tiketsoohyun == 1) 
-                                    {
-                                        eventsoohyun.inputTiketaktris(input);
-                                        eventsoohyun.cetakTiketaktris();
-                                        eventsoohyun.jiwon();
-                                    } 
-                                    else 
-                                    {
-                                        System.out.println("Anda membatalkan pembelian.");
-                                        System.out.println();
-                                    }
-                                    break;
-
-                                case 5:
-                                    System.out.println("Kamu kembali ke menu"); 
-                                    System.out.println();
-                                    break;
-                                
-                                default:
-                                    System.out.println("Menu tidak tersedia!");
-                                    System.out.println();
-                            break;
-                            }
-                        case 3:  
-                            System.out.println("=================================================================");
-                            System.out.println("=====================  KEGIATAN PARA PEMERAN  ===================");
-                            System.out.println("=================================================================");
-                            System.out.println("1. Lee Min-ho");
-                            System.out.println("2. Lee Dong-wook");
-                            System.out.println("3. Park Shin-Hye");
-                            System.out.println("4. Kim Soo-hyun");
-                            System.out.println("5. Kembali");
-                            System.out.println("----------------------------------------------------------------");                                
-                            System.out.print("Pilih Pemeran : ");
-                            int menukegiatanpemeran = input.nextInt();
-                            System.out.println();
-                            switch (menukegiatanpemeran) 
-                            {
-                                case 1:
-                                    System.out.println("=================================================");
-                                    System.out.println("==================  PILIH PERAN  ================");
-                                    System.out.println("=================================================");
-                                    System.out.println("1. First Lead");
-                                    System.out.println("2. Cameo");
-                                    System.out.println("3. Kembali");
-                                    System.out.println("-------------------------------------------------");
-                                    System.out.print("Pilih Peran : ");
-                                    int bleeminho = input.nextInt();
-                                    System.out.println();
-                                    switch (bleeminho) 
-                                    {
-                                        case 1:
-                                            firstminho.setPosterPosition();
-                                            firstminho.attendPressTour();
-                                            break;
-
-                                        case 2:
-                                            cameominho.appearBriefly(); 
-                                            cameominho.deliverPlotTwist();
-                                            break;
-
-                                        case 3:
-                                            System.out.println("Kamu kembali ke menu");
-                                            System.out.println();
-                                            break;
-
-                                        default:
-                                            System.out.println("Menu tidak tersedia!");
-                                            System.out.println();
-                                    break;
-                                    }
-                                case 2:
-                                    System.out.println("=================================================");
-                                    System.out.println("==================  PILIH PERAN  ================");
-                                    System.out.println("=================================================");
-                                    System.out.println("1. First Lead");
-                                    System.out.println("2. Cameo");
-                                    System.out.println("3. Kembali");
-                                    System.out.println("-------------------------------------------------");
-                                    System.out.print("Pilih Peran : ");
-                                    int bleedongwook = input.nextInt();  
-                                    System.out.println();
-                                    switch (bleedongwook) 
-                                    {
-                                        case 1:
-                                            firstdongwook.setPosterPosition();
-                                            firstdongwook.attendPressTour();
-                                            break;
-
-                                        case 2:
-                                            cameodongwook.appearBriefly();
-                                            cameodongwook.deliverPlotTwist();
-                                            break;
-
-                                        case 3:
-                                            System.out.println("Kamu kembali ke menu");
-                                            System.out.println();
-                                            break;
-
-                                        default:
-                                            System.out.println("Menu tidak tersedia!");
-                                            System.out.println();
-                                    break;
-                                    }
-
-                                case 3:
-                                    System.out.println("=================================================");
-                                    System.out.println("==================  PILIH PERAN  ================");
-                                    System.out.println("=================================================");
-                                    System.out.println("1. First Lead");
-                                    System.out.println("2. Cameo");
-                                    System.out.println("3. Kembali");
-                                    System.out.println("-------------------------------------------------");
-                                    System.out.print("Pilih Peran : ");
-                                    int bparkshinhye = input.nextInt();  
-                                    System.out.println();   
-                                    switch (bparkshinhye) 
-                                    {
-                                        case 1:
-                                            firstshinhye.setPosterPosition();
-                                            firstshinhye.attendPressTour();
-                                            break;
-
-                                        case 2:
-                                            cameoshinhye.appearBriefly();
-                                            cameoshinhye.deliverPlotTwist();
-                                            break;
-
-                                        case 3:
-                                            System.out.println("Kamu kembali ke menu");
-                                            System.out.println();
-                                            break;
-
-                                        default:
-                                            System.out.println("Menu tidak tersedia!");
-                                            System.out.println();
-
-                                    break;
-                                    }
-                                case 4: 
-                                    System.out.println("=================================================");
-                                    System.out.println("==================  PILIH PERAN  ================");
-                                    System.out.println("=================================================");
-                                    System.out.println("1. First Lead");
-                                    System.out.println("2. Cameo");
-                                    System.out.println("3. Kembali");
-                                    System.out.println("-------------------------------------------------");
-                                    System.out.print("Pilih Peran : ");
-                                    int bkimsoohyun = input.nextInt();  
-                                    System.out.println();   
-                                    switch (bkimsoohyun) 
-                                    {
-                                        case 1:
-                                            firstsoohyun.setPosterPosition();
-                                            firstsoohyun.attendPressTour();
-                                            break;
-
-                                        case 2:
-                                            cameosoohyun.appearBriefly();
-                                            cameosoohyun.deliverPlotTwist();
-                                            break;
-
-                                        case 3:
-                                            System.out.println("Kamu kembali ke menu");
-                                            System.out.println();
-                                            break;
-
-                                        default:
-                                            System.out.println("Menu tidak tersedia!");
-                                            System.out.println();
-
-                                    break;
-                                    }
-
-                                case 5:
-                                    System.out.println("Kamu kembali ke menu"); 
-                                    System.out.println();
-                                    break;
-                                
-                                default:
-                                    System.out.println("Menu tidak tersedia!");
-                                    System.out.println();
-                            
-                         break;
-                         }                            
-                    }
-                }
-            break;
-            
-
-            case 2:
-                boolean kembaliidol = false;
-                while (!kembaliidol) 
-                {
-                    System.out.println("=================================================================");
-                    System.out.println("==========================  MENU IDOL  ==========================");
-                    System.out.println("=================================================================");
-                    System.out.println("1. Group");
-                    System.out.println("2. Soloist");
-                    System.out.println("3. Kembali ke Menu Utama");
-                    System.out.println("-----------------------------------------------------------------");   
-                    System.out.print("Pilih Menu : ");
-                    int menuutama = input.nextInt();
-                    System.out.println();
-                    switch (menuutama) 
-                    {
-                        case 1: 
-                        System.out.println("===========================================================");
-                        System.out.println("=======================  MENU IDOL  =======================");
-                        System.out.println("===========================================================");
-                        System.out.println("1. Lihat Biodata");
-                        System.out.println("2. Pembelian Album");
-                        System.out.println("3. Ticketing");
-                        System.out.println("4. Kembali ke Menu Utama");
-                        System.out.println("-----------------------------------------------------------");
-                        System.out.print("Pilih Menu: ");
-                        int menugroup = input.nextInt();
+                        System.out.println("=================================================================");
+                        System.out.println("======================  MENU PEMERAN FILM  =====================");
+                        System.out.println("=================================================================");
+                        System.out.println("1. Aktris");
+                        System.out.println("2. Aktor");
+                        System.out.println("3. Kembali ke Menu Utama");
+                        System.out.println("-----------------------------------------------------------------");
+                        System.out.print("Pilih Menu : ");
+                        int menuutamapemeran = input.nextInt();
                         System.out.println();
-                        switch (menugroup) 
+                        switch (menuutamapemeran) 
                         {
-                            case 1:  
-                                System.out.println("===========================================================");
-                                System.out.println("==================== PILIH BIODATA IDOL ===================");
-                                System.out.println("===========================================================");
-                                System.out.println("1. NCT Dream");
-                                System.out.println("2. Day6");
-                                System.out.println("3. Kembali");
-                                System.out.println("-----------------------------------------------------------");                            
-                                System.out.print("Pilih Idol : ");
-                                int menubiodatagroup = input.nextInt();
-                                System.out.println();
-                                switch (menubiodatagroup) 
+                            case 1: 
+                                boolean kembaliAktris = false;
+                                while (!kembaliAktris) 
                                 {
-                                    case 1:
-                                        System.out.println("===========================================================");
-                                        System.out.println("==================== BIODATA NCT DREAM ====================");
-                                        System.out.println("===========================================================");
-                                        System.out.println("1. Biodata Group");
-                                        System.out.println("2. Biodata Per-member");
-                                        System.out.println("3. Keluar");
-                                        System.out.println("-----------------------------------------------------------");
-                                        System.out.print("Pilih yang ingin kamu akses biodatanya : ");
-                                        int nctdream = input.nextInt();
-                                        System.out.println();
-                                        switch (nctdream) 
-                                        {
-                                            case 1 : 
-                                                idol1.tampilkanbiodatagroupidol();
-                                                break;
-                                            
-                                            case 2 :
-                                                System.out.println("===========================================================");
-                                                System.out.println("================= BIODATA MEMBER NCT DREAM ================");
-                                                System.out.println("===========================================================");
-                                                System.out.println("1. Mark");
-                                                System.out.println("2. Renjun");
-                                                System.out.println("3. Jeno");
-                                                System.out.println("4. Haechan");
-                                                System.out.println("5. Jaemin");
-                                                System.out.println("6. Chenle");
-                                                System.out.println("7. Jisung");
-                                                System.out.println("8. Keluar");
-                                                System.out.println("-----------------------------------------------------------");
-                                                System.out.print("Pilih member yang ingin biodatanya kamu liat : ");
-                                                int membernct = input.nextInt();
-                                                System.out.println();
-                                                switch (membernct) {
-                                                    case 1 : 
-                                                        mark.tampilkanbiodatamemberNCTDream();
-                                                        break;
+                                    System.out.println("=================================================================");
+                                    System.out.println("=========================  MENU AKTRIS ==========================");
+                                    System.out.println("=================================================================");
+                                    System.out.println("1. Lihat Biodata");
+                                    System.out.println("2. Info Event dan Pembelian Tiket");
+                                    System.out.println("3. Kegiatan Ter Up to Date");
+                                    System.out.println("4. Kembali");
+                                    System.out.println("-----------------------------------------------------------------");
+                                    System.out.print("Pilih Menu : ");
+                                    int menuaktris = input.nextInt();
+                                    System.out.println();
+                                    switch (menuaktris) 
+                                    {
+                                        case 1: 
+                                            System.out.println("=================================================================");
+                                            System.out.println("==================  PILIH BIODATA PEMERAN FILM  =================");
+                                            System.out.println("=================================================================");
+                                            System.out.println("1. Park Shin-Hye");
+                                            System.out.println("2. Kim Ji-won");
+                                            System.out.println("3. Kembali");
+                                            System.out.println("----------------------------------------------------------------");
+                                            System.out.print("Pilih Pemeran : ");
+                                            int menubiodataaktris = input.nextInt();
+                                            System.out.println();
+                                            switch (menubiodataaktris) 
+                                            {
+                                                case 1:
+                                                    parkshinhye.tampilkanAktris();
+                                                    break;
+                                                case 2:
+                                                    kimjiwon.tampilkanAktris();
+                                                    break;
+                                                case 3:
+                                                    break;
+                                                default:
+                                                    System.out.println("Menu tidak tersedia!");
+                                            }
+                                            break;
 
-                                                    case 2 : 
-                                                        renjun.tampilkanbiodatamemberNCTDream();
-                                                        break;
+                                        case 2: 
+                                            System.out.println("=================================================================");
+                                            System.out.println("====================  PRICELIST & INFO EVENT  ===================");
+                                            System.out.println("=================================================================");
+                                            System.out.println("1. Park Shin-Hye");
+                                            System.out.println("2. Kim Ji-won");
+                                            System.out.println("3. Kembali");
+                                            System.out.println("----------------------------------------------------------------");
+                                            System.out.print("Pilih Pemeran : ");
+                                            int menutiketaktris = input.nextInt();
+                                            System.out.println();
+                                            switch (menutiketaktris) 
+                                            {
+                                                case 1:
+                                                    parkshinhye.infoEventaktris();
+                                                    System.out.println("1. Beli Tiket");
+                                                    System.out.println("2. Kembali");
+                                                    System.out.print("Pilih : ");
+                                                    int tiketshinhye = input.nextInt();
+                                                    System.out.println();
+                                                    if (tiketshinhye == 1) 
+                                                    {
+                                                        parkshinhye.inputTiketaktris(input);
+                                                        parkshinhye.cetakTiketaktris();
+                                                        parkshinhye.shinhye();
+                                                    } 
+                                                    else 
+                                                    {
+                                                        System.out.println("Anda membatalkan pembelian.");
+                                                        System.out.println();
+                                                    }
+                                                    break;
 
-                                                    case 3 : 
-                                                        jeno.tampilkanbiodatamemberNCTDream();
-                                                        break;
+                                                case 2:
+                                                    kimjiwon.infoEventaktor();
+                                                    System.out.println("1. Beli Tiket");
+                                                    System.out.println("2. Kembali");   
+                                                    System.out.print("Pilih : ");
+                                                    int tiketjiwon = input.nextInt();
+                                                    System.out.println();
+                                                    if (tiketjiwon == 1) 
+                                                    {
+                                                        kimjiwon.inputTiketaktris(input);
+                                                        kimjiwon.cetakTiketaktris();
+                                                        kimjiwon.jiwon();
+                                                    } 
+                                                    else 
+                                                    {
+                                                        System.out.println("Anda membatalkan pembelian.");
+                                                        System.out.println();
+                                                    }
+                                                    break;
 
-                                                    case 4 : 
-                                                        haechan.tampilkanbiodatamemberNCTDream();
-                                                        break;
+                                                case 3:
+                                                    System.out.println("Kamu kembali ke menu");
+                                                    System.out.println();
+                                                    break;
 
-                                                    case 5 : 
-                                                        jaemin.tampilkanbiodatamemberNCTDream();
-                                                        break;
+                                                default:
+                                                    System.out.println("Menu tidak tersedia!");
+                                                    System.out.println();
+                                            }
+                                            break;
 
-                                                    case 6 : 
-                                                        chenle.tampilkanbiodatamemberNCTDream();
-                                                        break;
+                                        case 3:
+                                            System.out.println("=================================================================");
+                                            System.out.println("=====================  KEGIATAN PARA PEMERAN  ===================");
+                                            System.out.println("=================================================================");
+                                            System.out.println("1. Park Shin-Hye");
+                                            System.out.println("2. Kim Soo-hyun");
+                                            System.out.println("3. Kembali");
+                                            System.out.println("----------------------------------------------------------------");                                
+                                            System.out.print("Pilih Pemeran : ");
+                                            int menukegiatanpemeranaktris = input.nextInt();
+                                            System.out.println();
+                                            switch (menukegiatanpemeranaktris)   
+                                            {
+                                                case 1:
+                                                    System.out.println("=================================================");
+                                                    System.out.println("==================  PILIH PERAN  ================");
+                                                    System.out.println("=================================================");
+                                                    System.out.println("1. First Lead");
+                                                    System.out.println("2. Cameo");
+                                                    System.out.println("3. Kembali");
+                                                    System.out.println("-------------------------------------------------");
+                                                    System.out.print("Pilih Peran : ");
+                                                    int shinhye = input.nextInt();
+                                                    System.out.println();
+                                                    switch (shinhye) 
+                                                    {
+                                                        case 1:
+                                                            firstshinhye.setPosterPosition();
+                                                            firstshinhye.attendPressTour();
+                                                            break;
 
-                                                    case 7 : 
-                                                        jisung.tampilkanbiodatamemberNCTDream();
-                                                        break;
+                                                        case 2:
+                                                            cameoshinhye.appearBriefly();
+                                                            cameoshinhye.deliverPlotTwist();
+                                                            break;
 
-                                                    default : 
-                                                        System.out.println("Anda telah keluar dari fitur ini");
-                                                }
-                                        }
-                                        break;
+                                                        case 3:
+                                                            System.out.println("Kamu kembali ke menu");
+                                                            System.out.println();
+                                                            break;
 
-                                    case 2:
-                                        System.out.println("===========================================================");
-                                        System.out.println("=====================  BIODATA DAY6  ======================");
-                                        System.out.println("===========================================================");
-                                        System.out.println("1. Biodata Group");
-                                        System.out.println("2. Biodata Per-member");
-                                        System.out.println("3. Keluar");
-                                        System.out.println("-----------------------------------------------------------");
-                                        System.out.print("Pilih yang ingin kamu akses biodatanya : ");
-                                        int day6 = input.nextInt();
-                                        System.out.println();
-                                        switch (day6) 
-                                        {
-                                            case 1 : 
-                                            idol2.tampilkanbiodatagroupidol();
+                                                        default:
+                                                            System.out.println("Menu tidak tersedia!");
+                                                            System.out.println();
+                                                    }
+                                                    break;
+
+                                                case 2:
+                                                    System.out.println("=================================================");
+                                                    System.out.println("==================  PILIH PERAN  ================");
+                                                    System.out.println("=================================================");
+                                                    System.out.println("1. First Lead");
+                                                    System.out.println("2. Cameo");
+                                                    System.out.println("3. Kembali");
+                                                    System.out.println("-------------------------------------------------");
+                                                    System.out.print("Pilih Peran : ");
+                                                    int jiwon = input.nextInt();
+                                                    System.out.println();
+                                                    switch (jiwon) 
+                                                    {
+                                                        case 1:
+                                                            firstjiwon.setPosterPosition();
+                                                            firstjiwon.attendPressTour();
+                                                            break;
+
+                                                        case 2:
+                                                            cameojiwon.appearBriefly();
+                                                            cameojiwon.deliverPlotTwist();
+                                                            break;
+
+                                                        case 3:
+                                                            System.out.println("Kamu kembali ke menu");
+                                                            System.out.println();
+                                                            break;
+
+                                                        default:
+                                                            System.out.println("Menu tidak tersedia!");
+                                                            System.out.println();
+                                                    }
+                                                    break;
+
+                                                case 3:
+                                                        System.out.println("Kamu kembali ke menu");
+                                                        System.out.println();
+                                                    break;
+
+                                                default:
+                                                    System.out.println("Menu tidak tersedia!");
+                                                    System.out.println();
+                                            }
                                             break;
                                             
-                                            case 2 :
-                                                System.out.println("===========================================================");
-                                                System.out.println("=================  BIODATA MEMBER DAY6  ===================");
-                                                System.out.println("===========================================================");
-                                                System.out.println("1. Sungjin");
-                                                System.out.println("2. YoungK");
-                                                System.out.println("3. Wonpil");
-                                                System.out.println("4. Dowoon");
-                                                System.out.println("5. Keluar");
-                                                System.out.println("-----------------------------------------------------------");
-                                                System.out.print("Pilih member yang ingin biodatanya kamu liat : ");
-                                                int memberday6 = input.nextInt();
-                                                System.out.println();
-                                                switch (memberday6) 
-                                                {
-                                                    case 1 : 
-                                                        sungjin.tampilkanbiodatamemberDAY6();
-                                                        break;
+                                        case 4:
+                                            kembaliAktris = true;
+                                            break;
 
-                                                    case 2 : 
-                                                        youngk.tampilkanbiodatamemberDAY6();
-                                                        break;
-
-                                                    case 3 : 
-                                                        wonpil.tampilkanbiodatamemberDAY6();
-                                                        break;
-
-                                                    case 4 : 
-                                                        dowoon.tampilkanbiodatamemberDAY6();
-                                                        break;
-
-                                                    default : 
-                                                        System.out.println("Anda telah keluar dari fitur ini");
-                                                        System.out.println();
-                                                }
-
-                                        }
-                                        break;
-
-                                    default:
-                                        System.out.println("Anda telah keluar dari fitur ini");
+                                        default:
+                                            System.out.println("Menu tidak tersedia!");
+                                    }
                                 }
                                 break;
 
-                            case 2:  
-                                System.out.println("===========================================================");
-                                System.out.println("====================  PEMBELIAN ALBUM  ====================");
-                                System.out.println("===========================================================");
-                                System.out.println("1. NCT Dream");
-                                System.out.println("2. Day6");
-                                System.out.println("3. Kembali");
-                                System.out.println("-----------------------------------------------------------");
-                                System.out.print("Pilih Idol yang anda ingin beli Album nya : ");
-                                int menualbum = input.nextInt();
-                                System.out.println();
-                                switch (menualbum) 
+                            case 2:
+                                boolean kembaliAktor = false;
+                                while (!kembaliAktor) 
                                 {
-                                    case 1:
-                                        idol1.pricelistAlbumNCT();
-                                        System.out.println("1. Beli Album");
-                                        System.out.println("2. Kembali");
-                                        System.out.print("Pilih : ");
-                                        int albumnct = input.nextInt();
-                                        System.out.println();
-                                        if (albumnct == 1) 
-                                        {
-                                            idol1.beliAlbum(input);
-                                            idol1.cetakStruk();
-                                        } 
-                                        else 
-                                        {
-                                            System.out.println("Anda membatalkan pembelian.");
+                                    System.out.println("=================================================================");
+                                    System.out.println("==========================  MENU AKTOR ==========================");
+                                    System.out.println("=================================================================");
+                                    System.out.println("1. Lihat Biodata");
+                                    System.out.println("2. Info Event dan Pembelian Tiket");
+                                    System.out.println("3. Kegiatan Ter Up to Date");
+                                    System.out.println("4. Kembali");
+                                    System.out.println("-----------------------------------------------------------------");
+                                    System.out.print("Pilih Menu : ");
+                                    int menuaktris = input.nextInt();
+                                    System.out.println();
+                                    switch (menuaktris) 
+                                    {
+                                        case 1: 
+                                            System.out.println("=================================================================");
+                                            System.out.println("==================  PILIH BIODATA PEMERAN FILM  =================");
+                                            System.out.println("=================================================================");
+                                            System.out.println("1. Lee Min-ho");
+                                            System.out.println("2. Lee Dong-wook");
+                                            System.out.println("3. Kembali");
+                                            System.out.println("----------------------------------------------------------------");
+                                            System.out.print("Pilih Pemeran : ");
+                                            int menubiodataaktor = input.nextInt();
                                             System.out.println();
-                                        }
-                                        break;
+                                            switch (menubiodataaktor) 
+                                            {
+                                                case 1:
+                                                    leeminho.tampilkanAktor();
+                                                    break;
+                                                case 2:
+                                                    leedongwook.tampilkanAktor();
+                                                    break;
+                                                case 3:
+                                                    break;
+                                                default:
+                                                    System.out.println("Menu tidak tersedia!");
+                                            }
+                                            break;
 
-                                    case 2:
-                                        idol2.pricelistAlbumDAY6();
-                                        System.out.println("1. Beli Album");
-                                        System.out.println("2. Kembali");
-                                        System.out.print("Pilih : ");
-                                        int albumday6 = input.nextInt();
-                                        System.out.println();
-                                        if (albumday6 == 1) 
-                                        {
-                                            idol2.beliAlbum(input);
-                                            idol2.cetakStruk();
-                                        } 
-                                        else 
-                                        {
-                                            System.out.println("Anda membatalkan pembelian.");
+                                        case 2: 
+                                            System.out.println("=================================================================");
+                                            System.out.println("====================  PRICELIST & INFO EVENT  ===================");
+                                            System.out.println("=================================================================");
+                                            System.out.println("1. Lee Min-ho");
+                                            System.out.println("2. Lee Dong-wook");
+                                            System.out.println("3. Kembali");
+                                            System.out.println("----------------------------------------------------------------");
+                                            System.out.print("Pilih Pemeran : ");
+                                            int menutiketaktor = input.nextInt();
                                             System.out.println();
-                                        }
-                                        break;
+                                            switch (menutiketaktor) 
+                                            {
+                                                case 1:
+                                                    parkshinhye.infoEventaktor();
+                                                    System.out.println("1. Beli Tiket");
+                                                    System.out.println("2. Kembali");
+                                                    System.out.print("Pilih : ");
+                                                    int tiketminho = input.nextInt();
+                                                    System.out.println();
+                                                    if (tiketminho == 1) 
+                                                    {
+                                                        leeminho.inputTiketaktor(input);
+                                                        leeminho.cetakTiketaktor();
+                                                        leeminho.leeminho();
+                                                    } 
+                                                    else 
+                                                    {
+                                                        System.out.println("Anda membatalkan pembelian.");
+                                                        System.out.println();
+                                                    }
+                                                    break;
 
-                                    default:
-                                        System.out.println("Anda telah keluar");
-                                        System.out.println();
+                                                case 2:
+                                                    leedongwook.infoEventaktor();
+                                                    System.out.println("1. Beli Tiket");
+                                                    System.out.println("2. Kembali");   
+                                                    System.out.print("Pilih : ");
+                                                    int tiketdongwook = input.nextInt();
+                                                    System.out.println();
+                                                    if (tiketdongwook == 1) 
+                                                    {
+                                                        leedongwook.inputTiketaktor(input);
+                                                        leedongwook.cetakTiketaktor();
+                                                        leedongwook.dongwook();
+                                                    } 
+                                                    else 
+                                                    {
+                                                        System.out.println("Anda membatalkan pembelian.");
+                                                        System.out.println();
+                                                    }
+                                                    break;
+
+                                                case 3:
+                                                    System.out.println("Kamu kembali ke menu");
+                                                    System.out.println();
+                                                    break;
+
+                                                default:
+                                                    System.out.println("Menu tidak tersedia!");
+                                                    System.out.println();
+                                            }
+                                            break;
+
+                                        case 3:
+                                            System.out.println("=================================================================");
+                                            System.out.println("=====================  KEGIATAN PARA PEMERAN  ===================");
+                                            System.out.println("=================================================================");
+                                            System.out.println("1. Lee Min-ho");
+                                            System.out.println("2. Lee Dong-wook");
+                                            System.out.println("3. Kembali");
+                                            System.out.println("----------------------------------------------------------------");                                
+                                            System.out.print("Pilih Pemeran : ");
+                                            int menukegiatanpemeranaktor = input.nextInt();
+                                            System.out.println();
+                                            switch (menukegiatanpemeranaktor)   
+                                            {
+                                                case 1:
+                                                    System.out.println("=================================================");
+                                                    System.out.println("==================  PILIH PERAN  ================");
+                                                    System.out.println("=================================================");
+                                                    System.out.println("1. First Lead");
+                                                    System.out.println("2. Cameo");
+                                                    System.out.println("3. Kembali");
+                                                    System.out.println("-------------------------------------------------");
+                                                    System.out.print("Pilih Peran : ");
+                                                    int minho = input.nextInt();
+                                                    System.out.println();
+                                                    switch (minho) 
+                                                    {
+                                                        case 1:
+                                                            firstminho.setPosterPosition();
+                                                            firstminho.attendPressTour();
+                                                            break;
+
+                                                        case 2:
+                                                            cameominho.appearBriefly();
+                                                            cameominho.deliverPlotTwist();
+                                                            break;
+
+                                                        case 3:
+                                                            System.out.println("Kamu kembali ke menu");
+                                                            System.out.println();
+                                                            break;
+
+                                                        default:
+                                                            System.out.println("Menu tidak tersedia!");
+                                                            System.out.println();
+                                                    }
+                                                    break;
+
+                                                case 2:
+                                                    System.out.println("=================================================");
+                                                    System.out.println("==================  PILIH PERAN  ================");
+                                                    System.out.println("=================================================");
+                                                    System.out.println("1. First Lead");
+                                                    System.out.println("2. Cameo");
+                                                    System.out.println("3. Kembali");
+                                                    System.out.println("-------------------------------------------------");
+                                                    System.out.print("Pilih Peran : ");
+                                                    int dongwook = input.nextInt();
+                                                    System.out.println();
+                                                    switch (dongwook) 
+                                                    {
+                                                        case 1:
+                                                            firstdongwook.setPosterPosition();
+                                                            firstdongwook.attendPressTour();
+                                                            break;
+
+                                                        case 2:
+                                                            cameodongwook.appearBriefly();
+                                                            cameodongwook.deliverPlotTwist();
+                                                            break;
+
+                                                        case 3:
+                                                            System.out.println("Kamu kembali ke menu");
+                                                            System.out.println();
+                                                            break;
+
+                                                        default:
+                                                            System.out.println("Menu tidak tersedia!");
+                                                            System.out.println();
+                                                    }
+                                                    break;
+
+                                                case 3:
+                                                        System.out.println("Kamu kembali ke menu");
+                                                        System.out.println();
+                                                    break;
+
+                                                default:
+                                                    System.out.println("Menu tidak tersedia!");
+                                                    System.out.println();
+                                            }
+                                            break;
+                                            
+                                        case 4:
+                                            kembaliAktor = true;
+                                            break;
+
+                                        default:
+                                            System.out.println("Menu tidak tersedia!");
+                                    }
                                 }
                                 break;
 
                             case 3:
-                                System.out.println("===========================================================");
-                                System.out.println("=======================  TICKETING  =======================");
-                                System.out.println("===========================================================");
-                                System.out.println("1. NCT Dream");
-                                System.out.println("2. Day6");
-                                System.out.println("3. Kembali");
-                                System.out.println("-----------------------------------------------------------");
-                                System.out.print("Pilih : ");
-                                int menutiket = input.nextInt();
-                                System.out.println();
-                                switch (menutiket) 
-                                {
-                                    case 1:
-                                        System.out.println("===========================================================");
-                                        System.out.println("==================  TICKETING NCT DREAM  ==================");
-                                        System.out.println("===========================================================");
-                                        System.out.println("1. Konser");
-                                        System.out.println("2. Fanmeeting");
-                                        System.out.println("3. Kembali");
-                                        System.out.println("-----------------------------------------------------------");
-                                        System.out.print("Pilih : ");
-                                        int tiketnct = input.nextInt();
-                                        System.out.println();
-                                        switch (tiketnct) 
-                                        {
-                                            case 1 : 
-                                            idol1.infoEvent();
-                                            System.out.println("1. Beli Tiket");
-                                            System.out.println("2. Kembali");
-                                            System.out.print("Pilih : ");
-                                            int konsernct = input.nextInt();
-                                            System.out.println();
-                                            if (konsernct == 1) 
-                                            {
-                                                konser1.inputTiket(input);
-                                                konser1.cetakTiket();
-                                            } 
-                                            else 
-                                            {
-                                                System.out.println("Anda membatalkan pembelian.");
-                                                System.out.println();
-                                            }
-                                            break;
-
-                                            case 2 : 
-                                            fanmeet1.infoEvent();
-                                            System.out.println("1. Beli Tiket");
-                                            System.out.println("2. Kembali");
-                                            System.out.print("Pilih : ");
-                                            int fanmeetnct = input.nextInt();
-                                            System.out.println();
-                                            if (fanmeetnct == 1) 
-                                            {
-                                                fanmeet1.inputTiket(input);
-                                                fanmeet1.cetakTiket();
-                                            } 
-                                            else 
-                                            {
-                                                System.out.println("Anda membatalkan pembelian.");
-                                                System.out.println();
-                                            }
-                                            break;
-
-                                            default:
-                                                System.out.println("Anda telah keluar");
-                                                System.out.println();
-                                        } 
-                                        break;
-
-                                    case 2:
-                                        System.out.println("===========================================================");
-                                        System.out.println("====================  TICKETING DAY6  =====================");
-                                        System.out.println("===========================================================");
-                                        System.out.println("1. Konser");
-                                        System.out.println("2. Fanmeeting");
-                                        System.out.println("3. Kembali");
-                                        System.out.println("-----------------------------------------------------------");
-                                        System.out.print("Pilih : ");
-                                        int tiketday = input.nextInt();
-                                        System.out.println();
-                                        switch (tiketday) 
-                                        {
-                                            case 1 : 
-                                            konser2.infoEvent();
-                                            System.out.println("1. Beli Tiket");
-                                            System.out.println("2. Kembali");
-                                            System.out.print("Pilih : ");
-                                            int konserday6 = input.nextInt();
-                                            System.out.println();
-                                            if (konserday6 == 1) 
-                                            {
-                                                konser2.inputTiket(input);
-                                                konser2.cetakTiket();
-                                            } 
-                                            else 
-                                            {
-                                                System.out.println("Anda membatalkan pembelian.");
-                                                System.out.println();
-                                            }
-                                            break;
-
-                                            case 2 : 
-                                            fanmeet2.infoEvent();
-                                            System.out.println("1. Beli Tiket");
-                                            System.out.println("2. Kembali");
-                                            System.out.print("Pilih : ");
-                                            int fanmeetday6 = input.nextInt();
-                                            System.out.println();
-                                            if (fanmeetday6 == 1) 
-                                            {
-                                                fanmeet2.inputTiket(input);
-                                                fanmeet2.cetakTiket();
-                                            } 
-                                            else 
-                                            {
-                                                System.out.println("Anda membatalkan pembelian.");
-                                                System.out.println();
-                                            }
-                                            break;
-
-                                            default:
-                                                System.out.println("Anda telah keluar");
-                                                System.out.println();
-                                        } 
-                                        break;
-
-                                    default:
-                                        System.out.println("Anda telah keluar");
-                                        System.out.println();
-                                }
-                                break;
-
-                            case 4:
-                                kembaliIdol = true;
+                                kembalipemeran = true;
                                 break;
 
                             default:
-                                System.out.println("Pilihan tidak valid!");
-                                System.out.println();
+                                System.out.println("Menu tidak tersedia!");
                         }
                     }
+                    break;
 
-                case 4:
-                    System.out.println("Anda telah keluar dari program. Terima kasih!");
+                case 2: 
+                    boolean kembaliidol = false;
+                    while (!kembaliidol) 
+                    {
+                        System.out.println("=================================================================");
+                        System.out.println("==========================  MENU IDOL  ==========================");
+                        System.out.println("=================================================================");
+                        System.out.println("1. Group");
+                        System.out.println("2. Soloist");
+                        System.out.println("3. Kembali ke Menu Utama");
+                        System.out.println("-----------------------------------------------------------------");   
+                        System.out.print("Pilih Menu : ");
+                        int menuutamaidol = input.nextInt();
+                        System.out.println();
+                        switch (menuutamaidol) 
+                        {
+                            case 1: 
+                            System.out.println("===========================================================");
+                            System.out.println("=======================  MENU GROUP  ======================");
+                            System.out.println("===========================================================");
+                            System.out.println("1. Lihat Biodata");
+                            System.out.println("2. Pembelian Album");
+                            System.out.println("3. Ticketing");
+                            System.out.println("4. Kegiatan Ter Up to Date");
+                            System.out.println("5. Kembali ke Menu Utama");
+                            System.out.println("-----------------------------------------------------------");
+                            System.out.print("Pilih Menu: ");
+                            int menugroup = input.nextInt();
+                            System.out.println();
+                            switch (menugroup) 
+                            {
+                                case 1:  
+                                    System.out.println("===========================================================");
+                                    System.out.println("====================== PILIH BIODATA ======================");
+                                    System.out.println("===========================================================");
+                                    System.out.println("1. NCT Dream");
+                                    System.out.println("2. Day6");
+                                    System.out.println("3. Kembali");
+                                    System.out.println("-----------------------------------------------------------");                            
+                                    System.out.print("Pilih Idol : ");
+                                    int menubiodatagroup = input.nextInt();
+                                    System.out.println();
+                                    switch (menubiodatagroup) 
+                                    {
+                                        case 1:
+                                            System.out.println("===========================================================");
+                                            System.out.println("==================== BIODATA NCT DREAM ====================");
+                                            System.out.println("===========================================================");
+                                            System.out.println("1. Biodata Group");
+                                            System.out.println("2. Biodata Per-member");
+                                            System.out.println("3. Keluar");
+                                            System.out.println("-----------------------------------------------------------");
+                                            System.out.print("Pilih yang ingin kamu akses biodatanya : ");
+                                            int biodatanctdream = input.nextInt();
+                                            System.out.println();
+                                            switch (biodatanctdream) 
+                                            {
+                                                case 1 : 
+                                                    nctdream.tampilkanbiodatagroupidol();
+                                                    break;
+                                                
+                                                case 2 :
+                                                    System.out.println("===========================================================");
+                                                    System.out.println("================= BIODATA MEMBER NCT DREAM ================");
+                                                    System.out.println("===========================================================");
+                                                    System.out.println("1. Mark");
+                                                    System.out.println("2. Renjun");
+                                                    System.out.println("3. Jeno");
+                                                    System.out.println("4. Haechan");
+                                                    System.out.println("5. Jaemin");
+                                                    System.out.println("6. Chenle");
+                                                    System.out.println("7. Jisung");
+                                                    System.out.println("8. Keluar");
+                                                    System.out.println("-----------------------------------------------------------");
+                                                    System.out.print("Pilih member yang ingin biodatanya kamu liat : ");
+                                                    int membernct = input.nextInt();
+                                                    System.out.println();
+                                                    switch (membernct) 
+                                                    {
+                                                        case 1 : 
+                                                            mark.tampilkanbiodatamemberNCTDream();
+                                                            break;
+
+                                                        case 2 : 
+                                                            renjun.tampilkanbiodatamemberNCTDream();
+                                                            break;
+
+                                                        case 3 : 
+                                                            jeno.tampilkanbiodatamemberNCTDream();
+                                                            break;
+
+                                                        case 4 : 
+                                                            haechan.tampilkanbiodatamemberNCTDream();
+                                                            break;
+
+                                                        case 5 : 
+                                                            jaemin.tampilkanbiodatamemberNCTDream();
+                                                            break;
+
+                                                        case 6 : 
+                                                            chenle.tampilkanbiodatamemberNCTDream();
+                                                            break;
+
+                                                        case 7 : 
+                                                            jisung.tampilkanbiodatamemberNCTDream();
+                                                            break;
+
+                                                        default : 
+                                                            System.out.println("Anda telah keluar dari fitur ini");
+                                                    }
+                                                    break;
+                                            }
+                                            break;
+
+                                        case 2:
+                                            System.out.println("===========================================================");
+                                            System.out.println("=====================  BIODATA DAY6  ======================");
+                                            System.out.println("===========================================================");
+                                            System.out.println("1. Biodata Group");
+                                            System.out.println("2. Biodata Per-member");
+                                            System.out.println("3. Keluar");
+                                            System.out.println("-----------------------------------------------------------");
+                                            System.out.print("Pilih yang ingin kamu akses biodatanya : ");
+                                            int biodataday6 = input.nextInt();
+                                            System.out.println();
+                                            switch (biodataday6) 
+                                            {
+                                                case 1 : 
+                                                day6.tampilkanbiodatagroupidol();
+                                                break;
+                                                
+                                                case 2 :
+                                                    System.out.println("===========================================================");
+                                                    System.out.println("=================  BIODATA MEMBER DAY6  ===================");
+                                                    System.out.println("===========================================================");
+                                                    System.out.println("1. Sungjin");
+                                                    System.out.println("2. YoungK");
+                                                    System.out.println("3. Wonpil");
+                                                    System.out.println("4. Dowoon");
+                                                    System.out.println("5. Keluar");
+                                                    System.out.println("-----------------------------------------------------------");
+                                                    System.out.print("Pilih member yang ingin biodatanya kamu liat : ");
+                                                    int memberday6 = input.nextInt();
+                                                    System.out.println();
+                                                    switch (memberday6) 
+                                                    {
+                                                        case 1 : 
+                                                            sungjin.tampilkanbiodatamemberDAY6();
+                                                            break;
+
+                                                        case 2 : 
+                                                            youngk.tampilkanbiodatamemberDAY6();
+                                                            break;
+
+                                                        case 3 : 
+                                                            wonpil.tampilkanbiodatamemberDAY6();
+                                                            break;
+
+                                                        case 4 : 
+                                                            dowoon.tampilkanbiodatamemberDAY6();
+                                                            break;
+
+                                                        default : 
+                                                            System.out.println("Anda telah keluar dari fitur ini");
+                                                            System.out.println();
+                                                    }
+
+                                            }
+                                            break;
+
+                                        default:
+                                            System.out.println("Anda telah keluar dari fitur ini");
+                                    }
+                                    break; 
+
+                                case 2:
+                                    System.out.println("===========================================================");
+                                    System.out.println("====================  PEMBELIAN ALBUM  ====================");
+                                    System.out.println("===========================================================");
+                                    System.out.println("1. NCT Dream");
+                                    System.out.println("2. Day6");
+                                    System.out.println("3. Kembali");
+                                    System.out.println("-----------------------------------------------------------");
+                                    System.out.print("Pilih Idol yang anda ingin beli Album nya : ");
+                                    int menualbum = input.nextInt();
+                                    System.out.println();
+                                    switch (menualbum) 
+                                    {
+                                        case 1:
+                                            nctdream.pricelistAlbumNCT();
+                                            System.out.println("1. Beli Album");
+                                            System.out.println("2. Kembali");
+                                            System.out.print("Pilih : ");
+                                            int albumnct = input.nextInt();
+                                            System.out.println();
+                                            if (albumnct == 1) 
+                                            {
+                                                nctdream.belialbumnct(input);
+                                                nctdream.cetakStruk();
+                                            } 
+                                            else 
+                                            {
+                                                System.out.println("Anda membatalkan pembelian.");
+                                                System.out.println();
+                                            }
+                                            break;
+
+                                        case 2:
+                                            day6.pricelistAlbumDAY6();
+                                            System.out.println("1. Beli Album");
+                                            System.out.println("2. Kembali");
+                                            System.out.print("Pilih : ");
+                                            int albumday6 = input.nextInt();
+                                            System.out.println();
+                                            if (albumday6 == 1) 
+                                            {
+                                                day6.belialbumday6(input);
+                                                day6.cetakStruk();
+                                            } 
+                                            else 
+                                            {
+                                                System.out.println("Anda membatalkan pembelian.");
+                                                System.out.println();
+                                            }
+                                            break;
+
+                                        case 3:
+                                            System.out.println("Anda telah keluar");
+                                            System.out.println();
+                                            break;
+
+                                        default:
+                                            System.out.println("Tidak ada menu yang dipilih");
+                                            System.out.println();
+                                    }
+                                    break;
+
+                                case 3:
+                                    System.out.println("===========================================================");
+                                    System.out.println("========================  TICKETING  ======================");
+                                    System.out.println("===========================================================");
+                                    System.out.println("1. NCT Dream");
+                                    System.out.println("2. Day6");
+                                    System.out.println("3. Kembali");
+                                    System.out.println("-----------------------------------------------------------");
+                                    System.out.print("Pilih : ");
+                                    int menutiketgroup = input.nextInt();
+                                    System.out.println();
+                                    switch (menutiketgroup) 
+                                    {
+                                        case 1:
+                                            System.out.println("===========================================================");
+                                            System.out.println("==================  TICKETING NCT DREAM  ==================");
+                                            System.out.println("===========================================================");
+                                            System.out.println("1. Konser");
+                                            System.out.println("2. Fanmeeting");
+                                            System.out.println("3. Kembali");
+                                            System.out.println("-----------------------------------------------------------");
+                                            System.out.print("Pilih : ");
+                                            int eventnct = input.nextInt();
+                                            System.out.println();
+                                            switch (eventnct)
+                                            {
+                                                case 1:
+                                                    nctdream.infoEventidol();
+                                                    System.out.println("1. Beli Tiket");
+                                                    System.out.println("2. Kembali");
+                                                    System.out.print("Pilih : ");
+                                                    int tiketnctkonser = input.nextInt();
+                                                    System.out.println();
+                                                    if (tiketnctkonser == 1) 
+                                                    {
+                                                        nctdream.inputTiketidol(input);
+                                                        nctdream.cetakTiketidol();
+                                                    } 
+                                                    else 
+                                                    {
+                                                        System.out.println("Anda membatalkan pembelian.");
+                                                        System.out.println();
+                                                    }
+                                                    break;
+
+                                                case 2:
+                                                    nctdream.infoEventidol();
+                                                    System.out.println("1. Beli Tiket");
+                                                    System.out.println("2. Kembali");
+                                                    System.out.print("Pilih : ");
+                                                    int tiketnctfanmeeting = input.nextInt();
+                                                    System.out.println();
+                                                    if (tiketnctfanmeeting == 1) 
+                                                    {
+                                                        nctdream.inputTiketidol(input);
+                                                        nctdream.cetakTiketidol();
+                                                    } 
+                                                    else 
+                                                    {
+                                                        System.out.println("Anda membatalkan pembelian.");
+                                                        System.out.println();
+                                                    }
+                                                    break;
+
+                                                case 3  :
+                                                    System.out.println("Anda telah keluar dari fitur ini");
+                                                    System.out.println();
+                                                    break;
+
+                                                default :
+                                                    System.out.println("Menu tidak tersedia!");
+                                            }
+                                            break;
+                                        case 2:
+                                            System.out.println("===========================================================");
+                                            System.out.println("===================  TICKETING DAY6  ======================");
+                                            System.out.println("===========================================================");
+                                            System.out.println("1. Konser");
+                                            System.out.println("2. Fanmeeting");
+                                            System.out.println("3. Kembali");
+                                            System.out.println("-----------------------------------------------------------");
+                                            System.out.print("Pilih : ");
+                                            int eventday6 = input.nextInt();
+                                            System.out.println();
+                                            switch (eventday6)
+                                            {
+                                                case 1:
+                                                    day6.infoEventidol();
+                                                    System.out.println("1. Beli Tiket");
+                                                    System.out.println("2. Kembali");
+                                                    System.out.print("Pilih : ");
+                                                    int tiketday6konser = input.nextInt();
+                                                    System.out.println();
+                                                    if (tiketday6konser == 1) 
+                                                    {
+                                                        day6.inputTiketidol(input);
+                                                        day6.cetakTiketidol();
+                                                    } 
+                                                    else 
+                                                    {
+                                                        System.out.println("Anda membatalkan pembelian.");
+                                                        System.out.println();
+                                                    }
+                                                    break;
+
+                                                case 2:
+                                                    day6.infoEventidol();
+                                                    System.out.println("1. Beli Tiket");
+                                                    System.out.println("2. Kembali");
+                                                    System.out.print("Pilih : ");
+                                                    int tiketday6fanmeeting = input.nextInt();
+                                                    System.out.println();
+                                                    if (tiketday6fanmeeting == 1) 
+                                                    {
+                                                        day6.inputTiketidol(input);
+                                                        day6.cetakTiketidol();
+                                                    } 
+                                                    else 
+                                                    {
+                                                        System.out.println("Anda membatalkan pembelian.");
+                                                        System.out.println();
+                                                    }
+                                                    break;
+                                                case 3  :
+                                                    System.out.println("Anda telah keluar dari fitur ini");
+                                                    System.out.println();
+                                                    break;
+
+                                                default :
+                                                    System.out.println("Menu tidak tersedia!");
+                                                    System.out.println();
+                                            }
+                                            break;
+
+                                        case 3:
+                                            System.out.println("Anda telah keluar");
+                                            System.out.println();
+                                            break;
+
+                                        default:
+                                            System.out.println("Tidak ada menu yang dipilih");  
+                                            System.out.println();
+                                    }
+                                    break; 
+
+                                case 4:
+                                    System.out.println("===========================================================");
+                                    System.out.println("========================  UP TO DATE  =====================");
+                                    System.out.println("===========================================================");
+                                    System.out.println("1. NCT Dream");
+                                    System.out.println("2. Day6");
+                                    System.out.println("3. Kembali");
+                                    System.out.println("-----------------------------------------------------------");
+                                    System.out.print("Pilih Group : ");
+                                    int detailgroup = input.nextInt();
+                                    System.out.println();   
+                                    switch (detailgroup) 
+                                    {
+                                        case 1:
+                                            System.out.println("=================================================");
+                                            System.out.println("============== KEGIATAN UP TO DATE ==============");
+                                            System.out.println("=================================================");
+                                            System.out.println("1. Jadwal Comeback");
+                                            System.out.println("2. Line Distribution");
+                                            System.out.println("3. Fan Chant");
+                                            System.out.println("4. Kembali");
+                                            System.out.println("-------------------------------------------------");
+                                            System.out.print("Pilih Menu : ");
+                                            int menukegiatannct = input.nextInt();
+                                            System.out.println();
+                                            switch (menukegiatannct)
+                                            {
+                                                case 1:
+                                                grupnct.jadwalComeback();
+                                                    break;
+
+                                                case 2:
+                                                    grupnct.bagiLineDistribution();
+                                                    break;
+
+                                                case 3:
+                                                    grupnct.fanChant();
+                                                    break;
+
+                                                case 4:
+                                                    System.out.println("Anda telah keluar dari fitur ini");
+                                                    break;
+
+                                                default:
+                                                    System.out.println("Menu tidak tersedia!");
+                                            }
+                                            break;
+                                    
+                                        case 2:
+                                            System.out.println("=================================================");
+                                            System.out.println("============== KEGIATAN UP TO DATE ==============");
+                                            System.out.println("=================================================");    
+                                            System.out.println("1. Jadwal Comeback");
+                                            System.out.println("2. Line Distribution");
+                                            System.out.println("3. Fan Chant");
+                                            System.out.println("4. Kembali");
+                                            System.out.println("-------------------------------------------------");
+                                            System.out.print("Pilih Menu : ");
+                                            int menukegiatanday6 = input.nextInt();
+                                            System.out.println();
+                                            switch (menukegiatanday6)
+                                            {
+                                                case 1:
+                                                    grupday6.jadwalComeback();
+                                                    break;
+
+                                                case 2:
+                                                    grupday6.bagiLineDistribution();
+                                                    break;
+
+                                                case 3:
+                                                    grupday6.fanChant();
+                                                    break;
+
+                                                case 4:
+                                                    System.out.println("Anda telah keluar dari fitur ini");
+                                                    break;
+
+                                                default:
+                                                    System.out.println("Menu tidak tersedia!");
+                                            }
+                                        
+                                        case 3:
+                                            System.out.println("Anda telah keluar");
+                                            System.out.println();   
+                                            break;
+
+                                        default:
+                                            break;
+                                    }
+                            }
+                            break;
+
+                        case 2: 
+                        
+                case 3: // ================== KELUAR ==================
+                    kembaliutama = true;
+                    System.out.println("Terima kasih telah berkunjung!");
                     break;
 
                 default:
-                    System.out.println("Pilihan tidak valid!");
-
-                            boolean kembaligroup = false;
-                            while (!kembaligroup) 
-                            {
-                    
-                        case 3:  
-                            System.out.println("=================================================================");
-                            System.out.println("=====================  KEGIATAN PARA PEMERAN  ===================");
-                            System.out.println("=================================================================");
-                            System.out.println("1. Lee Min-ho");
-                            System.out.println("2. Lee Dong-wook");
-                            System.out.println("3. Park Shin-Hye");
-                            System.out.println("4. Kim Soo-hyun");
-                            System.out.println("5. Kembali");
-                            System.out.println("----------------------------------------------------------------");                                
-                            System.out.print("Pilih Pemeran : ");
-                            int menukegiatanpemeran = input.nextInt();
-                            System.out.println();
-                            switch (menukegiatanpemeran) 
-                            {
-                                case 1:
-                                    System.out.println("=================================================");
-                                    System.out.println("==================  PILIH PERAN  ================");
-                                    System.out.println("=================================================");
-                                    System.out.println("1. First Lead");
-                                    System.out.println("2. Cameo");
-                                    System.out.println("3. Kembali");
-                                    System.out.println("-------------------------------------------------");
-                                    System.out.print("Pilih Peran : ");
-                                    int bleeminho = input.nextInt();
-                                    System.out.println();
-                                    switch (bleeminho) 
-                                    {
-                                        case 1:
-                                            firstminho.setPosterPosition();
-                                            firstminho.attendPressTour();
-                                            break;
-
-                                        case 2:
-                                            cameominho.appearBriefly(); 
-                                            cameominho.deliverPlotTwist();
-                                            break;
-
-                                        case 3:
-                                            System.out.println("Kamu kembali ke menu");
-                                            System.out.println();
-                                            break;
-
-                                        default:
-                                            System.out.println("Menu tidak tersedia!");
-                                            System.out.println();
-                                    break;
-                                    }
-                                case 2:
-                                    System.out.println("=================================================");
-                                    System.out.println("==================  PILIH PERAN  ================");
-                                    System.out.println("=================================================");
-                                    System.out.println("1. First Lead");
-                                    System.out.println("2. Cameo");
-                                    System.out.println("3. Kembali");
-                                    System.out.println("-------------------------------------------------");
-                                    System.out.print("Pilih Peran : ");
-                                    int bleedongwook = input.nextInt();  
-                                    System.out.println();
-                                    switch (bleedongwook) 
-                                    {
-                                        case 1:
-                                            firstdongwook.setPosterPosition();
-                                            firstdongwook.attendPressTour();
-                                            break;
-
-                                        case 2:
-                                            cameodongwook.appearBriefly();
-                                            cameodongwook.deliverPlotTwist();
-                                            break;
-
-                                        case 3:
-                                            System.out.println("Kamu kembali ke menu");
-                                            System.out.println();
-                                            break;
-
-                                        default:
-                                            System.out.println("Menu tidak tersedia!");
-                                            System.out.println();
-                                    break;
-                                    }
-
-                                case 3:
-                                    System.out.println("=================================================");
-                                    System.out.println("==================  PILIH PERAN  ================");
-                                    System.out.println("=================================================");
-                                    System.out.println("1. First Lead");
-                                    System.out.println("2. Cameo");
-                                    System.out.println("3. Kembali");
-                                    System.out.println("-------------------------------------------------");
-                                    System.out.print("Pilih Peran : ");
-                                    int bparkshinhye = input.nextInt();  
-                                    System.out.println();   
-                                    switch (bparkshinhye) 
-                                    {
-                                        case 1:
-                                            firstshinhye.setPosterPosition();
-                                            firstshinhye.attendPressTour();
-                                            break;
-
-                                        case 2:
-                                            cameoshinhye.appearBriefly();
-                                            cameoshinhye.deliverPlotTwist();
-                                            break;
-
-                                        case 3:
-                                            System.out.println("Kamu kembali ke menu");
-                                            System.out.println();
-                                            break;
-
-                                        default:
-                                            System.out.println("Menu tidak tersedia!");
-                                            System.out.println();
-
-                                    break;
-                                    }
-                                case 4: 
-                                    System.out.println("=================================================");
-                                    System.out.println("==================  PILIH PERAN  ================");
-                                    System.out.println("=================================================");
-                                    System.out.println("1. First Lead");
-                                    System.out.println("2. Cameo");
-                                    System.out.println("3. Kembali");
-                                    System.out.println("-------------------------------------------------");
-                                    System.out.print("Pilih Peran : ");
-                                    int bkimsoohyun = input.nextInt();  
-                                    System.out.println();   
-                                    switch (bkimsoohyun) 
-                                    {
-                                        case 1:
-                                            firstsoohyun.setPosterPosition();
-                                            firstsoohyun.attendPressTour();
-                                            break;
-
-                                        case 2:
-                                            cameosoohyun.appearBriefly();
-                                            cameosoohyun.deliverPlotTwist();
-                                            break;
-
-                                        case 3:
-                                            System.out.println("Kamu kembali ke menu");
-                                            System.out.println();
-                                            break;
-
-                                        default:
-                                            System.out.println("Menu tidak tersedia!");
-                                            System.out.println();
-
-                                    break;
-                                    }
-
-                                case 5:
-                                    System.out.println("Kamu kembali ke menu"); 
-                                    System.out.println();
-                                    break;
-                                
-                                default:
-                                    System.out.println("Menu tidak tersedia!");
-                                    System.out.println();
-                            
-                         break;
-                         }                            
-                    }
+                    System.out.println("Menu tidak tersedia!");
+                     }
                 }
-            break;
-            
-
-
-
-
-        input.close();
-        
-        }
-
+            input.close();
+            }
+        }  
     }
-}
+} 
