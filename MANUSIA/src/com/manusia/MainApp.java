@@ -13,119 +13,156 @@ public class MainApp
 
         Scanner input = new Scanner(System.in);
 
-        // ================= FIRST LEAD =================
+        /** Aktor - Aktris */
 
-        Firstlead firstminho = new Firstlead(
-                "Lee Min-ho", "Korea Selatan", "22 Juni 1987", "2006",
-                2, "Aktor",
+        Cameo leeMinhoCameo = new Cameo(
+                "Lee Min-ho",
+                "Korea Selatan",
+                "22 Juni 1987",
+                "2006",
+                2,
+                "Aktor",
+                "The King: Eternal Monarch",
+                "Gangnam Blues",
+                "-",
+                "Baeksang Arts Awards",
+                "Gangnam Blues"
+        );
+
+        leeMinhoCameo.durasi = "± 3 Menit";
+        leeMinhoCameo.deskripsi = "Kemunculan misterius sebagai pria berjas hitam";
+        leeMinhoCameo.AksiUtama = "Memberi peringatan ke karakter utama";
+        leeMinhoCameo.DetailAksi = "Datang → Bicara → Menghilang";
+
+        Firstlead leeMinhoLead = new Firstlead(
+                "Lee Min-ho",
+                "Korea Selatan",
+                "22 Juni 1987",
+                "2006",
+                2,
+                "Aktor",
                 "The Heirs, The King: Eternal Monarch",
-                "Gangnam Blues", "—",
+                "Gangnam Blues",
+                "-",
                 "Baeksang Arts Awards",
-                "The King: Eternal Monarch", "Lee Gon", "Raja Korea"
+                "The King: Eternal Monarch"
         );
 
-        Firstlead firstdongwook = new Firstlead(
-                "Lee Dong-wook", "Korea Selatan", "6 November 1981", "1999",
-                3, "Aktor",
-                "Goblin, Tale of the Nine Tailed",
-                "Single in Seoul", "—",
+        leeMinhoLead.event = "Lee Min-ho Global Fanmeeting 2026";
+        leeMinhoLead.lokasi = "Jakarta Convention Center (JCC)";
+        leeMinhoLead.tanggal = "10 Mei 2026";
+
+        Cameo leeDongwookCameo = new Cameo(
+                "Lee Dong-wook",
+                "Korea Selatan",
+                "6 November 1981",
+                "1999",
+                3,
+                "Aktor",
+                "Goblin",
+                "Single in Seoul",
+                "-",
                 "SBS Drama Awards",
-                "Tale of the Nine Tailed", "Lee Yeon", "Gumiho"
+                "Goblin"
         );
 
-        Firstlead firstsoohyun = new Firstlead(
-                "Kim Soo-hyun", "Korea Selatan", "16 Februari 1988", "2007",
-                3, "Aktor",
+        leeDongwookCameo.durasi = "± 2 Menit";
+        leeDongwookCameo.deskripsi = "Muncul sebagai pria misterius berpakaian gelap";
+        leeDongwookCameo.AksiUtama = "Memberi informasi rahasia";
+        leeDongwookCameo.DetailAksi = "Muncul → Senyum → Pergi";
+
+        Firstlead leeDongwookLead = new Firstlead(
+                "Lee Dong-wook",
+                "Korea Selatan",
+                "6 November 1981",
+                "1999",
+                3,
+                "Aktor",
+                "Tale of the Nine Tailed",
+                "Single in Seoul",
+                "-",
+                "SBS Drama Awards",
+                "Tale of the Nine Tailed"
+        );
+
+        leeDongwookLead.event = "Lee Dong-wook Fanmeeting 2026";
+        leeDongwookLead.lokasi = "Istora Senayan";
+        leeDongwookLead.tanggal = "18 Mei 2026";
+
+        Cameo parkShinhyeCameo = new Cameo(
+                "Park Shin-hye",
+                "Korea Selatan",
+                "18 Februari 1990",
+                "2003",
+                2,
+                "Aktris",
+                "Doctors",
+                "Alive",
+                "-",
+                "SBS Drama Awards",
+                "Alive"
+        );
+
+        parkShinhyeCameo.durasi = "± 2 Menit";
+        parkShinhyeCameo.deskripsi = "Muncul sebagai dokter darurat";
+        parkShinhyeCameo.AksiUtama = "Menyelamatkan pasien";
+        parkShinhyeCameo.DetailAksi = "Datang → Bertindak → Pergi";
+
+        Firstlead parkShinhyeLead = new Firstlead(
+                "Park Shin-hye",
+                "Korea Selatan",
+                "18 Februari 1990",
+                "2003",
+                2,
+                "Aktris",
+                "Doctors",
+                "Alive",
+                "-",
+                "SBS Drama Awards",
+                "Doctors"
+        );
+
+        parkShinhyeLead.event = "Park Shin-hye Fanmeeting 2026";
+        parkShinhyeLead.lokasi = "Balai Kartini";
+        parkShinhyeLead.tanggal = "25 Mei 2026";
+
+        Cameo kimJiwonCameo = new Cameo(
+                "Kim Ji-won",
+                "Korea Selatan",
+                "19 Oktober 1992",
+                "2010",
+                2,
+                "Aktris",
                 "Queen of Tears",
-                "Secretly, Greatly", "—",
+                "The Chronicles",
+                "-",
                 "Baeksang Arts Awards",
-                "Queen of Tears", "Baek Hyun-woo", "Pengacara"
+                "Detective Story"
         );
 
-        Firstlead firstshinhye = new Firstlead(
-                "Park Shin-hye", "Korea Selatan", "18 Februari 1990", "2003",
-                2, "Aktris",
-                "Doctors, The Heirs",
-                "Alive", "—",
-                "SBS Drama Awards",
-                "Doctors", "Yoo Hye-jung", "Dokter Bedah"
-        );
+        kimJiwonCameo.durasi = "± 2 Menit";
+        kimJiwonCameo.deskripsi = "Kemunculan singkat penuh emosi";
+        kimJiwonCameo.AksiUtama = "Mengungkap rahasia besar";
+        kimJiwonCameo.DetailAksi = "Datang → Mengaku → Pergi";
 
-        // ================= CAMEO =================
-
-        Cameo cameominho = new Cameo(
-                "Lee Min-ho", "Korea Selatan", "22 Juni 1987", "2006",
-                2, "Aktor",
-                "—", "—", "—", "—",
-                "The Legend of the Blue Sea", 1, "Special Appearance"
-        );
-
-        Cameo cameodongwook = new Cameo(
-                "Lee Dong-wook", "Korea Selatan", "6 November 1981", "1999",
-                3, "Aktor",
-                "—", "—", "—", "—",
-                "Goblin", 1, "Mystery Cameo"
-        );
-
-        Cameo cameosoohyun = new Cameo(
-                "Kim Soo-hyun", "Korea Selatan", "16 Februari 1988", "2007",
-                3, "Aktor",
-                "—", "—", "—", "—",
-                "Hotel Del Luna", 1, "Surprise Cameo"
-        );
-
-        Cameo cameoshinhye = new Cameo(
-                "Park Shin-hye", "Korea Selatan", "18 Februari 1990", "2003",
-                2, "Aktris",
-                "—", "—", "—", "—",
-                "The Heirs", 1, "Guest Role"
-        );
-
-        // ================= PEMERAN =================
-
-        Pemeran eventminho = new Pemeran(
-                "Lee Min-ho", "Korea Selatan", "22 Juni 1987", "2006",
-                2, "Aktor",
-                "The Heirs", "Gangnam Blues", "—",
+        Firstlead kimJiwonLead = new Firstlead(
+                "Kim Ji-won",
+                "Korea Selatan",
+                "19 Oktober 1992",
+                "2010",
+                2,
+                "Aktris",
+                "Queen of Tears",
+                "The Chronicles",
+                "-",
                 "Baeksang Arts Awards",
-                "Aktor", "The King: Eternal Monarch"
+                "Queen of Tears"
         );
-        eventminho.event = "Lee Min-ho Global Fanmeeting 2026";
-        eventminho.lokasi = "JCC Jakarta";
-        eventminho.tanggal = "10 Mei 2026";
 
-        Pemeran eventdongwook = new Pemeran(
-                "Lee Dong-wook", "Korea Selatan", "6 November 1981", "1999",
-                3, "Aktor",
-                "Goblin", "Single in Seoul", "—",
-                "SBS Drama Awards",
-                "Aktor", "Tale of the Nine Tailed"
-        );
-        eventdongwook.event = "Lee Dong-wook Fanmeeting 2026";
-        eventdongwook.lokasi = "ICE BSD";
-        eventdongwook.tanggal = "18 Mei 2026";
+        kimJiwonLead.event = "Kim Ji-won Fanmeeting 2026";
+        kimJiwonLead.lokasi = "The Kasablanka Hall";
+        kimJiwonLead.tanggal = "30 Mei 2026";
 
-        Pemeran eventshinhye = new Pemeran(
-                "Park Shin-hye", "Korea Selatan", "18 Februari 1990", "2003",
-                2, "Aktris",
-                "Doctors", "Alive", "—",
-                "SBS Drama Awards",
-                "Aktris", "Doctors"
-        );
-        eventshinhye.event = "Park Shin-hye Fanmeeting 2026";
-        eventshinhye.lokasi = "Balai Kartini";
-        eventshinhye.tanggal = "25 Mei 2026";
-
-        Pemeran eventsoohyun = new Pemeran(
-                "Kim Soo-hyun", "Korea Selatan", "16 Februari 1988", "2007",
-                3, "Aktor",
-                "Queen of Tears", "Secretly, Greatly", "—",
-                "Baeksang Arts Awards",             
-                "Aktor", "Queen of Tears"
-        );
-        eventsoohyun.event = "Kim Soo-hyun Fanmeeting 2026";
-        eventsoohyun.lokasi = "The Kasablanka";
-        eventsoohyun.tanggal = "30 Mei 2026";  
         
         // ====================== GROUP ======================
         Idol idol1 = new Idol(

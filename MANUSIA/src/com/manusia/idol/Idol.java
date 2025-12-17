@@ -5,9 +5,20 @@ import java.util.Scanner;
 
 public class Idol extends Agensi {
 
-    private String albumKpop;
+    public String event;
+    public String eventName;
+    public String eventType;
+    public String lokasi;
+    public String tanggal;
 
-    // ✅ CONSTRUCTOR FIX
+    protected String kategori;
+    protected String section;
+    protected double harga;
+    protected int qty;
+    protected double total;
+    protected String film;
+    protected String drama;
+
     public Idol(
             String nama,
             String kewarganegaraan,
@@ -31,11 +42,14 @@ public class Idol extends Agensi {
             movie,
             album,
             penghargaan,
-            posisi,
-            "idol" // ✅ kategori
+            posisi
         );
 
-        this.albumKpop = "-";
+        this.event = "-";
+        this.eventName = "-";
+        this.eventType = "-";
+        this.lokasi = "-";
+        this.tanggal = "-";
     }
 
     // ================= BIODATA =================
@@ -107,24 +121,48 @@ public class Idol extends Agensi {
         System.out.println("================================================");
     }
 
-    // ================= TRANSAKSI =================
-    public void beliAlbum(Scanner input) {
+    public void belialbumnct(Scanner input) {
         input.nextLine();
-        System.out.print("Nama Album : ");
-        albumKpop = input.nextLine();
-
-        harga = tentukanHargaAlbum(albumKpop);
-
-        System.out.print("Jumlah     : ");
+        System.out.println("===========================================================");
+        System.out.println("===============  PEMBELIAN ALBUM NCT DREAM  ===============");
+        System.out.println("===========================================================");
+        System.out.println("Idol    : " + nama);
+        System.out.print("Nama Album    : ");
+        this.album = input.nextLine();
+        this.harga = tentukanHargaAlbum(this.album); // ✅ FIX
+        System.out.println("Harga     : Rp " + this.harga);
+        System.out.print("Masukkan jumlah Album : ");
         qty = input.nextInt();
+        total = qty * harga;
+        System.out.println("===========================================================");
+        System.out.println();
+        System.out.println("Anda telat membeli album ini, Terimakasih <3");
+        System.out.println();
+    }
 
-        total = harga * qty;
+    public void belialbumday6(Scanner input) {
+        input.nextLine();
+        System.out.println("===========================================================");
+        System.out.println("==================  PEMBELIAN ALBUM DAY6  =================");
+        System.out.println("===========================================================");
+        System.out.println("Idol    : " + nama);
+        System.out.print("Nama Album    : ");
+        this.album = input.nextLine();
+        this.harga = tentukanHargaAlbum(this.album);
+        System.out.println("Harga     : Rp " + this.harga);
+        System.out.print("Masukkan jumlah Album : ");
+        qty = input.nextInt();
+        total = qty * harga;
+        System.out.println("===========================================================");
+        System.out.println();
+        System.out.println("Anda telat membeli album ini, Terimakasih <3");
+        System.out.println();
     }
 
     public void cetakStruk() {
         System.out.println("================ STRUK PEMBELIAN ================");
         System.out.println("Idol   : " + nama);
-        System.out.println("Album  : " + albumKpop);
+        System.out.println("Album  : " + album); 
         System.out.println("Harga  : Rp " + harga);
         System.out.println("Jumlah : " + qty);
         System.out.println("Total  : Rp " + total);

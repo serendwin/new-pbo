@@ -2,6 +2,11 @@ package com.manusia.idol;
 
 public class Soloist extends Idol {
 
+    public String gayaAwal;
+    public String gayaAkhir;
+    public String deskripsi;
+    public String penampilan;
+    
     public Soloist(
             String nama,
             String kewarganegaraan,
@@ -26,6 +31,10 @@ public class Soloist extends Idol {
                 album,
                 penghargaan
         );
+        this.gayaAwal = "-";
+        this.gayaAkhir = "-";
+        this.deskripsi = "-";
+        this.penampilan = "-";
     }
 
     @Override
@@ -37,13 +46,28 @@ public class Soloist extends Idol {
         System.out.println("============================================");
     }
 
-    public void transisiGayaPersonal(String gayaAwal, String gayaAkhir) {
-    System.out.println(nama + " melakukan transisi gaya dari "
-            + gayaAwal + " ke " + gayaAkhir + " secara personal.");
-    }
+public void transisiGayaPersonal() {
+    System.out.println("=================================================");
+    System.out.println("          TRANSISI GAYA PERSONAL                ");
+    System.out.println("=================================================");
+    System.out.println("Nama        : " + nama);
+    System.out.println("Gaya Awal   : " + gayaAwal);
+    System.out.println("Gaya Akhir  : " + gayaAkhir);
+    System.out.println("Deskripsi   :" + deskripsi);
+    System.out.println("=================================================");
+    System.out.println();
+}
 
-    public void monologuePerformance(String tema) {
-        System.out.println(nama + " menampilkan monolog dengan tema: " + tema);
-    }   
+public void monologuePerformance(String tema) {
+    System.out.println("=================================================");
+    System.out.println("           MONOLOGUE PERFORMANCE                ");
+    System.out.println("=================================================");
+    System.out.println("Pemeran     : " + nama);
+    System.out.println("Tema        : " + tema);
+    System.out.println("Penampilan  :" + penampilan);
+    System.out.println("=================================================");
+    System.out.println();
+}
+
 }
 

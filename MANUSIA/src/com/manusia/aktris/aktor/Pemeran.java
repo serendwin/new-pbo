@@ -5,11 +5,11 @@ import com.manusia.Agensi;
 
 public class Pemeran extends Agensi 
 {
-    protected String event;
-    protected String eventName;
-    protected String eventType;
-    protected String lokasi;
-    protected String tanggal;
+    public String event;
+    public String eventName;
+    public String eventType;
+    public String lokasi;
+    public String tanggal;
 
     protected String kategori;
     protected String section;
@@ -38,8 +38,8 @@ public class Pemeran extends Agensi
                 ttlLahir,
                 ttlDebut,
                 masaTrainee,
-                drama,        // listDrama
-                movie,        // listMovie
+                drama,    
+                movie,    
                 album,
                 penghargaan,
                 posisi
@@ -242,7 +242,27 @@ public class Pemeran extends Agensi
         }
     }
 
-    public void tampilkandrama() {}
-    public void tampilkanFilm() {}
-    
+    public void tampilkandrama() {
+        System.out.println("=================================================");
+        System.out.println("                 DRAMA POPULER                  ");
+        System.out.println("=================================================");
+        System.out.println("Nama Artis : " + nama);
+        System.out.println("Drama      : " + listDrama);
+        System.out.println("Peran      : " + posisi);
+        System.out.println("=================================================");
+        System.out.println();
+    }
+
+    public void tampilkanFilm() {
+        System.out.println("=================================================");
+        System.out.println("                  FILM POPULER                  ");
+        System.out.println("=================================================");
+        System.out.println("Nama Artis : " + nama);
+        System.out.println("Film       : " + listMovie);
+        System.out.println("Peran      : " + posisi);
+        System.out.println("=================================================");
+        System.out.println();
+    }
+
+
 }

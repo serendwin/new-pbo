@@ -3,11 +3,11 @@ package com.manusia.aktris.aktor;
 public class Cameo extends Pemeran 
 {
 
-    protected String namaperancameo; 
-    protected String durasi;
-    protected String deskripsi;
-    protected String DetailAksi;
-    protected String AksiUtama;
+    public String namaperancameo; 
+    public String durasi;
+    public String deskripsi;
+    public String DetailAksi;
+    public String AksiUtama;
 
     public Cameo(
             String nama,

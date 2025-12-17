@@ -2,11 +2,11 @@ package com.manusia.aktris.aktor;
 
 public class Firstlead extends Pemeran 
 {
-    protected String PosisiPoster;
-    protected String Highlight;
-    protected String FokusCerita;
-    protected String namapresscon;
-    protected String Tv;
+    public String PosisiPoster;
+    public String Highlight;
+    public String FokusCerita;
+    public String namapresscon;
+    public String Tv;
 
     public Firstlead(
             String nama,
