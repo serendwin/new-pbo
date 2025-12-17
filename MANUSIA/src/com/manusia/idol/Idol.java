@@ -75,6 +75,7 @@ public class Idol extends Agensi {
         System.out.println("============================  BIODATA MEMBER NCT DREAM  ==========================");
         System.out.println("==================================================================================");
         System.out.println("Nama            : " + nama);
+        System.out.println("Gender          : " + gender);
         System.out.println("Tanggal Lahir   : " + ttlLahir);
         System.out.println("Kewarganegaraan : " + kewarganegaraan);
         System.out.println("Masa Trainee    : " + masaTrainee);
@@ -89,10 +90,25 @@ public class Idol extends Agensi {
         System.out.println("===================  BIODATA MEMBER DAY6  =================");
         System.out.println("===========================================================");
         System.out.println("Nama            : " + nama);
+        System.out.println("Gender          : " + gender);
         System.out.println("Tanggal Lahir   : " + ttlLahir);
         System.out.println("Kewarganegaraan : " + kewarganegaraan);
         System.out.println("Masa Trainee    : " + masaTrainee);
         System.out.println("Posisi          : " + posisi);
+        System.out.println("===========================================================");
+        System.out.println();
+    }
+
+    @Override
+    public void tampilkanbiodatasoloist() {
+        System.out.println("===========================================================");
+        System.out.println("=====================  BIODATA SOLOIST  ===================");
+        System.out.println("===========================================================");
+        System.out.println("Nama            : " + nama);
+        System.out.println("Gender          : " + gender);
+        System.out.println("Tanggal Lahir   : " + ttlLahir);
+        System.out.println("Kewarganegaraan : " + kewarganegaraan);
+        System.out.println("Masa Trainee    : " + masaTrainee);
         System.out.println("===========================================================");
         System.out.println();
     }

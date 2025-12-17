@@ -5,6 +5,8 @@ import com.manusia.aktris.aktor.Firstlead;
 import com.manusia.aktris.aktor.Cameo;
 import com.manusia.aktris.aktor.Pemeran;
 import com.manusia.idol.Idol;
+import com.manusia.idol.Soloist;
+import com.manusia.idol.Group;
 
 public class MainApp 
 {
@@ -15,327 +17,465 @@ public class MainApp
 
         /** Aktor - Aktris */
 
+        /* Cameo */
         Cameo cameominho = new Cameo(
                 "Lee Min-ho",
                 "Korea Selatan",
+                "Laki-laki",
                 "22 Juni 1987",
                 "2006",
                 2,
                 "Aktor",
                 "The King: Eternal Monarch",
                 "Gangnam Blues",
-                "-",
                 "Baeksang Arts Awards",
-                "Gangnam Blues"
+                "-", "-", "-"
         );
 
-        cameominho.durasi = "± 3 Menit";
-        cameominho.deskripsi = "Kemunculan misterius sebagai pria berjas hitam";
-        cameominho.AksiUtama = "Memberi peringatan ke karakter utama";
-        cameominho.DetailAksi = "Datang → Bicara → Menghilang";
-
-        Firstlead firstminho = new Firstlead(
-                "Lee Min-ho",
-                "Korea Selatan",
-                "22 Juni 1987",
-                "2006",
-                2,
-                "Aktor",
-                "The Heirs, The King: Eternal Monarch",
-                "Gangnam Blues",
-                "-",
-                "Baeksang Arts Awards",
-                "The King: Eternal Monarch"
-        );
-
-        leeMinhoLead.event = "Lee Min-ho Global Fanmeeting 2026";
-        leeMinhoLead.lokasi = "Jakarta Convention Center (JCC)";
-        leeMinhoLead.tanggal = "10 Mei 2026";
-
-        Cameo leeDongwookCameo = new Cameo(
+        Cameo cameodongwook = new Cameo(
                 "Lee Dong-wook",
                 "Korea Selatan",
+                "Laki-laki",
                 "6 November 1981",
                 "1999",
                 3,
                 "Aktor",
                 "Goblin",
                 "Single in Seoul",
-                "-",
                 "SBS Drama Awards",
-                "Goblin"
+                "-", "-", "-"
         );
 
-        leeDongwookCameo.durasi = "± 2 Menit";
-        leeDongwookCameo.deskripsi = "Muncul sebagai pria misterius berpakaian gelap";
-        leeDongwookCameo.AksiUtama = "Memberi informasi rahasia";
-        leeDongwookCameo.DetailAksi = "Muncul → Senyum → Pergi";
+        Cameo cameoshinhye = new Cameo(
+                "Park Shin-hye",
+                "Korea Selatan",
+                "Perempuan",
+                "18 Februari 1990",
+                "2003",
+                2,
+                "Aktris",
+                "Doctors",
+                "Alive",
+                "SBS Drama Awards",
+                "-", "-", "-"
+        );        
 
-        Firstlead leeDongwookLead = new Firstlead(
+        Cameo cameojiwon = new Cameo(
+                "Kim Ji-won",
+                "Korea Selatan",
+                "Perempuan",
+                "19 Oktober 1992",
+                "2010",
+                2,
+                "Aktris",
+                "Queen of Tears",
+                "The Chronicles",
+                "Baeksang Arts Awards",
+                "-", "-", "-"
+        );
+
+        /* First Lead */ 
+
+        Firstlead firstminho = new Firstlead(
+                "Lee Min-ho",
+                "Korea Selatan",
+                "Laki-laki",
+                "22 Juni 1987",
+                "2006",
+                2,
+                "Aktor",
+                "The Heirs, The King: Eternal Monarch",
+                "Gangnam Blues",
+                "Baeksang Arts Awards",
+                "Lee Min-ho Fanmeeting 2026",
+                "Jakarta Convention Center",
+                "10 Mei 2026"
+        );
+
+        Firstlead firstdongwook = new Firstlead(
                 "Lee Dong-wook",
                 "Korea Selatan",
+                "Laki-laki",
                 "6 November 1981",
                 "1999",
                 3,
                 "Aktor",
                 "Tale of the Nine Tailed",
                 "Single in Seoul",
-                "-",
                 "SBS Drama Awards",
-                "Tale of the Nine Tailed"
+                "Lee Dong-wook Fanmeeting 2026",
+                "Istora Senayan",
+                "18 Mei 2026"
         );
 
-        leeDongwookLead.event = "Lee Dong-wook Fanmeeting 2026";
-        leeDongwookLead.lokasi = "Istora Senayan";
-        leeDongwookLead.tanggal = "18 Mei 2026";
-
-        Cameo parkShinhyeCameo = new Cameo(
+        Firstlead firstshinhye = new Firstlead(
                 "Park Shin-hye",
                 "Korea Selatan",
+                "Perempuan",
                 "18 Februari 1990",
                 "2003",
                 2,
                 "Aktris",
                 "Doctors",
                 "Alive",
-                "-",
                 "SBS Drama Awards",
-                "Alive"
+                "Park Shin-hye Fanmeeting 2026",
+                "Balai Kartini",
+                "25 Mei 2026"
         );
 
-        parkShinhyeCameo.durasi = "± 2 Menit";
-        parkShinhyeCameo.deskripsi = "Muncul sebagai dokter darurat";
-        parkShinhyeCameo.AksiUtama = "Menyelamatkan pasien";
-        parkShinhyeCameo.DetailAksi = "Datang → Bertindak → Pergi";
-
-        Firstlead parkShinhyeLead = new Firstlead(
-                "Park Shin-hye",
-                "Korea Selatan",
-                "18 Februari 1990",
-                "2003",
-                2,
-                "Aktris",
-                "Doctors",
-                "Alive",
-                "-",
-                "SBS Drama Awards",
-                "Doctors"
-        );
-
-        parkShinhyeLead.event = "Park Shin-hye Fanmeeting 2026";
-        parkShinhyeLead.lokasi = "Balai Kartini";
-        parkShinhyeLead.tanggal = "25 Mei 2026";
-
-        Cameo kimJiwonCameo = new Cameo(
+        Firstlead firstjiwon = new Firstlead(
                 "Kim Ji-won",
                 "Korea Selatan",
+                "Perempuan",
                 "19 Oktober 1992",
                 "2010",
                 2,
                 "Aktris",
                 "Queen of Tears",
                 "The Chronicles",
-                "-",
                 "Baeksang Arts Awards",
-                "Detective Story"
+                "Kim Ji-won Fanmeeting 2026",
+                "The Kasablanka Hall",
+                "30 Mei 2026"
         );
 
-        kimJiwonCameo.durasi = "± 2 Menit";
-        kimJiwonCameo.deskripsi = "Kemunculan singkat penuh emosi";
-        kimJiwonCameo.AksiUtama = "Mengungkap rahasia besar";
-        kimJiwonCameo.DetailAksi = "Datang → Mengaku → Pergi";
+        /* Pemeran */
 
-        Firstlead kimJiwonLead = new Firstlead(
-                "Kim Ji-won",
-                "Korea Selatan",
-                "19 Oktober 1992",
-                "2010",
-                2,
-                "Aktris",
-                "Queen of Tears",
-                "The Chronicles",
-                "-",
-                "Baeksang Arts Awards",
-                "Queen of Tears"
+        Pemeran leeminho = new Pemeran(
+            "Lee Min-ho",
+            "Korea Selatan",
+            "Laki-laki",
+            "22 Juni 1987",
+            "2006",
+            2,
+            "Aktor",
+            "The Heirs",
+            "Gangnam Blues",
+            "Baeksang Arts Awards",
+            "Lee Min-ho Fanmeeting 2026",
+            "JCC",
+            "10 Mei 2026"
         );
 
-        kimJiwonLead.event = "Kim Ji-won Fanmeeting 2026";
-        kimJiwonLead.lokasi = "The Kasablanka Hall";
-        kimJiwonLead.tanggal = "30 Mei 2026";
+        Pemeran leedongwook = new Pemeran(
+            "Lee Dong-wook",
+            "Korea Selatan",
+            "Laki-laki",
+            "6 November 1981",
+            "1999",
+            3,
+            "Aktor",
+            "Goblin",
+            "Single in Seoul",
+            "SBS Drama Awards",
+            "Lee Dong-wook Fanmeeting 2026",
+            "Istora Senayan",
+            "18 Mei 2026"
+        );
+
+        Pemeran parkshinhye = new Pemeran(
+            "Park Shin-hye",
+            "Korea Selatan",
+            "Perempuan",
+            "18 Februari 1990",
+            "2003",
+            2,
+            "Aktris",
+            "Doctors",
+            "Alive",
+            "SBS Drama Awards",
+            "Park Shin-hye Fanmeeting 2026",
+            "Balai Kartini",
+            "25 Mei 2026"
+        );
+
+        Pemeran kimjiwon = new Pemeran(
+            "Kim Ji-won",
+            "Korea Selatan",
+            "Perempuan",
+            "19 Oktober 1992",
+            "2010",
+            2,
+            "Aktris",
+            "Queen of Tears",
+            "The Chronicles",
+            "Baeksang Arts Awards",
+            "Kim Ji-won Fanmeeting 2026",
+            "The Kasablanka Hall",
+            "30 Mei 2026"
+        );
 
         /** Idol */
 
-        Idol idol1 = new Idol(
+        Idol nctdream = new Idol(
                 "NCT DREAM",
                 "Korea Selatan",
-                "25 Agustus 2016",
+                "Boygroup",
+                "-",
                 "2016",
-                7,
-                "Vocalist, Rapper, Dancer",
-                "-",
-                "-",
-                "Hot Sauce (2021)",
-                "Seoul Music Awards - Bonsang"
+                0,
+                "Boygroup",
+                "Daesang, Bonsang",
+                "GLITCH MODE",
+                "-", "-", "-", "-", "-"
         );
-
-        Idol idol2 = new Idol(
+        Idol day6 = new Idol(
                 "DAY6",
                 "Korea Selatan",
-                "7 September 2015",
+                "Band",
+                "-",
                 "2015",
-                2,
-                "Band (Vocalist, Guitarist, Bassist, Keyboardist, Drummer)",
-                "-",
-                "-",
-                "The Book of Us (2020)",
-                "Golden Disc Award - Best Band"
+                0,
+                "Band",
+                "Best Band",
+                "The Book of Us: Negentropy",
+                "-", "-", "-", "-", "-"
         );
 
-        // ====================== MEMBER NCT DREAM ======================
         Idol mark = new Idol(
-                "Mark",
-                "Korea Selatan / Kanada",
-                "2 Agustus 1999",
-                "2016",
-                5,
-                "Leader, Main Rapper, Main Dancer, Sub Vocalist",
-                "-",
-                "-",
-                "Reload (2020)",
-                "Seoul Music Awards - Bonsang"
+            "Mark",
+            "Korea Selatan / Kanada",
+            "Laki-laki",
+            "2 Agustus 1999",
+            "2016",
+            5,
+            "Leader, Main Rapper, Main Dancer, Sub Vocalist",
+            "Seoul Music Awards - Bonsang",
+            "Reload (2020)",
+            "-", "-", "-", "-", "-"
         );
 
         Idol renjun = new Idol(
-                "Renjun",
-                "Tiongkok",
-                "23 Maret 2000",
-                "2016",
-                4,
-                "Main Vocalist, Main Dancer",
-                "-",
-                "-",
-                "Reload (2020)",
-                "Seoul Music Awards - Bonsang"
+            "Renjun",
+            "Tiongkok",
+            "Laki-laki",
+            "23 Maret 2000",
+            "2016",
+            4,
+            "Main Vocalist, Main Dancer",
+            "Seoul Music Awards - Bonsang",
+            "Reload (2020)",
+            "-", "-", "-", "-", "-"
         );
 
         Idol jeno = new Idol(
-                "Jeno",
-                "Korea Selatan",
-                "23 April 2000",
-                "2016",
-                5,
-                "Main Rapper, Main Dancer, Sub Vocalist, Visual",
-                "-",
-                "-",
-                "Reload (2020)",
-                "Seoul Music Awards - Bonsang"
+            "Jeno",
+            "Korea Selatan",
+            "Laki-laki",
+            "23 April 2000",
+            "2016",
+            5,
+            "Main Rapper, Main Dancer, Sub Vocalist, Visual",
+            "Seoul Music Awards - Bonsang",
+            "Reload (2020)",
+            "-", "-", "-", "-", "-"
         );
 
         Idol haechan = new Idol(
-                "Haechan",
-                "Korea Selatan",
-                "6 Juni 2000",
-                "2016",
-                3,
-                "Main Vocalist",
-                "-",
-                "-",
-                "Reload (2020)",
-                "Seoul Music Awards - Bonsang"
+            "Haechan",
+            "Korea Selatan",
+            "Laki-laki",
+            "6 Juni 2000",
+            "2016",
+            3,
+            "Main Vocalist",
+            "Seoul Music Awards - Bonsang",
+            "Reload (2020)",
+            "-", "-", "-", "-", "-"
         );
 
         Idol jaemin = new Idol(
-                "Jaemin",
-                "Korea Selatan",
-                "13 Agustus 2000",
-                "2016",
-                5,
-                "Main Dancer, Sub Rapper, Sub Vocalist, Visual, Center",
-                "-",
-                "-",
-                "Reload (2020)",
-                "Seoul Music Awards - Bonsang"
+            "Jaemin",
+            "Korea Selatan",
+            "Laki-laki",
+            "13 Agustus 2000",
+            "2016",
+            5,
+            "Main Dancer, Sub Rapper, Sub Vocalist, Visual, Center",
+            "Seoul Music Awards - Bonsang",
+            "Reload (2020)",
+            "-", "-", "-", "-", "-"
         );
 
         Idol chenle = new Idol(
-                "Chenle",
-                "Tiongkok",
-                "22 November 2001",
-                "2016",
-                1,
-                "Main Vocalist",
-                "-",
-                "-",
-                "Reload (2020)",
-                "Seoul Music Awards - Bonsang"
+            "Chenle",
+            "Tiongkok",
+            "Laki-laki",
+            "22 November 2001",
+            "2016",
+            1,
+            "Main Vocalist",
+            "Seoul Music Awards - Bonsang",
+            "Reload (2020)",
+            "-", "-", "-", "-", "-"
         );
 
         Idol jisung = new Idol(
-                "Jisung",
-                "Korea Selatan",
-                "5 Februari 2002",
-                "2016",
-                5,
-                "Main Dancer, Sub Rapper, Sub Vocalist, Maknae",
-                "-",
-                "-",
-                "Reload (2020)",
-                "Seoul Music Awards - Bonsang"
+            "Jisung",
+            "Korea Selatan",
+            "Laki-laki",
+            "5 Februari 2002",
+            "2016",
+            5,
+            "Main Dancer, Sub Rapper, Sub Vocalist, Maknae",
+            "Seoul Music Awards - Bonsang",
+            "Reload (2020)",
+            "-", "-", "-", "-", "-"
         );
 
-        // ====================== MEMBER DAY6 ======================
         Idol sungjin = new Idol(
-                "Sungjin",
-                "Korea Selatan",
-                "16 Januari 1993",
-                "2015",
-                2,
-                "Leader, Main Vocalist, Rhythm Guitarist",
-                "-",
-                "-",
-                "The Book of Us: Negentropy (2021)",
-                "Golden Disc Award - Best Band"
+            "Sungjin",
+            "Korea Selatan",
+            "Laki-laki",
+            "16 Januari 1993",
+            "2015",
+            2,
+            "Leader, Main Vocalist, Rhythm Guitarist",
+            "Golden Disc Award - Best Band",
+            "The Book of Us: Negentropy (2021)",
+            "-", "-", "-", "-", "-"
         );
 
         Idol youngk = new Idol(
-                "Young K",
-                "Korea Selatan",
-                "19 Desember 1993",
-                "2015",
-                2,
-                "Bassist, Main Rapper, Main Vocalist",
-                "-",
-                "-",
-                "The Book of Us: Negentropy (2021)",
-                "Golden Disc Award - Best Band"
+            "Young K",
+            "Korea Selatan",
+            "Laki-laki",
+            "19 Desember 1993",
+            "2015",
+            2,
+            "Bassist, Main Rapper, Main Vocalist",
+            "Golden Disc Award - Best Band",
+            "The Book of Us: Negentropy (2021)",
+            "-", "-", "-", "-", "-"
         );
 
         Idol wonpil = new Idol(
-                "Wonpil",
-                "Korea Selatan",
-                "28 April 1994",
-                "2015",
-                2,
-                "Keyboardist, Main Vocalist, Visual",
-                "-",
-                "-",
-                "The Book of Us: Negentropy (2021)",
-                "Golden Disc Award - Best Band"
+            "Wonpil",
+            "Korea Selatan",
+            "Laki-laki",
+            "28 April 1994",
+            "2015",
+            2,
+            "Keyboardist, Main Vocalist, Visual",
+            "Golden Disc Award - Best Band",
+            "The Book of Us: Negentropy (2021)",
+            "-", "-", "-", "-", "-"
         );
 
         Idol dowoon = new Idol(
-                "Dowoon",
-                "Korea Selatan",
-                "25 Agustus 1995",
-                "2015",
-                2,
-                "Drummer, Maknae, Vocalist",
-                "-",
-                "-",
-                "The Book of Us: Negentropy (2021)",
-                "Golden Disc Award - Best Band"
+            "Dowoon",
+            "Korea Selatan",
+            "Laki-laki",
+            "25 Agustus 1995",
+            "2015",
+            2,
+            "Drummer, Maknae, Vocalist",
+            "Golden Disc Award - Best Band",
+            "The Book of Us: Negentropy (2021)",
+            "-", "-", "-", "-", "-"
         );
 
+        Idol iu = new Idol(
+            "IU",
+            "Korea Selatan",
+            "Perempuan",
+            "16 Mei 1993",
+            "2008",
+            1,
+            "Soloist, Vocalist, Songwriter",
+            "Melon Music Awards, Baeksang Arts Awards",
+            "LILAC (2021)",
+            "-", "-", "-", "-", "-"
+        );
+
+        Idol paulkim = new Idol(
+            "Paul Kim",
+            "Korea Selatan",
+            "Laki-laki",
+            "11 Februari 1988",
+            "2014",
+            3,
+            "Soloist, Vocalist",
+            "Melon Music Awards, Seoul Music Awards",
+            "Star (2018)",
+            "-", "-", "-", "-", "-"
+        );
+
+        /* Group*/
+
+        String[] memberNctDream = {
+            "Mark",
+            "Renjun",
+            "Jeno",
+            "Haechan",
+            "Jaemin",
+            "Chenle",
+            "Jisung"
+        };
+
+        Group grupnct = new Group(
+            "NCT DREAM",
+            "Korea Selatan",
+            "Laki-laki",
+            "-",
+            "2016",
+            3,
+            "Boy Group",
+            "Seoul Music Awards - Bonsang",
+            "Reload (2020)",
+            7,
+            memberNctDream,
+            "Ridin'"
+        );
+
+        String[] memberDay6 = {
+            "Sungjin",
+            "Young K",
+            "Wonpil",
+            "Dowoon"
+        };
+
+        Group grupday6 = new Group(
+            "DAY6",
+            "Korea Selatan",
+            "Laki-laki",
+            "-",
+            "2015", 
+            2,
+            "Band",
+            "Golden Disc Award - Best Band",
+            "The Book of Us: Negentropy (2021)",
+            4,
+            memberDay6,
+            "You Make Me"
+        );
+
+        /* Soloist */
+
+        Soloist soloiu = new Soloist(
+            "IU",
+            "Korea Selatan",
+            "Perempuan",
+            "16 Mei 1993",
+            "2008",
+            3,
+            "Soloist, Vocalist, Actress",
+            "Melon Music Awards, Baeksang Arts Awards",
+            "LILAC (2021)"
+        );
+
+        Soloist solopaulkim = new Soloist(
+            "Paul Kim",
+            "Korea Selatan",
+            "Laki-laki",
+            "11 Februari 1988",
+            "2014",
+            4,
+            "Soloist, Ballad Singer",
+            "Melon Music Awards, Gaon Chart Music Awards",
+            "Star (2018)"
+        );
 
         boolean kembaliutama = false;
         while (!kembaliutama) 

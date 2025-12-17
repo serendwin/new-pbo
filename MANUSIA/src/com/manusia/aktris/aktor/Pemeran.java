@@ -56,6 +56,7 @@ public class Pemeran extends Agensi
         System.out.println("======================   BIODATA AKTRIS   =======================");
         System.out.println("=================================================================");
         System.out.println("Nama             : " + nama);
+        System.out.println("Gender           : " + gender);
         System.out.println("Kewarganegaraan  : " + kewarganegaraan);
         System.out.println("Tanggal Lahir    : " + ttlLahir);
         System.out.println("Debut            : " + ttlDebut);
@@ -72,6 +73,7 @@ public class Pemeran extends Agensi
         System.out.println("=======================   BIODATA AKTOR   =======================");
         System.out.println("=================================================================");
         System.out.println("Nama             : " + nama);
+        System.out.println("Gender           : " + gender);
         System.out.println("Kewarganegaraan  : " + kewarganegaraan);
         System.out.println("Tanggal Lahir    : " + ttlLahir);
         System.out.println("Debut            : " + ttlDebut);

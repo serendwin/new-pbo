@@ -39,6 +39,7 @@ public class Agensi {
     public void tampilkanbiodatagroupidol() {}
     public void tampilkanbiodatamemberNCTDream() {}
     public void tampilkanbiodatamemberDAY6() {}
+    public void tampilkanbiodatasoloist() {}
 
     public void infoEventaktor() {}
     public void inputTiketaktor(Scanner in) {}
