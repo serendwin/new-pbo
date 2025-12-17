@@ -12,7 +12,6 @@ public class MainApp
 {
     public static void main(String[] args) 
     {
-
         Scanner input = new Scanner(System.in);
 
         /** Aktor - Aktris */
@@ -1414,18 +1413,415 @@ public class MainApp
                             break;
 
                         case 2: 
-                        
-                case 3: // ================== KELUAR ==================
-                    kembaliutama = true;
-                    System.out.println("Terima kasih telah berkunjung!");
-                    break;
+                            System.out.println("===========================================================");
+                            System.out.println("========================  SOLOIST  ========================");
+                            System.out.println("===========================================================");
+                            System.out.println("1. Lihat Biodata");
+                            System.out.println("2. Pembelian Album");
+                            System.out.println("3. Ticketing");
+                            System.out.println("4. Kegiatan Up To Date");
+                            System.out.println("5. Kembali");
+                            System.out.println("-----------------------------------------------------------");
+                            System.out.print("Pilih Menu : ");
+                            int menusoloist = input.nextInt();
+                            System.out.println();   
+                            switch (menusoloist) 
+                            {
+                                case 1:
+                                    System.out.println("===========================================================");
+                                    System.out.println("=====================  BIODATA SOLOIST  ===================");
+                                    System.out.println("===========================================================");
+                                    System.out.println("1. IU");
+                                    System.out.println("2. Paul Kim");
+                                    System.out.println("3. Kembali");
+                                    System.out.println("-----------------------------------------------------------");
+                                    System.out.print("Pilih Soloist yang ingin kamu lihat biodatanya : ");
+                                    int biodatasoloist = input.nextInt();
+                                    System.out.println();
+                                    switch (biodatasoloist) 
+                                    {
+                                        case 1 :
+                                            iu.tampilkanbiodatasoloist();
+                                            break;
 
+                                        case 2 :
+                                            paulkim.tampilkanbiodatasoloist();
+                                            break;
+
+                                        case 3 :
+                                            System.out.println("Anda telah keluar dari fitur ini");
+                                            System.out.println();
+                                            break;
+                                                
+                                        default :
+                                            System.out.println("Anda telah keluar dari fitur ini");
+                                            System.out.println();
+                                    }
+                                break;
+
+                                case 2:
+                                    System.out.println("===========================================================");
+                                    System.out.println("===================  PEMBELIAN ALBUM  =====================");
+                                    System.out.println("===========================================================");
+                                    System.out.println("1. IU");
+                                    System.out.println("2. Paul Kim");
+                                    System.out.println("3. Kembali");
+                                    System.out.println("-----------------------------------------------------------");
+                                    System.out.print("Pilih Soloist yang anda ingin beli Album nya : ");
+                                    int menualbumsoloist = input.nextInt();
+                                    System.out.println();
+                                    switch (menualbumsoloist) 
+                                    {
+                                        case 1:
+                                            iu.pricelistAlbumIU();
+                                            System.out.println("1. Beli Album");
+                                            System.out.println("2. Kembali");
+                                            System.out.print("Pilih : ");
+                                            int albumsoloistiu = input.nextInt();
+                                            System.out.println();
+                                            if (albumsoloistiu == 1) 
+                                            {
+                                                iu.belialbumIU(input);
+                                                iu.cetakStruk();
+                                            } 
+                                            else 
+                                            {
+                                                System.out.println("Anda membatalkan pembelian.");
+                                                System.out.println();
+                                            }
+                                            break;
+
+                                        case 2:
+                                            paulkim.pricelistAlbumPaulKim();
+                                            System.out.println("1. Beli Album");
+                                            System.out.println("2. Kembali");
+                                            System.out.print("Pilih : ");
+                                            int albumsoloistpaulkim = input.nextInt();
+                                            System.out.println();
+                                            if (albumsoloistpaulkim == 1) 
+                                            {
+                                                paulkim.belialbumPaulKim(input);
+                                                paulkim.cetakStruk();
+                                            } 
+                                            else 
+                                            {
+                                                System.out.println("Anda membatalkan pembelian.");
+                                                System.out.println();
+                                            }
+                                            break;
+
+                                        case 3:
+                                            System.out.println("Anda telah keluar");
+                                            System.out.println();
+                                            break;
+
+                                        default:
+                                            System.out.println("Tidak ada menu yang dipilih");
+                                            System.out.println();
+                                    }
+                                    break;
+
+                                case 3:
+                                    System.out.println("===========================================================");
+                                    System.out.println("===================  TICKETING SOLOIST  ===================");
+                                    System.out.println("===========================================================");
+                                    System.out.println("1. IU");
+                                    System.out.println("2. Paul Kim");
+                                    System.out.println("3. Kembali");
+                                    System.out.println("-----------------------------------------------------------");
+                                    System.out.print("Pilih : ");
+                                    int menutiketsoloist = input.nextInt();
+                                    System.out.println();
+                                    switch (menutiketsoloist)
+                                    {
+                                        case 1:
+                                            System.out.println("===========================================================");
+                                            System.out.println("======================  TICKETING IU  =====================");
+                                            System.out.println("===========================================================");
+                                            System.out.println("1. Konser");
+                                            System.out.println("2. Showcase");
+                                            System.out.println("3. Fanmeeting");
+                                            System.out.println("4. Kembali");
+                                            System.out.println("-----------------------------------------------------------");
+                                            System.out.print("Pilih : ");
+                                            int tiketnct = input.nextInt();
+                                            System.out.println();
+                                            switch (tiketnct) 
+                                            {  
+                                                case 1:
+                                                    iu.infoEventsoloist();
+                                                    System.out.println("1. Beli Tiket");
+                                                    System.out.println("2. Kembali");
+                                                    System.out.print("Pilih : ");
+                                                    int tiketsoloistiuKonser = input.nextInt();
+                                                    System.out.println();
+                                                    if (tiketsoloistiuKonser == 1) 
+                                                    {
+                                                        iu.inputTiketsoloist(input);
+                                                        iu.cetakTiketsoloist();
+                                                    } 
+                                                    else 
+                                                    {
+                                                        System.out.println("Anda membatalkan pembelian.");
+                                                        System.out.println();
+                                                    }
+                                                    break;
+
+                                                case 2:
+                                                    iu.infoEventsoloist();
+                                                    System.out.println("1. Beli Tiket");
+                                                    System.out.println("2. Kembali");
+                                                    System.out.print("Pilih : ");
+                                                    int tiketsoloistiuShowcase = input.nextInt();
+                                                    System.out.println();
+                                                    if (tiketsoloistiuShowcase == 1) 
+                                                    {
+                                                        iu.inputTiketsoloist(input);
+                                                        iu.cetakTiketsoloist();
+                                                    } 
+                                                    else 
+                                                    {
+                                                        System.out.println("Anda membatalkan pembelian.");
+                                                        System.out.println();
+                                                    }
+                                                    break;
+
+                                                case 3:
+                                                    iu.infoEventsoloist();
+                                                    System.out.println("1. Beli Tiket");
+                                                    System.out.println("2. Kembali");
+                                                    System.out.print("Pilih : ");
+                                                    int tiketsoloistiuFanmeeting = input.nextInt();
+                                                    System.out.println();
+                                                    if (tiketsoloistiuFanmeeting == 1) 
+                                                    {
+                                                        iu.inputTiketsoloist(input);
+                                                        iu.cetakTiketsoloist();
+                                                    } 
+                                                    else 
+                                                    {
+                                                        System.out.println("Anda membatalkan pembelian.");
+                                                        System.out.println();
+                                                    }
+                                                    break;
+
+                                                case 4:
+                                                    System.out.println("Anda telah keluar dari fitur ini");
+                                                    System.out.println();
+                                                    break;
+
+                                                default:
+                                                    System.out.println("Menu tidak tersedia!");
+                                            }                                          
+                                            break;
+
+                                        case 2:
+                                            System.out.println("===========================================================");
+                                            System.out.println("====================  TICKETING PAUL KIM  ==================");
+                                            System.out.println("===========================================================");
+                                            System.out.println("1. Konser");
+                                            System.out.println("2. Showcase");
+                                            System.out.println("3. Fanmeeting");
+                                            System.out.println("4. Kembali");
+                                            System.out.println("-----------------------------------------------------------");
+                                            System.out.print("Pilih : ");
+                                            int tiketpaul = input.nextInt();
+                                            System.out.println();
+                                            switch (tiketpaul) 
+                                            {  
+                                                case 1:
+                                                    paulkim.infoEventsoloist();
+                                                    System.out.println("1. Beli Tiket");
+                                                    System.out.println("2. Kembali");
+                                                    System.out.print("Pilih : ");
+                                                    int tiketsoloistpaulKonser = input.nextInt();
+                                                    System.out.println();
+                                                    if (tiketsoloistpaulKonser == 1) 
+                                                    {
+                                                        paulkim.inputTiketsoloist(input);
+                                                        paulkim.cetakTiketsoloist();
+                                                    } 
+                                                    else 
+                                                    {
+                                                        System.out.println("Anda membatalkan pembelian.");
+                                                        System.out.println();
+                                                    }
+                                                    break;
+
+                                                case 2:
+                                                    solopaulkim.infoEventsoloist();
+                                                    System.out.println("1. Beli Tiket");
+                                                    System.out.println("2. Kembali");
+                                                    System.out.print("Pilih : ");
+                                                    int tiketsoloistpaulShowcase = input.nextInt();
+                                                    System.out.println();
+                                                    if (tiketsoloistpaulShowcase == 1) 
+                                                    {
+                                                        paulkim.inputTiketsoloist(input);
+                                                        paulkim.cetakTiketsoloist();
+                                                    } 
+                                                    else 
+                                                    {
+                                                        System.out.println("Anda membatalkan pembelian.");
+                                                        System.out.println();
+                                                    }
+                                                    break;
+
+                                                case 3:
+                                                    solopaulkim.infoEventsoloist();
+                                                    System.out.println("1. Beli Tiket");
+                                                    System.out.println("2. Kembali");
+                                                    System.out.print("Pilih : ");
+                                                    int tiketsoloistpaulFanmeeting = input.nextInt();
+                                                    System.out.println();
+                                                    if (tiketsoloistpaulFanmeeting == 1) 
+                                                    {
+                                                        paulkim.inputTiketsoloist(input);
+                                                        paulkim.cetakTiketsoloist();
+                                                    } 
+                                                    else 
+                                                    {
+                                                        System.out.println("Anda membatalkan pembelian.");
+                                                        System.out.println();
+                                                    }
+                                                    break;
+
+                                                case 4:
+                                                    System.out.println("Anda telah keluar dari fitur ini");
+                                                    System.out.println();
+                                                    break;
+
+                                                default:
+                                                    System.out.println("Menu tidak tersedia!");
+                                            }
+                                            break;
+
+                                        case 3:
+                                            System.out.println("Kembali ke menu utama.");
+                                            System.out.println();
+                                            break;
+
+                                        default:
+                                            System.out.println("Pilihan tidak valid.");
+                                            System.out.println();
+                                    }
+
+                                case 4:
+                                    System.out.println("===========================================================");
+                                    System.out.println("========================  UP TO DATE  =====================");
+                                    System.out.println("===========================================================");
+                                    System.out.println("1. IU");
+                                    System.out.println("2. Paul Kim");
+                                    System.out.println("3. Kembali");
+                                    System.out.println("-----------------------------------------------------------");
+                                    System.out.print("Pilih Soloist : ");
+                                    int detailsoloist = input.nextInt();
+                                    System.out.println();
+                                    switch (detailsoloist) 
+                                    {
+                                        case 1:
+                                            System.out.println("=================================================");
+                                            System.out.println("============== KEGIATAN UP TO DATE ==============");
+                                            System.out.println("================================================="); 
+                                            System.out.println("1. Jadwal Comeback");
+                                            System.out.println("2. Transisi Gaya Personal");
+                                            System.out.println("3. Kembali");
+                                            System.out.println("-------------------------------------------------");
+                                            System.out.print("Pilih Menu : ");
+                                            int menukegiatansoloist = input.nextInt();
+                                            System.out.println();
+                                            switch (menukegiatansoloist)
+                                            {
+                                                case 1:
+                                                    soloiu.jadwalComeback();
+                                                    break;
+
+                                                case 2:
+                                                    soloiu.transisiGayaPersonal();
+                                                    break;
+
+                                                case 3:
+                                                    System.out.println("Anda telah keluar dari fitur ini");
+                                                    System.out.println();
+                                                    break;
+
+                                                default:
+                                                    System.out.println("Menu tidak tersedia!");
+                                                    System.out.println();
+                                            }
+                                            break;
+                                        
+                                        case 2:
+                                            System.out.println("=================================================");
+                                            System.out.println("============== KEGIATAN UP TO DATE ==============");
+                                            System.out.println("=================================================");
+                                            System.out.println("1. Jadwal Comeback");
+                                            System.out.println("2. Transisi Gaya Personal");
+                                            System.out.println("3. Kembali");
+                                            System.out.println("-------------------------------------------------");
+                                            System.out.print("Pilih Menu : ");
+                                            int menukegiatansoloistpaul = input.nextInt();
+                                            System.out.println();
+                                            switch (menukegiatansoloistpaul)
+                                            {
+                                                case 1:
+                                                    solopaulkim.jadwalComeback();
+                                                    break;
+
+                                                case 2:
+                                                    solopaulkim.transisiGayaPersonal();
+                                                    break;
+
+                                                case 3:
+                                                    System.out.println("Anda telah keluar dari fitur ini");
+                                                    System.out.println();
+                                                    break;
+
+                                                default:
+                                                    System.out.println("Menu tidak tersedia!");
+                                            }
+                                            break;
+                                        
+                                        case 3:
+                                            System.out.println("Anda telah keluar");
+                                            System.out.println();
+                                            break;
+                                        default:
+                                            System.out.println("Menu tidak tersedia!");
+                                            System.out.println();
+                                    }
+                                    break;
+
+                                case 5:
+                                    System.out.println("Anda telah keluar");
+                                    System.out.println();
+                                    break;
+
+                                default:
+                                    System.out.println("Menu tidak tersedia!");
+                                    System.out.println();
+                            }
+                            break;
+
+                        case 3:
+                            System.out.println("Anda telah keluar dari program.");
+                            kembaliidol = true;
+                            break;
+                        default:
+                            System.out.println("Menu tidak tersedia!");
+                    }
+                    }
+                    break;
+                
+                case 3: 
+                    System.out.println("Anda telah keluar dari program.");
+                    kembaliutama = true;
+                    break;
+                    
                 default:
                     System.out.println("Menu tidak tersedia!");
-                     }
-                }
+            }
+        }
             input.close();
             }
         }  
-    }
-} 

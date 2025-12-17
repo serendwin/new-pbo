@@ -53,6 +53,10 @@ public class Agensi {
     public void inputTiketidol(Scanner in) {}
     public void cetakTiketidol() {}
 
+    public void infoEventsoloist() {}
+    public void inputTiketsoloist(Scanner in) {}
+    public void cetakTiketsoloist() {}
+
     public void leeminho() {}
     public void dongwook() {}
     public void jiwon() {}
