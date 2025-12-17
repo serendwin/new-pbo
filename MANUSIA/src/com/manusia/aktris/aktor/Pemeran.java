@@ -3,10 +3,22 @@ package com.manusia.aktris.aktor;
 import java.util.Scanner;
 import com.manusia.Agensi;
 
-public class Pemeran extends Agensi {
+public class Pemeran extends Agensi 
+{
+    protected String event;
+    protected String eventName;
+    protected String eventType;
+    protected String lokasi;
+    protected String tanggal;
 
+    protected String kategori;
+    protected String section;
+    protected double harga;
+    protected int qty;
+    protected double total;
     protected String film;
-
+    protected String drama;
+    
     public Pemeran(
             String nama,
             String kewarganegaraan,
@@ -18,7 +30,6 @@ public class Pemeran extends Agensi {
             String movie,
             String album,
             String penghargaan,
-            String kategori,   // ⬅️ PENTING
             String film
     ) {
         super(
@@ -31,17 +42,18 @@ public class Pemeran extends Agensi {
                 movie,        // listMovie
                 album,
                 penghargaan,
-                posisi,
-                kategori      // ⬅️ dikirim ke Agensi
+                posisi
         );
 
-        this.film = film;
+        this.event = "-";
+        this.eventName = "-";
+        this.eventType = "-";
+        this.lokasi = "-";
+        this.tanggal = "-";
+        this.harga = tentukanHargaAktor(kategori);
+        this.harga = tentukanHargaAktris(kategori);
     }
 
-
-
-
-    // ================= BIODATA =================
     @Override
     public void tampilkanAktris() {
         System.out.println("=================================================================");
@@ -76,7 +88,6 @@ public class Pemeran extends Agensi {
         System.out.println();
     }
 
-    // ================= EVENT AKTOR =================
     @Override
     public void infoEventaktor() {
         System.out.println("=================================================================");
@@ -87,24 +98,36 @@ public class Pemeran extends Agensi {
         System.out.println("Lokasi         : " + lokasi);
         System.out.println("Tanggal        : " + tanggal);
         System.out.println("----------------------  KATEGORI TIKET  -------------------------");
-        System.out.println("VVIP           : Rp " + tentukanHarga("VVIP"));
-        System.out.println("VIP            : Rp " + tentukanHarga("VIP"));
-        System.out.println("REGULAR        : Rp " + tentukanHarga("REGULAR"));
-        System.out.println("BALCONY        : Rp " + tentukanHarga("BALCONY"));
+        System.out.println("VVIP           : Rp " + tentukanHargaAktor("VVIP"));
+        System.out.println("VIP            : Rp " + tentukanHargaAktor("VIP"));
+        System.out.println("REGULAR        : Rp " + tentukanHargaAktor("REGULAR"));
+        System.out.println("BALCONY        : Rp " + tentukanHargaAktor("BALCONY"));
         System.out.println("=================================================================");
     }
 
     @Override
     public void inputTiketaktor(Scanner input) {
         input.nextLine();
-        System.out.print("Kategori Tiket : ");
+        System.out.println("=================================================================");
+        System.out.println("===================  PEMBELIAN TIKET FANMEETING =================");
+        System.out.println("=================================================================");
+        System.out.println("Aktor         : " + nama);
+        System.out.println("Event         : " + event);
+        System.out.print("Kategori Tiket: ");
+        
         kategori = input.nextLine();
-        harga = tentukanHarga(kategori);
+        harga = tentukanHargaAktor(kategori);
+
+        System.out.println("Harga/Tiket   : Rp " + harga);
+
         System.out.print("Jumlah Tiket  : ");
         qty = input.nextInt();
+
         total = harga * qty;
+        System.out.println("=================================================================");
         System.out.println();
     }
+
 
     @Override
     public void cetakTiketaktor() {
@@ -130,7 +153,6 @@ public class Pemeran extends Agensi {
         System.out.println();
     }
 
-    // ================= EVENT AKTRIS =================
     @Override
     public void infoEventaktris() {
         System.out.println("=================================================================");
@@ -141,24 +163,36 @@ public class Pemeran extends Agensi {
         System.out.println("Lokasi         : " + lokasi);
         System.out.println("Tanggal        : " + tanggal);
         System.out.println("----------------------  KATEGORI TIKET  -------------------------");
-        System.out.println("VVIP           : Rp " + tentukanHarga("VVIP"));
-        System.out.println("VIP            : Rp " + tentukanHarga("VIP"));
-        System.out.println("REGULAR        : Rp " + tentukanHarga("REGULAR"));
-        System.out.println("BALCONY        : Rp " + tentukanHarga("BALCONY"));
+        System.out.println("VVIP           : Rp " + tentukanHargaAktris("VVIP"));
+        System.out.println("VIP            : Rp " + tentukanHargaAktris("VIP"));
+        System.out.println("REGULAR        : Rp " + tentukanHargaAktris("REGULAR"));
+        System.out.println("BALCONY        : Rp " + tentukanHargaAktris("BALCONY"));
         System.out.println("=================================================================");
     }
 
     @Override
     public void inputTiketaktris(Scanner input) {
         input.nextLine();
-        System.out.print("Kategori Tiket : ");
+        System.out.println("=================================================================");
+        System.out.println("===================  PEMBELIAN TIKET FANMEETING =================");
+        System.out.println("=================================================================");
+        System.out.println("Aktris        : " + nama);
+        System.out.println("Event         : " + event);
+        System.out.print("Kategori Tiket: ");
+        
         kategori = input.nextLine();
-        harga = tentukanHarga(kategori);
+        harga = tentukanHargaAktris(kategori);
+
+        System.out.println("Harga/Tiket   : Rp " + harga);
+
         System.out.print("Jumlah Tiket  : ");
         qty = input.nextInt();
+
         total = harga * qty;
+        System.out.println("=================================================================");
         System.out.println();
     }
+
 
     @Override
     public void cetakTiketaktris() {
@@ -184,12 +218,31 @@ public class Pemeran extends Agensi {
         System.out.println();
     }
 
-    // ================= TAMBAHAN =================
-    public void tampilkandrama() {
-        System.out.println("Drama populer : " + listDrama);
+    private double tentukanHargaAktor(String kategori) {
+        switch (kategori.toUpperCase()) {
+            case "VVIP": return 3000000;
+            case "VIP": return 2500000;
+            case "REGULAR": return 900000;
+            case "BALCONY": return 600000;
+            default: 
+                System.out.println("Kategori  " + kategori + "  tidak tersedia. Harga default digunakan.");
+                return 0;
+        }
     }
 
-    public void tampilkanFilm() {
-        System.out.println("Film populer  : " + film);
+    private double tentukanHargaAktris(String kategori) {
+        switch (kategori.toUpperCase()) {
+            case "VVIP": return 2500000;
+            case "VIP": return 1500000;
+            case "REGULAR": return 800000;
+            case "BALCONY": return 500000;
+            default: 
+                System.out.println("Kategori  " + kategori + "  tidak tersedia. Harga default digunakan.");
+                return 0;
+        }
     }
+
+    public void tampilkandrama() {}
+    public void tampilkanFilm() {}
+    
 }

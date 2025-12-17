@@ -36,4 +36,14 @@ public class Soloist extends Idol {
         System.out.println("MV    : 18.00 KST");
         System.out.println("============================================");
     }
+
+    public void transisiGayaPersonal(String gayaAwal, String gayaAkhir) {
+    System.out.println(nama + " melakukan transisi gaya dari "
+            + gayaAwal + " ke " + gayaAkhir + " secara personal.");
+    }
+
+    public void monologuePerformance(String tema) {
+        System.out.println(nama + " menampilkan monolog dengan tema: " + tema);
+    }   
 }
+

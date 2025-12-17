@@ -1,9 +1,12 @@
 package com.manusia.aktris.aktor;
 
-public class Firstlead extends Pemeran {
-
-    private String namaPemeran;
-    private String peran;
+public class Firstlead extends Pemeran 
+{
+    protected String PosisiPoster;
+    protected String Highlight;
+    protected String FokusCerita;
+    protected String namapresscon;
+    protected String Tv;
 
     public Firstlead(
             String nama,
@@ -16,9 +19,7 @@ public class Firstlead extends Pemeran {
             String movie,
             String album,
             String penghargaan,
-            String film,            // ✅ TAMBAH
-            String namaPemeran,
-            String peran
+            String film
     ) {
         super(
                 nama,
@@ -31,27 +32,36 @@ public class Firstlead extends Pemeran {
                 movie,
                 album,
                 penghargaan,
-                "first lead",         // kategori
-                film                 // ✅ WAJIB
+                film
         );
 
-        this.namaPemeran = namaPemeran;
-        this.peran = peran;
+        this.PosisiPoster = "-";
+        this.Highlight = "-";
+        this.FokusCerita = "-";
+        this.namapresscon = "-";
+        this.Tv = "-";
     }
 
     public void setPosterPosition() {
-        System.out.println("Posisi: Tengah poster, ukuran font nama paling besar.");
+        System.out.println("=================================================");
+        System.out.println("              FIRST LEAD POSITION               ");
+        System.out.println("=================================================");
+        System.out.println("Posisi Poster : Tengah");
+        System.out.println("Highlight     : Nama paling besar");
+        System.out.println("Fokus Cerita  : Karakter utama");
+        System.out.println("=================================================");
+        System.out.println();
     }
 
     public void attendPressTour() {
-        System.out.println("Menghadiri wawancara TV, podcast, dan meet & greet di 5 kota.");
-    }
-
-    public String getNamaPemeran() {
-        return namaPemeran;
-    }
-
-    public String getPeran() {
-        return peran;
+        System.out.println("=================================================");
+        System.out.println("               PRESS TOUR ACTIVITY              ");
+        System.out.println("=================================================");
+        System.out.println("Aktivitas :");
+        System.out.println("• Wawancara TV nasional");
+        System.out.println("• Podcast eksklusif");
+        System.out.println("• Meet & Greet di 5 kota besar");
+        System.out.println("=================================================");
+        System.out.println();
     }
 }

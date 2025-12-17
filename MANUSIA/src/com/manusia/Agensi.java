@@ -16,19 +16,7 @@ public class Agensi {
     protected String penghargaan;
     protected String posisi;
 
-    protected String event;
-    protected String eventName;
-    protected String eventType;
-    protected String lokasi;
-    protected String tanggal;
 
-    protected String kategori;
-    protected String section;
-    protected double harga;
-    protected int qty;
-    protected double total;
-
-    // ✅ Constructor FIX
     public Agensi(
             String nama,
             String kewarganegaraan,
@@ -39,8 +27,7 @@ public class Agensi {
             String listMovie,
             String album,
             String penghargaan,
-            String posisi,
-            String kategori
+            String posisi
     ) {
         this.nama = nama;
         this.kewarganegaraan = kewarganegaraan;
@@ -53,37 +40,8 @@ public class Agensi {
         this.album = album;
         this.penghargaan = penghargaan;
         this.posisi = posisi;
-        this.kategori = kategori;
-
-        this.event = "-";
-        this.eventName = "-";
-        this.eventType = "-";
-        this.lokasi = "-";
-        this.tanggal = "-";
-
-        // ✅ aman sekarang
-        this.harga = tentukanHarga(kategori);
     }
 
-    // ✅ METHOD PENENTUAN HARGA
-    protected double tentukanHarga(String kategori) {
-        if (kategori == null) return 0;
-
-        switch (kategori.toLowerCase()) {
-            case "aktor":
-                return 500_000;
-            case "aktris":
-                return 450_000;
-            case "idol":
-                return 750_000;
-            default:
-                return 0;
-        }
-    }
-
-    // =======================
-    // Method placeholder
-    // =======================
     public void tampilkanAktor() {}
     public void tampilkanAktris() {}
     public void tampilkanbiodatagroupidol() {}
