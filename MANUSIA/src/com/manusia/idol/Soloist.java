@@ -16,7 +16,11 @@ public class Soloist extends Idol {
             int masaTrainee,
             String posisi,
             String penghargaan,
-            String album
+            String album,
+            String gayaAwal,
+            String gayaAkhir,
+            String deskripsi,
+            String penampilan
     ) {
         super(
                 nama,
@@ -35,10 +39,11 @@ public class Soloist extends Idol {
                 "-"     // tanggal
         );
 
-        this.gayaAwal = "-";
-        this.gayaAkhir = "-";
-        this.deskripsi = "-";
-        this.penampilan = "-";
+        // ✅ sekarang benar-benar terisi
+        this.gayaAwal = gayaAwal;
+        this.gayaAkhir = gayaAkhir;
+        this.deskripsi = deskripsi;
+        this.penampilan = penampilan;
     }
 
     @Override

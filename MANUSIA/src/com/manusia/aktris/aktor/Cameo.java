@@ -8,30 +8,35 @@ public class Cameo extends Pemeran
     public String DetailAksi;
     public String AksiUtama;
 
-    public Cameo(
-            String nama,
-            String kewarganegaraan,
-            String gender,
-            String ttlLahir,
-            String ttlDebut,
-            int masaTrainee,
-            String posisi,
-            String drama,
-            String film,
-            String penghargaan,
-            String event,
-            String lokasi,
-            String tanggal
-    ) {
-        super(nama, kewarganegaraan, gender, ttlLahir, ttlDebut, masaTrainee, posisi,
-              drama, film, penghargaan, event, lokasi, tanggal);
+public Cameo(
+        String nama,
+        String kewarganegaraan,
+        String gender,
+        String ttlLahir,
+        String ttlDebut,
+        int masaTrainee,
+        String posisi,
+        String drama,
+        String film,
+        String penghargaan,
+        String event,
+        String lokasi,
+        String tanggal,
+        String namaperancameo,
+        String durasi,
+        String deskripsi,
+        String DetailAksi,
+        String AksiUtama
+) {
+    super(nama, kewarganegaraan, gender, ttlLahir, ttlDebut, masaTrainee, posisi,
+          drama, film, penghargaan, event, lokasi, tanggal);
 
-        this.namaperancameo = nama;
-        this.durasi = "-";
-        this.deskripsi = "-";  
-        this.DetailAksi = "-"; 
-        this.AksiUtama = "-";
-    }
+    this.namaperancameo = namaperancameo;
+    this.durasi = durasi;
+    this.deskripsi = deskripsi;
+    this.DetailAksi = DetailAksi;
+    this.AksiUtama = AksiUtama;
+}
 
     public void appearBriefly() {
         System.out.println("=================================================");

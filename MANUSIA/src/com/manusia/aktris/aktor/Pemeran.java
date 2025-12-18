@@ -17,38 +17,43 @@ public class Pemeran extends Agensi
     protected String film;
     protected String drama;
     
-    public Pemeran(
-            String nama,
-            String kewarganegaraan,
-            String gender,
-            String ttlLahir,
-            String ttlDebut,
-            int masaTrainee,
-            String posisi,
-            String drama,
-            String film,
-            String penghargaan,
-            String event,
-            String lokasi,
-            String tanggal
-    ) {
-          super(
-            nama,
-            kewarganegaraan,
-            gender,
-            ttlLahir,
-            ttlDebut,
-            masaTrainee,
-            penghargaan,
-            posisi
-        );
+public Pemeran(
+        String nama,
+        String kewarganegaraan,
+        String gender,
+        String ttlLahir,
+        String ttlDebut,
+        int masaTrainee,
+        String posisi,
+        String drama,
+        String film,
+        String penghargaan,
+        String event,
+        String lokasi,
+        String tanggal
+) {
+    super(
+        nama,
+        kewarganegaraan,
+        gender,
+        ttlLahir,
+        ttlDebut,
+        masaTrainee,
+        posisi,        // ✅ urutan benar
+        penghargaan
+    );
 
-        this.event = "-";
-        this.lokasi = "-";
-        this.tanggal = "-";
-        this.kategori = "-";
-        this.section = "-";
-    }
+    // ✅ INI YANG KURANG SELAMA INI
+    this.drama = drama;
+    this.film = film;
+    this.event = event;
+    this.lokasi = lokasi;
+    this.tanggal = tanggal;
+
+    this.kategori = "-";
+    this.section = "-";
+}
+
 
     @Override
     public void tampilkanAktris() {

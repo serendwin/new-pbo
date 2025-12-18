@@ -2,11 +2,11 @@ package com.manusia.aktris.aktor;
 
 public class Firstlead extends Pemeran 
 {
-    public String PosisiPoster;
-    public String Highlight;
-    public String FokusCerita;
-    public String namapresscon;
-    public String Tv;
+    public String posisiPoster;
+    public String highlight;
+    public String fokusCerita;
+    public String namaPresscon;
+    public String tv;
 
     public Firstlead(
             String nama,
@@ -21,25 +21,30 @@ public class Firstlead extends Pemeran
             String penghargaan,
             String event,
             String lokasi,
-            String tanggal
+            String tanggal,
+            String posisiPoster,
+            String highlight,
+            String fokusCerita,
+            String namaPresscon,
+            String tv
     ) {
         super(nama, kewarganegaraan, gender, ttlLahir, ttlDebut, masaTrainee, posisi,
               drama, film, penghargaan, event, lokasi, tanggal);
 
-        this.PosisiPoster = "-";
-        this.Highlight = "-";
-        this.FokusCerita = "-";
-        this.namapresscon = "-";
-        this.Tv = "-";
+        this.posisiPoster = posisiPoster;
+        this.highlight = highlight;
+        this.fokusCerita = fokusCerita;
+        this.namaPresscon = namaPresscon;
+        this.tv = tv;
     }
 
     public void setPosterPosition() {
         System.out.println("=================================================");
         System.out.println("              FIRST LEAD POSITION               ");
         System.out.println("=================================================");
-        System.out.println("Posisi Poster   :" + PosisiPoster);
-        System.out.println("Highlight       :" + Highlight);
-        System.out.println("Fokus Cerita    :" + FokusCerita);
+        System.out.println("Posisi Poster   : " + posisiPoster);
+        System.out.println("Highlight       : " + highlight);
+        System.out.println("Fokus Cerita    : " + fokusCerita);
         System.out.println("=================================================");
         System.out.println();
     }
@@ -48,8 +53,8 @@ public class Firstlead extends Pemeran
         System.out.println("=================================================");
         System.out.println("               PRESS TOUR ACTIVITY              ");
         System.out.println("=================================================");
-        System.out.println("Nama Presscon   :" + namapresscon);
-        System.out.println("Nama TV         :" + Tv);
+        System.out.println("Nama Presscon   : " + namaPresscon);
+        System.out.println("Nama TV         : " + tv);
         System.out.println("• Podcast eksklusif");
         System.out.println("• Meet & Greet di 5 kota besar");
         System.out.println("=================================================");

@@ -28,7 +28,12 @@ public class MainApp
                 "The King: Eternal Monarch",
                 "Gangnam Blues",
                 "Baeksang Arts Awards",
-                "-", "-", "-"
+                "-", "-", "-",
+                "Kaisar Lee Gon (Cameo)",
+                "3 menit",
+                "Muncul sebagai kejutan di episode akhir",
+                "Menatap tokoh utama dan membuka portal",
+                "Memicu konflik lintas dunia"
         );
 
         Cameo cameodongwook = new Cameo(
@@ -42,7 +47,12 @@ public class MainApp
                 "Goblin",
                 "Single in Seoul",
                 "SBS Drama Awards",
-                "-", "-", "-"
+                "-", "-", "-",
+                "Malaikat Kematian",
+                "4 menit",
+                "Datang tiba-tiba membantu tokoh utama",
+                "Memberikan peringatan penting",
+                "Mengubah arah cerita"
         );
 
         Cameo cameoshinhye = new Cameo(
@@ -56,8 +66,13 @@ public class MainApp
                 "Doctors",
                 "Alive",
                 "SBS Drama Awards",
-                "-", "-", "-"
-        );        
+                "-", "-", "-",
+                "Dokter Misterius",
+                "2 menit",
+                "Menangani pasien penting secara singkat",
+                "Menyelamatkan nyawa tokoh utama",
+                "Menjadi titik balik emosional"
+        );
 
         Cameo cameojiwon = new Cameo(
                 "Kim Ji-won",
@@ -70,7 +85,12 @@ public class MainApp
                 "Queen of Tears",
                 "The Chronicles",
                 "Baeksang Arts Awards",
-                "-", "-", "-"
+                "-", "-", "-",
+                "CEO Muda",
+                "5 menit",
+                "Muncul di rapat penting perusahaan",
+                "Mengungkap fakta tersembunyi",
+                "Membalikkan kekuasaan"
         );
 
         /* First Lead */ 
@@ -88,7 +108,12 @@ public class MainApp
                 "Baeksang Arts Awards",
                 "Lee Min-ho Fanmeeting 2026",
                 "Jakarta Convention Center",
-                "10 Mei 2026"
+                "10 Mei 2026",
+                "Tengah Poster",
+                "Adegan ikonik episode akhir",
+                "Perjalanan raja lintas dunia",
+                "Lee Min-ho Global Presscon",
+                "SBS"
         );
 
         Firstlead firstdongwook = new Firstlead(
@@ -104,7 +129,12 @@ public class MainApp
                 "SBS Drama Awards",
                 "Lee Dong-wook Fanmeeting 2026",
                 "Istora Senayan",
-                "18 Mei 2026"
+                "18 Mei 2026",
+                "Tengah Poster",
+                "Transformasi karakter paling kuat",
+                "Mitologi & romansa",
+                "Nine Tailed Press Tour",
+                "tvN"
         );
 
         Firstlead firstshinhye = new Firstlead(
@@ -120,7 +150,12 @@ public class MainApp
                 "SBS Drama Awards",
                 "Park Shin-hye Fanmeeting 2026",
                 "Balai Kartini",
-                "25 Mei 2026"
+                "25 Mei 2026",
+                "Tengah Poster",
+                "Adegan operasi paling emosional",
+                "Kehidupan & pengorbanan",
+                "Doctors Press Conference",
+                "SBS"
         );
 
         Firstlead firstjiwon = new Firstlead(
@@ -136,8 +171,14 @@ public class MainApp
                 "Baeksang Arts Awards",
                 "Kim Ji-won Fanmeeting 2026",
                 "The Kasablanka Hall",
-                "30 Mei 2026"
+                "30 Mei 2026",
+                "Tengah Poster",
+                "Adegan klimaks pernikahan",
+                "Konflik cinta & keluarga chaebol",
+                "Queen of Tears Global Presscon",
+                "tvN"
         );
+
 
         /* Pemeran */
 
@@ -217,7 +258,11 @@ public class MainApp
                 "Boygroup",
                 "Daesang, Bonsang",
                 "GLITCH MODE",
-                "-", "-", "-", "-", "-"
+                "NCT DREAM Fanmeeting 2026", 
+                "-", 
+                "FANMEETING", 
+                "Balai Kartini", 
+                "15 Januari 2026"
         );
         Idol day6 = new Idol(
                 "DAY6",
@@ -229,7 +274,11 @@ public class MainApp
                 "Band",
                 "Best Band",
                 "The Book of Us: Negentropy",
-                "-", "-", "-", "-", "-"
+                "-", 
+                "Day6 Fanmeeting 2026", 
+                "FANMEETING", 
+                "JCC", 
+                "27 Januari 2026"
         );
 
         Idol mark = new Idol(
@@ -242,7 +291,11 @@ public class MainApp
             "Leader, Main Rapper, Main Dancer, Sub Vocalist",
             "Seoul Music Awards - Bonsang",
             "Reload (2020)",
-            "-", "-", "-", "-", "-"
+            "NCT DREAM WORLD TOUR", 
+            "NCT DREAM The Dream Show 3", 
+            "Konser", 
+            "GBK Stadium", 
+            "10 Agustus 2026"
         );
 
         Idol renjun = new Idol(
@@ -255,7 +308,11 @@ public class MainApp
             "Main Vocalist, Main Dancer",
             "Seoul Music Awards - Bonsang",
             "Reload (2020)",
-            "-", "-", "-", "-", "-"
+            "NCT DREAM WORLD TOUR", 
+            "NCT DREAM The Dream Show 3", 
+            "Konser", 
+            "GBK Stadium", 
+            "10 Agustus 2026"
         );
 
         Idol jeno = new Idol(
@@ -268,7 +325,11 @@ public class MainApp
             "Main Rapper, Main Dancer, Sub Vocalist, Visual",
             "Seoul Music Awards - Bonsang",
             "Reload (2020)",
-            "-", "-", "-", "-", "-"
+            "NCT DREAM WORLD TOUR", 
+            "NCT DREAM The Dream Show 3", 
+            "Konser", 
+            "GBK Stadium", 
+            "10 Agustus 2026"
         );
 
         Idol haechan = new Idol(
@@ -281,7 +342,11 @@ public class MainApp
             "Main Vocalist",
             "Seoul Music Awards - Bonsang",
             "Reload (2020)",
-            "-", "-", "-", "-", "-"
+            "NCT DREAM WORLD TOUR", 
+            "NCT DREAM The Dream Show 3", 
+            "Konser", 
+            "GBK Stadium", 
+            "10 Agustus 2026"
         );
 
         Idol jaemin = new Idol(
@@ -294,7 +359,11 @@ public class MainApp
             "Main Dancer, Sub Rapper, Sub Vocalist, Visual, Center",
             "Seoul Music Awards - Bonsang",
             "Reload (2020)",
-            "-", "-", "-", "-", "-"
+            "NCT DREAM WORLD TOUR", 
+            "NCT DREAM The Dream Show 3", 
+            "Konser", 
+            "GBK Stadium", 
+            "10 Agustus 2026"
         );
 
         Idol chenle = new Idol(
@@ -307,7 +376,11 @@ public class MainApp
             "Main Vocalist",
             "Seoul Music Awards - Bonsang",
             "Reload (2020)",
-            "-", "-", "-", "-", "-"
+             "NCT DREAM WORLD TOUR", 
+            "NCT DREAM The Dream Show 3", 
+            "Konser", 
+            "GBK Stadium", 
+            "10 Agustus 2026"
         );
 
         Idol jisung = new Idol(
@@ -320,7 +393,11 @@ public class MainApp
             "Main Dancer, Sub Rapper, Sub Vocalist, Maknae",
             "Seoul Music Awards - Bonsang",
             "Reload (2020)",
-            "-", "-", "-", "-", "-"
+             "NCT DREAM WORLD TOUR", 
+            "NCT DREAM The Dream Show 3", 
+            "Konser", 
+            "GBK Stadium", 
+            "10 Agustus 2026"
         );
 
         Idol sungjin = new Idol(
@@ -333,7 +410,11 @@ public class MainApp
             "Leader, Main Vocalist, Rhythm Guitarist",
             "Golden Disc Award - Best Band",
             "The Book of Us: Negentropy (2021)",
-            "-", "-", "-", "-", "-"
+            "DAY6 WORLD TOUR", 
+            "DAY6 Gravity Tour", 
+            "Konser", 
+            "ICE BSD Hall", 
+            "15 september 2026"
         );
 
         Idol youngk = new Idol(
@@ -346,7 +427,11 @@ public class MainApp
             "Bassist, Main Rapper, Main Vocalist",
             "Golden Disc Award - Best Band",
             "The Book of Us: Negentropy (2021)",
-            "-", "-", "-", "-", "-"
+            "DAY6 WORLD TOUR", 
+            "DAY6 Gravity Tour", 
+            "Konser", 
+            "ICE BSD Hall", 
+            "15 september 2026"
         );
 
         Idol wonpil = new Idol(
@@ -359,7 +444,11 @@ public class MainApp
             "Keyboardist, Main Vocalist, Visual",
             "Golden Disc Award - Best Band",
             "The Book of Us: Negentropy (2021)",
-            "-", "-", "-", "-", "-"
+            "DAY6 WORLD TOUR", 
+            "DAY6 Gravity Tour", 
+            "Konser", 
+            "ICE BSD Hall", 
+            "15 september 2026"
         );
 
         Idol dowoon = new Idol(
@@ -372,7 +461,11 @@ public class MainApp
             "Drummer, Maknae, Vocalist",
             "Golden Disc Award - Best Band",
             "The Book of Us: Negentropy (2021)",
-            "-", "-", "-", "-", "-"
+            "DAY6 WORLD TOUR", 
+            "DAY6 Gravity Tour", 
+            "Konser", 
+            "ICE BSD Hall", 
+            "15 september 2026"
         );
 
         Idol iu = new Idol(
@@ -385,7 +478,11 @@ public class MainApp
             "Soloist, Vocalist, Songwriter",
             "Melon Music Awards, Baeksang Arts Awards",
             "LILAC (2021)",
-            "-", "-", "-", "-", "-"
+            "IU FANMEETING", 
+            "IU Lve Poem Fanmeeting", 
+            "FANMEETING", 
+            "Balai Kartini", 
+            "21 Juni 2026"
         );
 
         Idol paulkim = new Idol(
@@ -398,7 +495,11 @@ public class MainApp
             "Soloist, Vocalist",
             "Melon Music Awards, Seoul Music Awards",
             "Star (2018)",
-            "-", "-", "-", "-", "-"
+            "PAUL KIM LIVE TOUR", 
+            "Paul Kim One More Time Concert", 
+            "Konser", 
+            "The kasablanka Hall", 
+            "30 Juli 2026"
         );
 
         /* Group*/
@@ -453,27 +554,35 @@ public class MainApp
         /* Soloist */
 
         Soloist soloiu = new Soloist(
-            "IU",
-            "Korea Selatan",
-            "Perempuan",
-            "16 Mei 1993",
-            "2008",
-            3,
-            "Soloist, Vocalist, Actress",
-            "Melon Music Awards, Baeksang Arts Awards",
-            "LILAC (2021)"
+                "IU",
+                "Korea Selatan",
+                "Perempuan",
+                "16 Mei 1993",
+                "2008",
+                3,
+                "Soloist, Vocalist, Actress",
+                "Melon Music Awards, Baeksang Arts Awards",
+                "LILAC (2021)",
+                "Gaya akustik sederhana",
+                "Konsep elegan & mature",
+                "Transformasi musikal yang emosional",
+                "Vokal live dengan sentuhan cinematic"
         );
 
         Soloist solopaulkim = new Soloist(
-            "Paul Kim",
-            "Korea Selatan",
-            "Laki-laki",
-            "11 Februari 1988",
-            "2014",
-            4,
-            "Soloist, Ballad Singer",
-            "Melon Music Awards, Gaon Chart Music Awards",
-            "Star (2018)"
+                "Paul Kim",
+                "Korea Selatan",
+                "Laki-laki",
+                "11 Februari 1988",
+                "2014",
+                4,
+                "Soloist, Ballad Singer",
+                "Melon Music Awards, Gaon Chart Music Awards",
+                "Star (2018)",
+                "Ballad minimalis",
+                "Ballad orchestral",
+                "Pendalaman emosi lewat lirik",
+                "Penampilan vokal penuh perasaan"
         );
 
         boolean kembaliutama = false;
@@ -775,7 +884,7 @@ public class MainApp
                                             switch (menutiketaktor) 
                                             {
                                                 case 1:
-                                                    parkshinhye.infoEventaktor();
+                                                    leeminho.infoEventaktor();
                                                     System.out.println("1. Beli Tiket");
                                                     System.out.println("2. Kembali");
                                                     System.out.print("Pilih : ");
