@@ -539,9 +539,10 @@ public class MainApp
                         System.out.println("========================  MENU LEE MINHO  =======================");
                         System.out.println("=================================================================");
                         System.out.println("1. Lihat Biodata");
-                        System.out.println("2. Info Event dan Pembelian Tiket");
-                        System.out.println("3. Kegiatan Ter Up to Date");                        
-                        System.out.println("4. Kembali ke Menu Utama");
+                        System.out.println("2. Film dan Drama");
+                        System.out.println("3. Info Event dan Pembelian Tiket");
+                        System.out.println("4. Kegiatan Ter Up to Date");                        
+                        System.out.println("5. Kembali ke Menu Utama");
                         System.out.println("-----------------------------------------------------------------");
                         System.out.print("Pilih Menu : ");
                         int menuutamaminho = input.nextInt();
@@ -552,7 +553,38 @@ public class MainApp
                                 leeminho.tampilkanAktor();
                                 break;
 
-                            case 2:
+                            case 2: 
+                                System.out.println("===========================================================");
+                                System.out.println("===================== FILM & DRAMA ========================");
+                                System.out.println("===========================================================");
+                                System.out.println("1. Film");
+                                System.out.println("2. Drama");
+                                System.out.println("3. Kembali");
+                                System.out.println("-----------------------------------------------------------");
+                                System.out.print("Pilih Menu :");
+                                int filmdramaleeminho = input.nextInt();
+                                System.out.println();
+                                switch (filmdramaleeminho) 
+                                {
+                                    case 1:
+                                        leeminho.tampilkandrama();
+                                        break;
+                                    
+                                    case 2: 
+                                        leeminho.tampilkanFilm();
+                                        break;
+                                    
+                                    case 3:
+                                        System.out.println("Anda telah keluar dari menu");
+                                        break;
+                                    
+                                    default:
+                                        System.out.println("Pilihan anda tidak tersedia");
+                                        break;
+                                }
+                                break;          
+
+                            case 3:
                                 leeminho.infoEventaktor();
                                 System.out.println("1. Beli Tiket");
                                 System.out.println("2. Kembali");
@@ -572,14 +604,14 @@ public class MainApp
                                 }
                                 break;
 
-                            case 3:
-                                System.out.println("=================================================");
-                                System.out.println("============== KEGIATAN UP TO DATE ==============");
-                                System.out.println("=================================================");
+                            case 4:
+                                System.out.println("===========================================================");
+                                System.out.println("=================== KEGIATAN UP TO DATE ===================");
+                                System.out.println("===========================================================");                            
                                 System.out.println("1. Poster Position");
                                 System.out.println("2. Touring Presscon Schedule");
                                 System.out.println("3. Kembali");
-                                System.out.println("-------------------------------------------------");
+                                System.out.println("-----------------------------------------------------------");                                
                                 System.out.print("Pilih Kegiatan : ");
                                 int kegiatanminho = input.nextInt();
                                 System.out.println();
@@ -604,7 +636,7 @@ public class MainApp
                                 }
                                 break;
 
-                            case 4:
+                            case 5:
                                 kembalileeminho = true;
                                 System.out.println("Kamu kembali ke menu");                                
                                 System.out.println();
@@ -639,7 +671,38 @@ public class MainApp
                                 leedongwook.tampilkanAktor();
                                 break;
 
-                            case 2:
+                            case 2: 
+                                System.out.println("===========================================================");
+                                System.out.println("===================== FILM & DRAMA ========================");
+                                System.out.println("===========================================================");
+                                System.out.println("1. Film");
+                                System.out.println("2. Drama");
+                                System.out.println("3. Kembali");
+                                System.out.println("-----------------------------------------------------------");
+                                System.out.print("Pilih Menu :");
+                                int filmdramadongwook = input.nextInt();
+                                System.out.println();
+                                switch (filmdramadongwook) 
+                                {
+                                    case 1:
+                                        leedongwook.tampilkandrama();
+                                        break;
+                                    
+                                    case 2: 
+                                        leedongwook.tampilkanFilm();
+                                        break;
+                                    
+                                    case 3:
+                                        System.out.println("Anda telah keluar dari menu");
+                                        break;
+                                    
+                                    default:
+                                        System.out.println("Pilihan anda tidak tersedia");
+                                        break;
+                                }
+                                break;          
+
+                            case 3:
                                 leedongwook.infoEventaktor();
                                 System.out.println("1. Beli Tiket");
                                 System.out.println("2. Kembali");
@@ -659,14 +722,14 @@ public class MainApp
                                 }
                                 break;
 
-                            case 3:
-                                System.out.println("=================================================");
-                                System.out.println("============== KEGIATAN UP TO DATE ==============");
-                                System.out.println("=================================================");
+                            case 4:
+                                System.out.println("===========================================================");
+                                System.out.println("=================== KEGIATAN UP TO DATE ===================");
+                                System.out.println("===========================================================");                            
                                 System.out.println("1. Partisipasi sebagai Cameo");
                                 System.out.println("2. Deliver Plot Twist");
                                 System.out.println("3. Kembali");
-                                System.out.println("-------------------------------------------------");
+                                System.out.println("-----------------------------------------------------------");
                                 System.out.print("Pilih Kegiatan : ");
                                 int kegiatandongwook = input.nextInt();
                                 System.out.println();
@@ -690,7 +753,7 @@ public class MainApp
                                     
                                 }
                                 break;
-                            case 4:
+                            case 5:
                                 kembalileedongwook = true;
                                 System.out.println("Kamu kembali ke menu");
                                 System.out.println();
@@ -726,7 +789,38 @@ public class MainApp
                                 parkshinhye.tampilkanAktris();
                                 break;
 
-                            case 2:
+                            case 2: 
+                                System.out.println("===========================================================");
+                                System.out.println("===================== FILM & DRAMA ========================");
+                                System.out.println("===========================================================");
+                                System.out.println("1. Film");
+                                System.out.println("2. Drama");
+                                System.out.println("3. Kembali");
+                                System.out.println("-----------------------------------------------------------");
+                                System.out.print("Pilih Menu :");
+                                int filmdramashinhye = input.nextInt();
+                                System.out.println();
+                                switch (filmdramashinhye) 
+                                {
+                                    case 1:
+                                        parkshinhye.tampilkandrama();
+                                        break;
+                                    
+                                    case 2: 
+                                        parkshinhye.tampilkanFilm();
+                                        break;
+                                    
+                                    case 3:
+                                        System.out.println("Anda telah keluar dari menu");
+                                        break;
+                                    
+                                    default:
+                                        System.out.println("Pilihan anda tidak tersedia");
+                                        break;
+                                }
+                                break;          
+
+                            case 3:
                                 parkshinhye.infoEventaktris();
                                 System.out.println("1. Beli Tiket");
                                 System.out.println("2. Kembali");
@@ -746,14 +840,14 @@ public class MainApp
                                 }
                                 break;
 
-                            case 3:
-                                System.out.println("=================================================");
-                                System.out.println("============== KEGIATAN UP TO DATE ==============");
-                                System.out.println("=================================================");
+                            case 4:
+                                System.out.println("===========================================================");
+                                System.out.println("=================== KEGIATAN UP TO DATE ===================");
+                                System.out.println("===========================================================");                            
                                 System.out.println("1. Poster Position");
                                 System.out.println("2. Touring Presscon Schedule");
                                 System.out.println("3. Kembali");
-                                System.out.println("-------------------------------------------------");
+                                System.out.println("-----------------------------------------------------------");                                
                                 System.out.print("Pilih Kegiatan : ");
                                 int kegiatanshinhye = input.nextInt();
                                 System.out.println();
@@ -778,7 +872,7 @@ public class MainApp
                                 }                                
                                 break;
 
-                            case 4:
+                            case 5:
                                 kembalishinhye = true;
                                 System.out.println("Kamu kembali ke menu");                                
                                 System.out.println();
@@ -813,7 +907,38 @@ public class MainApp
                                 kimjiwon.tampilkanAktris();
                                 break;
 
-                            case 2:
+                            case 2: 
+                                System.out.println("===========================================================");
+                                System.out.println("===================== FILM & DRAMA ========================");
+                                System.out.println("===========================================================");
+                                System.out.println("1. Film");
+                                System.out.println("2. Drama");
+                                System.out.println("3. Kembali");
+                                System.out.println("-----------------------------------------------------------");
+                                System.out.print("Pilih Menu :");
+                                int filmdramajiwon = input.nextInt();
+                                System.out.println();
+                                switch (filmdramajiwon) 
+                                {
+                                    case 1:
+                                        kimjiwon.tampilkandrama();
+                                        break;
+                                    
+                                    case 2: 
+                                        kimjiwon.tampilkanFilm();
+                                        break;
+                                    
+                                    case 3:
+                                        System.out.println("Anda telah keluar dari menu");
+                                        break;
+                                    
+                                    default:
+                                        System.out.println("Pilihan anda tidak tersedia");
+                                        break;
+                                }
+                                break;          
+
+                            case 3:
                                 kimjiwon.infoEventaktris();
                                 System.out.println("1. Beli Tiket");
                                 System.out.println("2. Kembali");
@@ -833,14 +958,14 @@ public class MainApp
                                 }
                                 break;
 
-                            case 3:
-                                System.out.println("=================================================");
-                                System.out.println("============== KEGIATAN UP TO DATE ==============");
-                                System.out.println("=================================================");
+                            case 4:
+                                System.out.println("===========================================================");
+                                System.out.println("=================== KEGIATAN UP TO DATE ===================");
+                                System.out.println("===========================================================");                            
                                 System.out.println("1. Partisipasi sebagai Cameo");
                                 System.out.println("2. Deliver Plot Twist");
                                 System.out.println("3. Kembali");
-                                System.out.println("-------------------------------------------------");
+                                System.out.println("-----------------------------------------------------------");
                                 System.out.print("Pilih Kegiatan : ");
                                 int kegiatanjiwon = input.nextInt();
                                 System.out.println();
@@ -864,7 +989,7 @@ public class MainApp
                                 }
                                 break;
 
-                            case 4:
+                            case 5:
                                 kembalijiwon = true;
                                 System.out.println("Kamu kembali ke menu");                                
                                 System.out.println();
@@ -910,7 +1035,7 @@ public class MainApp
                                 switch (menubiodataNCT) 
                                 {
                                     case 1:
-                                        nctdream.tampilkanbiodatagroupidol();
+                                        nctdream.tampilkanbiodatagrup();
                                         break;
 
                                     case 2:
@@ -997,7 +1122,7 @@ public class MainApp
                                 switch (eventnct)
                                 {
                                     case 1:
-                                        nctdream.infoEventidol();
+                                        nctdream.infoEventgrup();
                                         System.out.println("1. Beli Tiket");
                                         System.out.println("2. Kembali");
                                         System.out.print("Pilih : ");
@@ -1005,8 +1130,8 @@ public class MainApp
                                         System.out.println();
                                         if (tiketnctkonser == 1) 
                                         {
-                                            nctdream.inputTiketidol(input);
-                                            nctdream.cetakTiketidol();
+                                            nctdream.inputTiketgrup(input);
+                                            nctdream.cetakTiketgrup();
                                             nctdream.berhasilmemesanTiket();
                                         } 
                                         else 
@@ -1017,7 +1142,7 @@ public class MainApp
                                         break;
 
                                     case 2:
-                                        nctdream.infoEventidol();
+                                        nctdream.infoEventgrup();
                                         System.out.println("1. Beli Tiket");
                                         System.out.println("2. Kembali");
                                         System.out.print("Pilih : ");
@@ -1025,8 +1150,8 @@ public class MainApp
                                         System.out.println();
                                         if (tiketnctfanmeeting == 1) 
                                         {
-                                            nctdream.inputTiketidol(input);
-                                            nctdream.cetakTiketidol();
+                                            nctdream.inputTiketgrup(input);
+                                            nctdream.cetakTiketgrup();
                                             nctdream.berhasilmemesanTiket();
                                         } 
                                         else 
@@ -1058,8 +1183,7 @@ public class MainApp
                                 if (albumnct == 1) 
                                 {
                                     nctdream.belialbumnct(input);
-                                    nctdream.cetakStruk();
-                                    nctdream.berhasilmemesanTiket();
+                                    nctdream.cetakStrukgrup();
                                 } 
                                 else 
                                 {
@@ -1069,14 +1193,14 @@ public class MainApp
                                 break;
 
                             case 4:
-                                System.out.println("=================================================");
-                                System.out.println("============== KEGIATAN UP TO DATE ==============");
-                                System.out.println("=================================================");
+                                System.out.println("===========================================================");
+                                System.out.println("=================== KEGIATAN UP TO DATE ===================");
+                                System.out.println("===========================================================");
                                 System.out.println("1. Jadwal Comeback");
                                 System.out.println("2. Line Distribution");
                                 System.out.println("3. Fan Chant");
                                 System.out.println("4. Kembali");
-                                System.out.println("-------------------------------------------------");
+                                System.out.println("-----------------------------------------------------------");
                                 System.out.print("Pilih : ");
                                 int kegiatanupdatenct = input.nextInt();
                                 System.out.println();
@@ -1122,7 +1246,7 @@ public class MainApp
                     while (!kembaliday6) 
                     {
                         System.out.println("=================================================================");
-                        System.out.println("=========================  MENU DAY6 ===========================");
+                        System.out.println("==========================  MENU DAY6 ===========================");
                         System.out.println("=================================================================");
                         System.out.println("1. Lihat Biodata");
                         System.out.println("2. Info Event dan Pembelian Tiket");
@@ -1136,7 +1260,7 @@ public class MainApp
                         {
                             case 1:
                                 System.out.println("===========================================================");
-                                System.out.println("==================== BIODATA DAY6 ========================");
+                                System.out.println("===================== BIODATA DAY6 ========================");
                                 System.out.println("===========================================================");
                                 System.out.println("1. Biodata Group");
                                 System.out.println("2. Biodata Per-member");
@@ -1148,7 +1272,7 @@ public class MainApp
                                 switch (menubiodataDAY6) 
                                 {
                                     case 1:
-                                        day6.tampilkanbiodatagroupidol();
+                                        day6.tampilkanbiodatagrup();
                                         break;
 
                                     case 2:
@@ -1198,7 +1322,7 @@ public class MainApp
 
                             case 2:
                                 System.out.println("===========================================================");
-                                System.out.println("==================  TICKETING DAY6  ======================");
+                                System.out.println("===================  TICKETING DAY6  ======================");
                                 System.out.println("===========================================================");
                                 System.out.println("1. Konser");
                                 System.out.println("2. Fanmeeting");
@@ -1210,7 +1334,7 @@ public class MainApp
                                 switch (eventday6)
                                 {
                                     case 1:
-                                        day6.infoEventidol();
+                                        day6.infoEventgrup();
                                         System.out.println("1. Beli Tiket");
                                         System.out.println("2. Kembali");
                                         System.out.print("Pilih : ");
@@ -1218,8 +1342,8 @@ public class MainApp
                                         System.out.println();
                                         if (tiketday6konser == 1) 
                                         {
-                                            day6.inputTiketidol(input);
-                                            day6.cetakTiketidol();
+                                            day6.inputTiketgrup(input);
+                                            day6.cetakTiketgrup();
                                             day6.berhasilmemesanTiket();
                                         } 
                                         else 
@@ -1230,7 +1354,7 @@ public class MainApp
                                         break;
 
                                     case 2:
-                                        day6.infoEventidol();
+                                        day6.infoEventgrup();
                                         System.out.println("1. Beli Tiket");
                                         System.out.println("2. Kembali");
                                         System.out.print("Pilih : ");
@@ -1238,8 +1362,8 @@ public class MainApp
                                         System.out.println();
                                         if (tiketday6fanmeeting == 1) 
                                         {
-                                            day6.inputTiketidol(input);
-                                            day6.cetakTiketidol();
+                                            day6.inputTiketgrup(input);
+                                            day6.cetakTiketgrup();
                                             day6.berhasilmemesanTiket();
                                         } 
                                         else 
@@ -1271,8 +1395,7 @@ public class MainApp
                                 if (albumday6 == 1) 
                                 {
                                     day6.belialbumday6(input);
-                                    day6.cetakStruk();
-                                    day6.berhasilmemesanTiket();
+                                    day6.cetakStrukgrup();
                                 } 
                                 else 
                                 {
@@ -1282,14 +1405,14 @@ public class MainApp
                                 break;
 
                             case 4:
-                                System.out.println("=================================================");
-                                System.out.println("============== KEGIATAN UP TO DATE ==============");
-                                System.out.println("=================================================");
+                                System.out.println("===========================================================");
+                                System.out.println("=================== KEGIATAN UP TO DATE ===================");
+                                System.out.println("===========================================================");
                                 System.out.println("1. Jadwal Comeback");
                                 System.out.println("2. Line Distribution");
                                 System.out.println("3. Fan Chant");
                                 System.out.println("4. Kembali");
-                                System.out.println("-------------------------------------------------");
+                                System.out.println("-----------------------------------------------------------");
                                 System.out.print("Pilih : ");
                                 int kegiatanupdateday6 = input.nextInt();
                                 System.out.println();
@@ -1335,7 +1458,7 @@ public class MainApp
                     while (!keluariu) 
                     {
                         System.out.println("=================================================================");
-                        System.out.println("=========================  MENU IU ===========================");
+                        System.out.println("============================ MENU IU ============================");
                         System.out.println("=================================================================");
                         System.out.println("1. Lihat Biodata");
                         System.out.println("2. Info Event dan Pembelian Tiket");
@@ -1442,7 +1565,7 @@ public class MainApp
                                 if (albumiu == 1) 
                                 {
                                     iu.belialbumIU(input);
-                                    iu.cetakStruk();
+                                    iu.cetakStruksoloist();
                                     iu.berhasilmemesanTiket();
                                 } 
                                 else 
@@ -1453,14 +1576,14 @@ public class MainApp
                                 break;
 
                             case 4:
-                                System.out.println("=================================================");
-                                System.out.println("============== KEGIATAN UP TO DATE ==============");
-                                System.out.println("=================================================");
+                                System.out.println("===========================================================");
+                                System.out.println("=================== KEGIATAN UP TO DATE ===================");
+                                System.out.println("===========================================================");
                                 System.out.println("1. Jadwal Comeback");
                                 System.out.println("2. Transisi Gaya Personal");
                                 System.out.println("3. Monologue Terbaru");
                                 System.out.println("4. Kembali");
-                                System.out.println("-------------------------------------------------");
+                                System.out.println("-----------------------------------------------------------");                                
                                 System.out.print("Pilih : ");
                                 int kegiatanupdateiu = input.nextInt();
                                 System.out.println();
@@ -1613,8 +1736,7 @@ public class MainApp
                                 if (albumpaulkim == 1) 
                                 {
                                     paulkim.belialbumPaulKim(input);
-                                    paulkim.cetakStruk();
-                                    paulkim.berhasilmemesanTiket();
+                                    paulkim.cetakStruksoloist();
                                 } 
                                 else 
                                 {
@@ -1624,14 +1746,14 @@ public class MainApp
                                 break;
 
                             case 4:
-                                System.out.println("=================================================");
-                                System.out.println("============== KEGIATAN UP TO DATE ==============");
-                                System.out.println("=================================================");
+                                System.out.println("===========================================================");
+                                System.out.println("=================== KEGIATAN UP TO DATE ===================");
+                                System.out.println("===========================================================");
                                 System.out.println("1. Jadwal Comeback");
                                 System.out.println("2. Transisi Gaya Personal");
                                 System.out.println("3. Monologue Terbaru");
                                 System.out.println("4. Kembali");
-                                System.out.println("-------------------------------------------------");
+                                System.out.println("-----------------------------------------------------------");
                                 System.out.print("Pilih : ");
                                 int kegiatanupdatepaulkim = input.nextInt();
                                 System.out.println();
@@ -1670,9 +1792,18 @@ public class MainApp
                                 break;
                         }
                     }
-
+                    break;
                 
+                case 9:
+                    kembaliutama = true;
+                    System.out.println("Kamu kembali ke menu");
+                    System.out.println(); 
+                    break;
 
+                    default:
+                    System.out.println("Pilihan tidak valid. Silakan coba lagi.");
+                    System.out.println();
+                    break;
             }
         }  
 
