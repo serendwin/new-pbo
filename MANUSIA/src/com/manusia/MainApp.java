@@ -1,17 +1,99 @@
 package com.manusia;
 
 import java.util.Scanner;
-import com.manusia.aktris.aktor.Firstlead;
 import com.manusia.aktris.aktor.Cameo;
+import com.manusia.aktris.aktor.Firstlead;
 import com.manusia.aktris.aktor.Pemeran;
 import com.manusia.idol.Idol;
 import com.manusia.idol.Soloist;
 import com.manusia.idol.Group;
 
-public class MainApp 
-{
-    public static void main(String[] args) 
-    {
+public class MainApp {
+
+   public static void animateText(String text, int delay) {
+    for (int i = 0; i < text.length(); i++) {
+        System.out.print(text.charAt(i));
+        try {
+            Thread.sleep(delay);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+    System.out.println();
+}
+
+    public static void header() {
+        System.out.println("=====================================");
+        animateText("           SELAMAT DATANG           ", 100);
+        System.out.println("=====================================\n");
+    }
+    public static void closing() {
+    System.out.println("\n====================================");
+    animateText("            TERIMA KASIH", 100);
+    animateText("  Program telah selesai dijalankan", 70);
+    System.out.println("====================================");
+}
+    public static void catWalk() {
+    String cat = "=^.^=";
+
+    for (int i = 0; i < 30; i++) {
+        System.out.print("\r"); 
+        for (int j = 0; j < i; j++) {
+            System.out.print(" ");
+        }
+        System.out.print(cat);
+
+        try {
+            Thread.sleep(150);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+    System.out.println();
+}
+
+    public static void danceMan() {
+
+    String[][] frames = {
+        {
+            "  o  ",
+            " /|\\ ",
+            " / \\ "
+        },
+        {
+            " \\o/ ",
+            "  |  ",
+            " / \\ "
+        }
+    };
+
+    int startPos = 30;
+    System.out.println("\n\n");
+
+    for (int step = startPos; step >= 0; step--) {
+        System.out.print("\033[3A");
+        for (int i = 0; i < 3; i++) {
+            for (int s = 0; s < step; s++) {
+                System.out.print(" ");
+            }
+            System.out.println(frames[step % frames.length][i]);
+        }
+
+        try {
+            Thread.sleep(200);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+}
+
+
+    public static void main(String[] args) {
+        
+        header();
+        danceMan();
+        catWalk();
+
         Scanner input = new Scanner(System.in);
 
         /** Aktor - Aktris */
@@ -681,7 +763,7 @@ public class MainApp
         );
 
 
-        boolean kembaliutama = false;
+        boolean kembaliutama = false; {
         while (!kembaliutama) 
         {
             System.out.println("______________________________________________________________________");
@@ -1986,4 +2068,7 @@ public class MainApp
         }  
         input.close();
     }
+closing();
+danceMan();
+}
 }
