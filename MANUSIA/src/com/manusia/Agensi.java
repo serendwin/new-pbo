@@ -36,7 +36,7 @@ public class Agensi {
 
     public void tampilkanAktor() {}
     public void tampilkanAktris() {}
-    public void tampilkanbiodatagroupidol() {}
+    public void tampilkanbiodatagrup() {}
     public void tampilkanbiodatamemberNCTDream() {}
     public void tampilkanbiodatamemberDAY6() {}
     public void tampilkanbiodatasoloist() {}
@@ -49,16 +49,13 @@ public class Agensi {
     public void inputTiketaktris(Scanner in) {}
     public void cetakTiketaktris() {}
 
-    public void infoEventidol() {}
-    public void inputTiketidol(Scanner in) {}
-    public void cetakTiketidol() {}
+    public void infoEventgrup() {}
+    public void inputTiketgrup(Scanner in) {}
+    public void cetakTiketgrup() {}
 
     public void infoEventsoloist() {}
     public void inputTiketsoloist(Scanner in) {}
     public void cetakTiketsoloist() {}
 
-    public void leeminho() {}
-    public void dongwook() {}
-    public void jiwon() {}
-    public void shinhye() {}
+    public void berhasilmemesanTiket() {}
 }

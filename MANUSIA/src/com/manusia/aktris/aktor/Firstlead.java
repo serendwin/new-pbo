@@ -39,25 +39,25 @@ public class Firstlead extends Pemeran
     }
 
     public void setPosterPosition() {
-        System.out.println("=================================================");
-        System.out.println("              FIRST LEAD POSITION               ");
-        System.out.println("=================================================");
+        System.out.println("=================================================================");
+        System.out.println("====================== FIRST LEAD POSITION ======================");
+        System.out.println("=================================================================");        
         System.out.println("Posisi Poster   : " + posisiPoster);
         System.out.println("Highlight       : " + highlight);
         System.out.println("Fokus Cerita    : " + fokusCerita);
-        System.out.println("=================================================");
+        System.out.println("=================================================================");
         System.out.println();
     }
 
     public void attendPressTour() {
-        System.out.println("=================================================");
-        System.out.println("               PRESS TOUR ACTIVITY              ");
-        System.out.println("=================================================");
+        System.out.println("=================================================================");
+        System.out.println("====================== PRESS TOUR ACTIVITY ======================");
+        System.out.println("=================================================================");        
         System.out.println("Nama Presscon   : " + namaPresscon);
         System.out.println("Nama TV         : " + tv);
         System.out.println("• Podcast eksklusif");
         System.out.println("• Meet & Greet di 5 kota besar");
-        System.out.println("=================================================");
+        System.out.println("=================================================================");
         System.out.println();
     }
 }

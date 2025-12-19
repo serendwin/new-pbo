@@ -39,11 +39,10 @@ public Pemeran(
         ttlLahir,
         ttlDebut,
         masaTrainee,
-        posisi,        // ✅ urutan benar
+        posisi,       
         penghargaan
     );
 
-    // ✅ INI YANG KURANG SELAMA INI
     this.drama = drama;
     this.film = film;
     this.event = event;
@@ -132,27 +131,20 @@ public Pemeran(
 
     @Override
     public void cetakTiketaktor() {
+        System.out.println("=================================================================");
         System.out.println("====================== STRUK TIKET AKTOR ========================");
+        System.out.println("=================================================================");
         System.out.println("Aktor    : " + nama);
         System.out.println("Event    : " + event);
         System.out.println("Kategori : " + kategori);
+        System.out.println("Section  : " + section);
+        System.out.println("Harga   : Rp " + harga);
         System.out.println("Jumlah   : " + qty);
         System.out.println("Total    : Rp " + total);
         System.out.println("=================================================================");
         System.out.println();
     }
 
-    @Override
-    public void leeminho() {
-        System.out.println("Tiket fanmeeting Lee Min-ho berhasil dipesan!");
-        System.out.println();
-    }
-
-    @Override
-    public void dongwook() {
-        System.out.println("Tiket fanmeeting Lee Dong-wook berhasil dipesan!");
-        System.out.println();
-    }
 
     @Override
     public void infoEventaktris() {
@@ -197,27 +189,20 @@ public Pemeran(
 
     @Override
     public void cetakTiketaktris() {
+        System.out.println("=================================================================");
         System.out.println("====================== STRUK TIKET AKTRIS =======================");
+        System.out.println("=================================================================");
         System.out.println("Aktris   : " + nama);
         System.out.println("Event    : " + event);
         System.out.println("Kategori : " + kategori);
+        System.out.println("Section  : " + section);
+        System.out.println("Harga   : Rp " + harga);
         System.out.println("Jumlah   : " + qty);
         System.out.println("Total    : Rp " + total);
         System.out.println("=================================================================");
         System.out.println();
     }
 
-    @Override
-    public void jiwon() {
-        System.out.println("Tiket fanmeeting Kim Ji-won berhasil dipesan!");
-        System.out.println();
-    }
-
-    @Override
-    public void shinhye() {
-        System.out.println("Tiket fanmeeting Park Shin-hye berhasil dipesan!");
-        System.out.println();
-    }
 
     private double tentukanHargaAktris(String kategori) {
         if (kategori == null) {
@@ -253,26 +238,36 @@ public Pemeran(
         }
     }
 
+    @Override
+    public void berhasilmemesanTiket() 
+    {
+        System.out.println("=================================================================");
+        System.out.println("                SELAMAT! TIKET FANMEETING BERHASIL! 💜      ");
+        System.out.println("=================================================================");
+        System.out.println();
+    }
+
 
     public void tampilkandrama() {
-        System.out.println("=================================================");
-        System.out.println("                 DRAMA POPULER                  ");
-        System.out.println("=================================================");
+        System.out.println("=================================================================");
+        System.out.println("========================= DRAMA POPULER =========================");
+        System.out.println("=================================================================");
         System.out.println("Nama Artis : " + nama);
         System.out.println("Drama      : " + drama);
         System.out.println("Peran      : " + posisi);
-        System.out.println("=================================================");
+        System.out.println("=================================================================");
         System.out.println();
     }
 
     public void tampilkanFilm() {
-        System.out.println("=================================================");
-        System.out.println("                  FILM POPULER                  ");
-        System.out.println("=================================================");
+
+        System.out.println("=================================================================");
+        System.out.println("========================== FILM POPULER =========================");
+        System.out.println("=================================================================");        
         System.out.println("Nama Artis : " + nama);
         System.out.println("Film       : " + film);
         System.out.println("Peran      : " + posisi);
-        System.out.println("=================================================");
+        System.out.println("=================================================================");
         System.out.println();
     }
 

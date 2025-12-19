@@ -39,27 +39,27 @@ public Cameo(
 }
 
     public void appearBriefly() {
-        System.out.println("=================================================");
-        System.out.println("                CAMEO APPEARANCE                ");
-        System.out.println("=================================================");
+        System.out.println("=================================================================");
+        System.out.println("======================== CAMEO APPEARANCE =======================");
+        System.out.println("=================================================================");
         System.out.println("Nama Artis      : " + nama);
         System.out.println("Drama           : " + drama);
         System.out.println("Nama Pemeran    : " + namaperancameo);
         System.out.println("Durasi          : " + durasi);
         System.out.println("Deskripsi       : " + deskripsi);
-        System.out.println("=================================================");
+        System.out.println("=================================================================");
         System.out.println();
     }
 
     public void deliverPlotTwist() {
-        System.out.println("=================================================");
-        System.out.println("                PLOT TWIST MOMENT               ");
-        System.out.println("=================================================");
+        System.out.println("=================================================================");
+        System.out.println("======================= PLOT TWIST MOMENT =======================");
+        System.out.println("=================================================================");
         System.out.println("Nama Artis      : " + nama);
         System.out.println("Nama Pemeran    : " + namaperancameo);
         System.out.println("Aksi Utama      : " + AksiUtama);
         System.out.println("Detail Aksi     : " + DetailAksi);
-        System.out.println("=================================================");
+        System.out.println("=================================================================");
         System.out.println();
     }
 }
