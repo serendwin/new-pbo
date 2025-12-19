@@ -109,8 +109,8 @@ public class MainApp
             "22 Juni 1987",
             "2006",
             2,
-            "The Heirs, Boys Over Flowers, City Hunter, Legend of the Blue Sea, Pachinko",
-            "Gangnam Blues, Bounty Hunters, Our School E.T, Public Enemy Returns, Somewhere",
+            "\n  - The Heirs\n  - Boys Over Flowers\n  - City Hunter\n  - Legend of the Blue Sea\n  - Pachinko",
+            "\n  - Gangnam Blues\n  - Bounty Hunters\n  - Our School E.T\n  - Public Enemy Returns\n  - Somewhere",
             "Aktor",
             "Baeksang Arts Awards",
             "Lee Min-ho Fanmeeting 2026",
@@ -125,8 +125,8 @@ public class MainApp
             "6 November 1981",
             "1999",
             3,
-            "Goblin, Tale of the Nine Tailed, Touch Your Heart, Strangers from Hell, Life",
-            "Arang, Happy New Year, The Recipe, The Beauty Inside, Single in Seoul",
+            "\n  - Goblin\n  - Tale of the Nine Tailed\n  - Touch Your Heart\n  - Strangers from Hell\n  - Life",
+            "\n  - Arang\n  - Happy New Year\n  - The Recipe\n  - The Beauty Inside\n  - Single in Seoul",
             "Aktor",
             "Baeksang Arts Awards",
             "Lee Dong-wook Fanmeeting 2026",
@@ -141,8 +141,8 @@ public class MainApp
             "18 Februari 1990",
             "2003",
             2,
-            "The Heirs, Pinocchio, Doctors, Memories of the Alhambra, Sisyphus: The Myth",
-            "Miracle in Cell No.7, #Alive, The Call, Evil Twin, Heartstrings",
+            "\n  - The Heirs\n  - Pinocchio\n  - Doctors\n  - Memories of the Alhambra\n  - Sisyphus: The Myth",
+            "\n  - Miracle in Cell No.7\n  - #Alive\n  - The Call\n  - Evil Twin\n  - Heartstrings",
             "Aktris",
             "Baeksang Arts Awards",
             "Park Shin-hye Fanmeeting 2026",
@@ -157,8 +157,8 @@ public class MainApp
             "19 Oktober 1992",
             "2010",
             2,
-            "Descendants of the Sun, Fight for My Way, Arthdal Chronicles, My Liberation Notes, Lovestruck in the City",
-            "Horror Stories, Romantic Island, Detective K, The Chronicles of Evil, Big Bang",
+            "\n  - Descendants of the Sun\n  - Fight for My Way\n  - Arthdal Chronicles\n  - My Liberation Notes\n  - Lovestruck in the City",
+            "\n  - Horror Stories\n  - Romantic Island\n  - Detective K\n  - The Chronicles of Evil\n  - Big Bang",
             "Aktris",
             "Baeksang Arts Awards",
             "Kim Ji-won Fanmeeting 2026",
@@ -208,7 +208,7 @@ public class MainApp
             "2 Agustus 1999",
             "2016",
             5,
-            "Leader, Main Rapper, Main Dancer, Sub Vocalist",
+            "\n  - Leader\n  - Main Rapper\n  - Main Dancer\n  - Sub Vocalist",
             "Seoul Music Awards - Bonsang",
             "Reload (2020)",
             "NCT DREAM WORLD TOUR", 
@@ -242,7 +242,7 @@ public class MainApp
             "23 April 2000",
             "2016",
             5,
-            "Main Rapper, Main Dancer, Sub Vocalist, Visual",
+            "\n  - Main Rapper\n  - Main Dancer\n  - Sub Vocalist\n  - Visual",
             "Seoul Music Awards - Bonsang",
             "Reload (2020)",
             "NCT DREAM WORLD TOUR", 
@@ -276,7 +276,7 @@ public class MainApp
             "13 Agustus 2000",
             "2016",
             5,
-            "Main Dancer, Sub Rapper, Sub Vocalist, Visual, Center",
+            "\n  - Main Dancer\n  - Sub Rapper\n  - Sub Vocalist\n  - Visual\n  - Center",
             "Seoul Music Awards - Bonsang",
             "Reload (2020)",
             "NCT DREAM WORLD TOUR", 
@@ -310,7 +310,7 @@ public class MainApp
             "5 Februari 2002",
             "2016",
             5,
-            "Main Dancer, Sub Rapper, Sub Vocalist, Maknae",
+            "\n  - Main Dancer\n  - Sub Rapper\n  - Sub Vocalist\n  - Maknae",
             "Seoul Music Awards - Bonsang",
             "Reload (2020)",
              "NCT DREAM WORLD TOUR", 
@@ -327,7 +327,7 @@ public class MainApp
             "16 Januari 1993",
             "2015",
             2,
-            "Leader, Main Vocalist, Rhythm Guitarist",
+            "\n  - Leader\n  - Main Vocalis\n  - Rhythm Guitarist",
             "Golden Disc Award - Best Band",
             "The Book of Us: Negentropy (2021)",
             "DAY6 WORLD TOUR", 
@@ -344,7 +344,7 @@ public class MainApp
             "19 Desember 1993",
             "2015",
             2,
-            "Bassist, Main Rapper, Main Vocalist",
+            "\n  - Bassist\n  - Main Rapper\n  - Main Vocalist",
             "Golden Disc Award - Best Band",
             "The Book of Us: Negentropy (2021)",
             "DAY6 WORLD TOUR", 
@@ -361,7 +361,7 @@ public class MainApp
             "28 April 1994",
             "2015",
             2,
-            "Keyboardist, Main Vocalist, Visual",
+            "\n  - Keyboardist\n  - Main Vocalist\n  - Visual",
             "Golden Disc Award - Best Band",
             "The Book of Us: Negentropy (2021)",
             "DAY6 WORLD TOUR", 
@@ -378,7 +378,7 @@ public class MainApp
             "25 Agustus 1995",
             "2015",
             2,
-            "Drummer, Maknae, Vocalist",
+            "\n  - Drummer\n  - Maknae\n  - Vocalist",
             "Golden Disc Award - Best Band",
             "The Book of Us: Negentropy (2021)",
             "DAY6 WORLD TOUR", 
@@ -699,7 +699,7 @@ public class MainApp
             System.out.println("8. Paul Kim");
             System.out.println("9. Exit");
             System.out.println("----------------------------------------------------------------------");
-            System.out.print("Pilih menu : ");
+            System.out.print("Pilih Menu : ");
             int menuUtama = input.nextInt();
             System.out.println();
             switch (menuUtama) 
@@ -734,7 +734,7 @@ public class MainApp
                                 System.out.println("2. Drama");
                                 System.out.println("3. Kembali");
                                 System.out.println("-----------------------------------------------------------------");
-                                System.out.print("Pilih Menu :");
+                                System.out.print("Pilih Menu :  ");
                                 int filmdramaleeminho = input.nextInt();
                                 System.out.println();
                                 switch (filmdramaleeminho) 
@@ -785,7 +785,7 @@ public class MainApp
                                 System.out.println("2. Touring Presscon Schedule");
                                 System.out.println("3. Kembali");
                                 System.out.println("-----------------------------------------------------------------");
-                                System.out.print("Pilih Kegiatan : ");
+                                System.out.print("Pilih Menu : ");
                                 int kegiatanminho = input.nextInt();
                                 System.out.println();
                                 switch (kegiatanminho) 
@@ -828,7 +828,7 @@ public class MainApp
                     while (!kembalileedongwook) 
                     {
                         System.out.println("=================================================================");
-                        System.out.println("========================  MENU LEE DONGWOOK =====================");
+                        System.out.println("======================== MENU LEE DONGWOOK ======================");
                         System.out.println("=================================================================");
                         System.out.println("1. Lihat Biodata");
                         System.out.println("2. Film dan Drama");
@@ -853,7 +853,7 @@ public class MainApp
                                 System.out.println("2. Drama");
                                 System.out.println("3. Kembali");
                                 System.out.println("-----------------------------------------------------------------");
-                                System.out.print("Pilih Menu :");
+                                System.out.print("Pilih Menu :  ");
                                 int filmdramadongwook = input.nextInt();
                                 System.out.println();
                                 switch (filmdramadongwook) 
@@ -904,7 +904,7 @@ public class MainApp
                                 System.out.println("2. Deliver Plot Twist");
                                 System.out.println("3. Kembali");
                                 System.out.println("-----------------------------------------------------------------");
-                                System.out.print("Pilih Kegiatan : ");
+                                System.out.print("Pilih Menu : ");
                                 int kegiatandongwook = input.nextInt();
                                 System.out.println();
                                 switch (kegiatandongwook) 
@@ -947,7 +947,7 @@ public class MainApp
                     while (!kembalishinhye) 
                     {
                         System.out.println("=================================================================");
-                        System.out.println("========================  MENU PARK SHINHYE =====================");
+                        System.out.println("======================== MENU PARK SHINHYE ======================");
                         System.out.println("=================================================================");
                         System.out.println("1. Lihat Biodata");
                         System.out.println("2. Film dan Drama");
@@ -972,7 +972,7 @@ public class MainApp
                                 System.out.println("2. Drama");
                                 System.out.println("3. Kembali");
                                 System.out.println("-----------------------------------------------------------------");
-                                System.out.print("Pilih Menu :");
+                                System.out.print("Pilih Menu :  ");
                                 int filmdramashinhye = input.nextInt();
                                 System.out.println();
                                 switch (filmdramashinhye) 
@@ -1023,7 +1023,7 @@ public class MainApp
                                 System.out.println("2. Touring Presscon Schedule");
                                 System.out.println("3. Kembali");
                                 System.out.println("-----------------------------------------------------------------");
-                                System.out.print("Pilih Kegiatan : ");
+                                System.out.print("Pilih Menu : ");
                                 int kegiatanshinhye = input.nextInt();
                                 System.out.println();
                                 switch (kegiatanshinhye) 
@@ -1091,7 +1091,7 @@ public class MainApp
                                 System.out.println("2. Drama");
                                 System.out.println("3. Kembali");
                                 System.out.println("-----------------------------------------------------------------");
-                                System.out.print("Pilih Menu :");
+                                System.out.print("Pilih Menu :  ");
                                 int filmdramajiwon = input.nextInt();
                                 System.out.println();
                                 switch (filmdramajiwon) 
@@ -1142,7 +1142,7 @@ public class MainApp
                                 System.out.println("2. Deliver Plot Twist");
                                 System.out.println("3. Kembali");
                                System.out.println("-----------------------------------------------------------------");
-                                System.out.print("Pilih Kegiatan : ");
+                                System.out.print("Pilih Menu : ");
                                 int kegiatanjiwon = input.nextInt();
                                 System.out.println();
                                 switch (kegiatanjiwon) 
@@ -1227,7 +1227,7 @@ public class MainApp
                                         System.out.println("7. Jisung");
                                         System.out.println("8. Keluar");
                                         System.out.println("-----------------------------------------------------------------");                                                                                                                                                             
-                                        System.out.print("Pilih member yang ingin biodatanya kamu liat : ");
+                                        System.out.print("Pilih Menu : ");
                                         int membernct = input.nextInt();
                                         System.out.println();
                                         switch (membernct) 
@@ -1292,7 +1292,7 @@ public class MainApp
                                 System.out.println("2. Fanmeeting");
                                 System.out.println("3. Kembali");
                                 System.out.println("-----------------------------------------------------------------");                                                                                     
-                                System.out.print("Pilih : ");
+                                System.out.print("Pilih Menu  : ");
                                 int eventnct = input.nextInt();
                                 System.out.println();
                                 switch (eventnct)
@@ -1377,7 +1377,7 @@ public class MainApp
                                 System.out.println("3. Fan Chant");
                                 System.out.println("4. Kembali");
                                 System.out.println("-----------------------------------------------------------------");                                
-                                System.out.print("Pilih : ");
+                                System.out.print("Pilih Menu : ");
                                 int kegiatanupdatenct = input.nextInt();
                                 System.out.println();
                                 switch (kegiatanupdatenct)
@@ -1422,7 +1422,7 @@ public class MainApp
                     while (!kembaliday6) 
                     {
                         System.out.println("=================================================================");
-                        System.out.println("==========================  MENU DAY6 ===========================");
+                        System.out.println("=========================== MENU DAY6 ===========================");
                         System.out.println("=================================================================");
                         System.out.println("1. Lihat Biodata");
                         System.out.println("2. Info Event dan Pembelian Tiket");
@@ -1462,7 +1462,7 @@ public class MainApp
                                         System.out.println("4. Dowoon");
                                         System.out.println("5. Keluar");
                                         System.out.println("-----------------------------------------------------------------"); 
-                                        System.out.print("Pilih member yang ingin biodatanya kamu liat : ");
+                                        System.out.print("Pilih Menu : ");
                                         int memberday6 = input.nextInt();
                                         System.out.println();
                                         switch (memberday6) 
@@ -1505,7 +1505,7 @@ public class MainApp
                                 System.out.println("2. Fanmeeting");
                                 System.out.println("3. Kembali");
                                 System.out.println("-----------------------------------------------------------------");                                                     
-                                System.out.print("Pilih : ");
+                                System.out.print("Pilih Menu : ");
                                 int eventday6 = input.nextInt();
                                 System.out.println();
                                 switch (eventday6)
@@ -1590,7 +1590,7 @@ public class MainApp
                                 System.out.println("3. Fan Chant");
                                 System.out.println("4. Kembali");
                                 System.out.println("-----------------------------------------------------------------");                                                                
-                                System.out.print("Pilih : ");
+                                System.out.print("Pilih Menu : ");
                                 int kegiatanupdateday6 = input.nextInt();
                                 System.out.println();
                                 switch (kegiatanupdateday6)
@@ -1660,7 +1660,7 @@ public class MainApp
                                 System.out.println("3. Showcase");
                                 System.out.println("4. Kembali");
                                 System.out.println("-----------------------------------------------------------------");                                
-                                System.out.print("Pilih : ");
+                                System.out.print("Pilih Menu : ");
                                 int eventiu = input.nextInt();
                                 System.out.println();
                                 switch (eventiu)
@@ -1761,7 +1761,7 @@ public class MainApp
                                 System.out.println("3. Monologue Terbaru");
                                 System.out.println("4. Kembali");
                                 System.out.println("-----------------------------------------------------------------");
-                                System.out.print("Pilih : ");
+                                System.out.print("Pilih Menu : ");
                                 int kegiatanupdateiu = input.nextInt();
                                 System.out.println();
                                 switch (kegiatanupdateiu)
@@ -1832,7 +1832,7 @@ public class MainApp
                                 System.out.println("3. Showcase");
                                 System.out.println("4. Kembali");
                                 System.out.println("-----------------------------------------------------------------");
-                                System.out.print("Pilih : ");
+                                System.out.print("Pilih Menu : ");
                                 int eventpaulkim = input.nextInt();
                                 System.out.println();
                                 switch (eventpaulkim)
@@ -1932,7 +1932,7 @@ public class MainApp
                                 System.out.println("3. Monologue Terbaru");
                                 System.out.println("4. Kembali");
                                 System.out.println("-----------------------------------------------------------------");
-                                System.out.print("Pilih : ");
+                                System.out.print("Pilih Menu : ");
                                 int kegiatanupdatepaulkim = input.nextInt();
                                 System.out.println();
                                 switch (kegiatanupdatepaulkim)
@@ -1984,7 +1984,6 @@ public class MainApp
                     break;
             }
         }  
-
         input.close();
     }
 }

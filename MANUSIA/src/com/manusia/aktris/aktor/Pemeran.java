@@ -64,8 +64,6 @@ public Pemeran(
         System.out.println("Kewarganegaraan  : " + kewarganegaraan);
         System.out.println("Tanggal Lahir    : " + ttlLahir);
         System.out.println("Debut            : " + ttlDebut);
-        System.out.println("Drama            : " + drama);
-        System.out.println("Film             : " + film);
         System.out.println("Penghargaan      : " + penghargaan);
         System.out.println("=================================================================");
         System.out.println();
@@ -82,8 +80,6 @@ public Pemeran(
         System.out.println("Kewarganegaraan  : " + kewarganegaraan);
         System.out.println("Tanggal Lahir    : " + ttlLahir);
         System.out.println("Debut            : " + ttlDebut);
-        System.out.println("Drama            : " + drama);
-        System.out.println("Film             : " + film);
         System.out.println("Penghargaan      : " + penghargaan);
         System.out.println("=================================================================");
         System.out.println();
@@ -251,8 +247,7 @@ public Pemeran(
         System.out.println("========================= DRAMA POPULER =========================");
         System.out.println("=================================================================");
         System.out.println("Nama Artis : " + nama);
-        System.out.println("Drama      : " + drama);
-        System.out.println("Peran      : " + posisi);
+        System.out.println("List Drama : " + drama);
         System.out.println("=================================================================");
         System.out.println();
     }
@@ -263,11 +258,8 @@ public Pemeran(
         System.out.println("========================== FILM POPULER =========================");
         System.out.println("=================================================================");        
         System.out.println("Nama Artis : " + nama);
-        System.out.println("Film       : " + film);
-        System.out.println("Peran      : " + posisi);
+        System.out.println("List Film  : " + film);
         System.out.println("=================================================================");
         System.out.println();
     }
-
-
 }

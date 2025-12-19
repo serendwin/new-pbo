@@ -62,7 +62,7 @@ public class Idol extends Agensi {
     public void tampilkanbiodatagrup() 
     {
         System.out.println("=================================================================");
-        System.out.println("========================  BIODATA GROUP  =======================");
+        System.out.println("========================  BIODATA GROUP  ========================");
         System.out.println("=================================================================");
         System.out.println("Group Boyband   : " + nama);
         System.out.println("Debut           : " + ttlDebut);
@@ -74,17 +74,18 @@ public class Idol extends Agensi {
 
     @Override
     public void tampilkanbiodatamemberNCTDream() {
-        System.out.println("==================================================================================");
-        System.out.println("============================  BIODATA MEMBER NCT DREAM  ==========================");
-        System.out.println("==================================================================================");
+
+        System.out.println("=================================================================");
+        System.out.println("====================  BIODATA MEMBER NCT DREAM  =================");
+        System.out.println("=================================================================");
         System.out.println("Nama            : " + nama);
         System.out.println("Gender          : " + gender);
         System.out.println("Tanggal Lahir   : " + ttlLahir);
         System.out.println("Kewarganegaraan : " + kewarganegaraan);
         System.out.println("Masa Trainee    : " + masaTrainee);
         System.out.println("Posisi          : " + posisi);
-        System.out.println("==================================================================================");
-        System.out.println();
+        System.out.println("=================================================================");
+        System.out.println();        
     }
 
     @Override
