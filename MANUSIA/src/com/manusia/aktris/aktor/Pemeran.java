@@ -53,7 +53,6 @@ public Pemeran(
     this.section = "-";
 }
 
-
     @Override
     public void tampilkanAktris() {
         System.out.println("=================================================================");
@@ -128,7 +127,6 @@ public Pemeran(
         System.out.println();
     }
 
-
     @Override
     public void cetakTiketaktor() {
         System.out.println("=================================================================");
@@ -144,7 +142,6 @@ public Pemeran(
         System.out.println("=================================================================");
         System.out.println();
     }
-
 
     @Override
     public void infoEventaktris() {
@@ -185,7 +182,6 @@ public Pemeran(
         System.out.println("=================================================================");
         System.out.println();
     }
-
 
     @Override
     public void cetakTiketaktris() {
@@ -246,7 +242,6 @@ public Pemeran(
         System.out.println("=================================================================");
         System.out.println();
     }
-
 
     public void tampilkandrama() {
         System.out.println("=================================================================");

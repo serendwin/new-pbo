@@ -582,7 +582,7 @@ public class Idol extends Agensi {
     total = qty * harga;
     System.out.println("===========================================================");
     System.out.println();
-}
+    }
 
     private double tentukanHargaAlbumIU(String album) 
     {
