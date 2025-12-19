@@ -51,36 +51,38 @@ public class Soloist extends Idol {
     @Override
     public void jadwalComeback() 
     {
-        System.out.println("===========================================================");
-        System.out.println("=============== INFORMASI COMEBACK SOLOIST ================");
-        System.out.println("===========================================================");
-         System.out.println("Soloist : " + nama);
-        System.out.println("MV      : 18.00 KST");
-       System.out.println("===========================================================");
+        System.out.println("=================================================================");
+        System.out.println("==================== INFORMASI COMEBACK GROUP ===================");
+        System.out.println("=================================================================");
+        System.out.println("Soloist        : " + nama);
+        System.out.println("Nama Album     : " + album);
+        System.out.println("MV          : 19.00 KST");
+        System.out.println("=================================================================");
+        System.out.println();
     }
 
     public void transisiGayaPersonal() 
     {
-        System.out.println("===========================================================");
-        System.out.println("=========== INFORMASI TRANSISI GAYA PERSONAL ==============");
-        System.out.println("===========================================================");
+        System.out.println("=================================================================");  
+        System.out.println("=============== INFORMASI TRANSISI GAYA PERSONAL ================");
+        System.out.println("=================================================================");
         System.out.println("Nama        : " + nama);
         System.out.println("Gaya Awal   : " + gayaAwal);
         System.out.println("Gaya Akhir  : " + gayaAkhir);
         System.out.println("Deskripsi   : " + deskripsi);
-        System.out.println("===========================================================");
+        System.out.println("=================================================================");
         System.out.println();
     }
 
     public void monologuePerformance(String tema) 
     {
-        System.out.println("===========================================================");
-        System.out.println("=========== INFORMASI MONOLOGUE PERFORMANCE ===============");
-        System.out.println("===========================================================");
+        System.out.println("=================================================================");
+        System.out.println("================ INFORMASI MONOLOGUE PERFORMANCE ================");
+        System.out.println("=================================================================");
         System.out.println("Soloist    : " + nama);
         System.out.println("Tema       : " + tema);
         System.out.println("Penampilan : " + penampilan);
-        System.out.println("===========================================================");
+        System.out.println("=================================================================");
         System.out.println();
     }
 }

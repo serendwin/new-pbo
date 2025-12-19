@@ -18,19 +18,19 @@ public class Pemeran extends Agensi
     protected String drama;
     
 public Pemeran(
-        String nama,
-        String kewarganegaraan,
-        String gender,
-        String ttlLahir,
-        String ttlDebut,
-        int masaTrainee,
-        String posisi,
-        String drama,
-        String film,
-        String penghargaan,
-        String event,
-        String lokasi,
-        String tanggal
+    String nama,
+    String kewarganegaraan,
+    String gender,
+    String ttlLahir,
+    String ttlDebut,
+    int masaTrainee,
+    String drama,
+    String film,
+    String posisi,
+    String penghargaan,
+    String event,
+    String lokasi,
+    String tanggal
 ) {
     super(
         nama,
@@ -39,8 +39,8 @@ public Pemeran(
         ttlLahir,
         ttlDebut,
         masaTrainee,
-        posisi,       
-        penghargaan
+        penghargaan, 
+        posisi       
     );
 
     this.drama = drama;
@@ -54,7 +54,8 @@ public Pemeran(
 }
 
     @Override
-    public void tampilkanAktris() {
+    public void tampilkanAktris() 
+    {
         System.out.println("=================================================================");
         System.out.println("======================   BIODATA AKTRIS   =======================");
         System.out.println("=================================================================");
@@ -71,7 +72,8 @@ public Pemeran(
     }
 
     @Override
-    public void tampilkanAktor() {
+    public void tampilkanAktor() 
+    {
         System.out.println("=================================================================");
         System.out.println("=======================   BIODATA AKTOR   =======================");
         System.out.println("=================================================================");
@@ -88,7 +90,8 @@ public Pemeran(
     }
 
     @Override
-    public void infoEventaktor() {
+    public void infoEventaktor() 
+    {
         System.out.println("=================================================================");
         System.out.println("======================  INFO EVENT AKTOR  =======================");
         System.out.println("=================================================================");
@@ -105,7 +108,8 @@ public Pemeran(
     }
 
     @Override
-    public void inputTiketaktor(Scanner input) {
+    public void inputTiketaktor(Scanner input) 
+    {
         input.nextLine();
         System.out.println("=================================================================");
         System.out.println("===================  PEMBELIAN TIKET FANMEETING =================");
@@ -128,15 +132,15 @@ public Pemeran(
     }
 
     @Override
-    public void cetakTiketaktor() {
+    public void cetakTiketaktor() 
+    {
         System.out.println("=================================================================");
         System.out.println("====================== STRUK TIKET AKTOR ========================");
         System.out.println("=================================================================");
         System.out.println("Aktor    : " + nama);
         System.out.println("Event    : " + event);
         System.out.println("Kategori : " + kategori);
-        System.out.println("Section  : " + section);
-        System.out.println("Harga   : Rp " + harga);
+        System.out.println("Harga    : Rp " + harga);
         System.out.println("Jumlah   : " + qty);
         System.out.println("Total    : Rp " + total);
         System.out.println("=================================================================");
@@ -191,8 +195,7 @@ public Pemeran(
         System.out.println("Aktris   : " + nama);
         System.out.println("Event    : " + event);
         System.out.println("Kategori : " + kategori);
-        System.out.println("Section  : " + section);
-        System.out.println("Harga   : Rp " + harga);
+        System.out.println("Harga    : Rp " + harga);
         System.out.println("Jumlah   : " + qty);
         System.out.println("Total    : Rp " + total);
         System.out.println("=================================================================");
@@ -238,7 +241,7 @@ public Pemeran(
     public void berhasilmemesanTiket() 
     {
         System.out.println("=================================================================");
-        System.out.println("                SELAMAT! TIKET FANMEETING BERHASIL! 💜      ");
+        System.out.println("                SELAMAT! TIKET FANMEETING BERHASIL!       ");
         System.out.println("=================================================================");
         System.out.println();
     }
